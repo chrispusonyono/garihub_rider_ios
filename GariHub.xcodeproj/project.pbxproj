@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAA769782514D03D00750625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769772514D03D00750625 /* AppDelegate.swift */; };
+		FAA769812514D03F00750625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA769802514D03F00750625 /* Assets.xcassets */; };
+		FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA769822514D03F00750625 /* LaunchScreen.storyboard */; };
+		FAA7698F2514D04000750625 /* GariHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7698E2514D04000750625 /* GariHubTests.swift */; };
+		FAA7699A2514D04000750625 /* GariHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769992514D04000750625 /* GariHubUITests.swift */; };
+		FAA769AA2514D0C500750625 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769A82514D0C500750625 /* LandingController.swift */; };
+		FAA769AB2514D0C500750625 /* LandingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA769A92514D0C500750625 /* LandingController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAA7698B2514D04000750625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA7696C2514D03D00750625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA769732514D03D00750625;
+			remoteInfo = GariHub;
+		};
+		FAA769962514D04000750625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA7696C2514D03D00750625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA769732514D03D00750625;
+			remoteInfo = GariHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAA769742514D03D00750625 /* GariHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GariHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA769772514D03D00750625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA769802514D03F00750625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA769832514D03F00750625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA769852514D03F00750625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA7698A2514D04000750625 /* GariHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GariHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA7698E2514D04000750625 /* GariHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GariHubTests.swift; sourceTree = "<group>"; };
+		FAA769902514D04000750625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA769952514D04000750625 /* GariHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GariHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA769992514D04000750625 /* GariHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GariHubUITests.swift; sourceTree = "<group>"; };
+		FAA7699B2514D04000750625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA769A82514D0C500750625 /* LandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
+		FAA769A92514D0C500750625 /* LandingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA769712514D03D00750625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA769872514D04000750625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA769922514D04000750625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAA7696B2514D03D00750625 = {
+			isa = PBXGroup;
+			children = (
+				FAA769762514D03D00750625 /* GariHub */,
+				FAA7698D2514D04000750625 /* GariHubTests */,
+				FAA769982514D04000750625 /* GariHubUITests */,
+				FAA769752514D03D00750625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA769752514D03D00750625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA769742514D03D00750625 /* GariHub.app */,
+				FAA7698A2514D04000750625 /* GariHubTests.xctest */,
+				FAA769952514D04000750625 /* GariHubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA769762514D03D00750625 /* GariHub */ = {
+			isa = PBXGroup;
+			children = (
+				FAA769AF2514D31300750625 /* Utils */,
+				FAA769AE2514D30D00750625 /* Resources */,
+				FAA769AD2514D30300750625 /* Network */,
+				FAA769AC2514D2FD00750625 /* Models */,
+				FAA769A72514D0B200750625 /* Views */,
+				FAA769772514D03D00750625 /* AppDelegate.swift */,
+				FAA769802514D03F00750625 /* Assets.xcassets */,
+				FAA769822514D03F00750625 /* LaunchScreen.storyboard */,
+				FAA769852514D03F00750625 /* Info.plist */,
+			);
+			path = GariHub;
+			sourceTree = "<group>";
+		};
+		FAA7698D2514D04000750625 /* GariHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA7698E2514D04000750625 /* GariHubTests.swift */,
+				FAA769902514D04000750625 /* Info.plist */,
+			);
+			path = GariHubTests;
+			sourceTree = "<group>";
+		};
+		FAA769982514D04000750625 /* GariHubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA769992514D04000750625 /* GariHubUITests.swift */,
+				FAA7699B2514D04000750625 /* Info.plist */,
+			);
+			path = GariHubUITests;
+			sourceTree = "<group>";
+		};
+		FAA769A72514D0B200750625 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAA769A82514D0C500750625 /* LandingController.swift */,
+				FAA769A92514D0C500750625 /* LandingController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAA769AC2514D2FD00750625 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA769AD2514D30300750625 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAA769AE2514D30D00750625 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAA769AF2514D31300750625 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA769732514D03D00750625 /* GariHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA7699E2514D04000750625 /* Build configuration list for PBXNativeTarget "GariHub" */;
+			buildPhases = (
+				FAA769702514D03D00750625 /* Sources */,
+				FAA769712514D03D00750625 /* Frameworks */,
+				FAA769722514D03D00750625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GariHub;
+			productName = GariHub;
+			productReference = FAA769742514D03D00750625 /* GariHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAA769892514D04000750625 /* GariHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA769A12514D04000750625 /* Build configuration list for PBXNativeTarget "GariHubTests" */;
+			buildPhases = (
+				FAA769862514D04000750625 /* Sources */,
+				FAA769872514D04000750625 /* Frameworks */,
+				FAA769882514D04000750625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA7698C2514D04000750625 /* PBXTargetDependency */,
+			);
+			name = GariHubTests;
+			productName = GariHubTests;
+			productReference = FAA7698A2514D04000750625 /* GariHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAA769942514D04000750625 /* GariHubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA769A42514D04000750625 /* Build configuration list for PBXNativeTarget "GariHubUITests" */;
+			buildPhases = (
+				FAA769912514D04000750625 /* Sources */,
+				FAA769922514D04000750625 /* Frameworks */,
+				FAA769932514D04000750625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA769972514D04000750625 /* PBXTargetDependency */,
+			);
+			name = GariHubUITests;
+			productName = GariHubUITests;
+			productReference = FAA769952514D04000750625 /* GariHubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA7696C2514D03D00750625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Kevin Lagat";
+				TargetAttributes = {
+					FAA769732514D03D00750625 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					FAA769892514D04000750625 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FAA769732514D03D00750625;
+					};
+					FAA769942514D04000750625 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FAA769732514D03D00750625;
+					};
+				};
+			};
+			buildConfigurationList = FAA7696F2514D03D00750625 /* Build configuration list for PBXProject "GariHub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA7696B2514D03D00750625;
+			productRefGroup = FAA769752514D03D00750625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA769732514D03D00750625 /* GariHub */,
+				FAA769892514D04000750625 /* GariHubTests */,
+				FAA769942514D04000750625 /* GariHubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA769722514D03D00750625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */,
+				FAA769AB2514D0C500750625 /* LandingController.xib in Resources */,
+				FAA769812514D03F00750625 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA769882514D04000750625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA769932514D04000750625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA769702514D03D00750625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA769782514D03D00750625 /* AppDelegate.swift in Sources */,
+				FAA769AA2514D0C500750625 /* LandingController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA769862514D04000750625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA7698F2514D04000750625 /* GariHubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA769912514D04000750625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA7699A2514D04000750625 /* GariHubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAA7698C2514D04000750625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA769732514D03D00750625 /* GariHub */;
+			targetProxy = FAA7698B2514D04000750625 /* PBXContainerItemProxy */;
+		};
+		FAA769972514D04000750625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA769732514D03D00750625 /* GariHub */;
+			targetProxy = FAA769962514D04000750625 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA769822514D03F00750625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA769832514D03F00750625 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA7699C2514D04000750625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAA7699D2514D04000750625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA7699F2514D04000750625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99FHHVY5LH;
+				INFOPLIST_FILE = GariHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = garihub.GariHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA769A02514D04000750625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99FHHVY5LH;
+				INFOPLIST_FILE = GariHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = garihub.GariHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAA769A22514D04000750625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99FHHVY5LH;
+				INFOPLIST_FILE = GariHubTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = garihub.GariHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GariHub.app/GariHub";
+			};
+			name = Debug;
+		};
+		FAA769A32514D04000750625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99FHHVY5LH;
+				INFOPLIST_FILE = GariHubTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = garihub.GariHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GariHub.app/GariHub";
+			};
+			name = Release;
+		};
+		FAA769A52514D04000750625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99FHHVY5LH;
+				INFOPLIST_FILE = GariHubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = garihub.GariHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GariHub;
+			};
+			name = Debug;
+		};
+		FAA769A62514D04000750625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99FHHVY5LH;
+				INFOPLIST_FILE = GariHubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = garihub.GariHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GariHub;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA7696F2514D03D00750625 /* Build configuration list for PBXProject "GariHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA7699C2514D04000750625 /* Debug */,
+				FAA7699D2514D04000750625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA7699E2514D04000750625 /* Build configuration list for PBXNativeTarget "GariHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA7699F2514D04000750625 /* Debug */,
+				FAA769A02514D04000750625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA769A12514D04000750625 /* Build configuration list for PBXNativeTarget "GariHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA769A22514D04000750625 /* Debug */,
+				FAA769A32514D04000750625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA769A42514D04000750625 /* Build configuration list for PBXNativeTarget "GariHubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA769A52514D04000750625 /* Debug */,
+				FAA769A62514D04000750625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA7696C2514D03D00750625 /* Project object */;
+}
