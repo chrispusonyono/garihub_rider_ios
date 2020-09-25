@@ -1,0 +1,6 @@
+framework module Pods_GariHub_GariHubUITests {
+  umbrella header "Pods-GariHub-GariHubUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
