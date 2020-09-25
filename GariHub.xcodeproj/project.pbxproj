@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		0C893104251B5066001E17AD /* CampaignController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C893102251B5065001E17AD /* CampaignController.xib */; };
 		0C89310D251B6D9A001E17AD /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89310B251B6D9A001E17AD /* RegistrationController.swift */; };
 		0C89310E251B6D9A001E17AD /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C89310C251B6D9A001E17AD /* RegistrationController.xib */; };
+		89D87B8770C27F72779FF7CC /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AC168DD7714E28846F2575 /* Pods_GariHubTests.framework */; };
+		9EABCF32100EF8D0BAEDF0D3 /* Pods_GariHub_GariHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA551167B650BB5CF14FE7B /* Pods_GariHub_GariHubUITests.framework */; };
+		BA11F2FE22800259764A1282 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D7355EE339114B89B71B10 /* Pods_GariHub.framework */; };
+		FA34E374251DAA1B008712B1 /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34E373251DAA1B008712B1 /* AuthTarget.swift */; };
 		FAA769782514D03D00750625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769772514D03D00750625 /* AppDelegate.swift */; };
 		FAA769812514D03F00750625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA769802514D03F00750625 /* Assets.xcassets */; };
 		FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA769822514D03F00750625 /* LaunchScreen.storyboard */; };
@@ -38,10 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B86247175F1CC7DF48C3106 /* Pods-GariHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHubTests.release.xcconfig"; path = "Target Support Files/Pods-GariHubTests/Pods-GariHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		0C893101251B5065001E17AD /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
 		0C893102251B5065001E17AD /* CampaignController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CampaignController.xib; sourceTree = "<group>"; };
 		0C89310B251B6D9A001E17AD /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		0C89310C251B6D9A001E17AD /* RegistrationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
+		28AC168DD7714E28846F2575 /* Pods_GariHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39921ADD51EEA78E0C4B30FF /* Pods-GariHub-GariHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A09B45D74B04B2445D22C55 /* Pods-GariHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHubTests.debug.xcconfig"; path = "Target Support Files/Pods-GariHubTests/Pods-GariHubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B189BC68CCAE3022C40CF062 /* Pods-GariHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.debug.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.debug.xcconfig"; sourceTree = "<group>"; };
+		B5D7355EE339114B89B71B10 /* Pods_GariHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7492F601B934DDC0EA99C92 /* Pods-GariHub-GariHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.release.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DAA551167B650BB5CF14FE7B /* Pods_GariHub_GariHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub_GariHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CE00235507A61160E8E3D8 /* Pods-GariHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.release.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.release.xcconfig"; sourceTree = "<group>"; };
+		FA34E373251DAA1B008712B1 /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTarget.swift; sourceTree = "<group>"; };
 		FAA769742514D03D00750625 /* GariHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GariHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA769772514D03D00750625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA769802514D03F00750625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA11F2FE22800259764A1282 /* Pods_GariHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D87B8770C27F72779FF7CC /* Pods_GariHubTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EABCF32100EF8D0BAEDF0D3 /* Pods_GariHub_GariHubUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1211ECAB536DFAA8E3FC74C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7355EE339114B89B71B10 /* Pods_GariHub.framework */,
+				DAA551167B650BB5CF14FE7B /* Pods_GariHub_GariHubUITests.framework */,
+				28AC168DD7714E28846F2575 /* Pods_GariHubTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA6557D1755037DB29D0323D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B189BC68CCAE3022C40CF062 /* Pods-GariHub.debug.xcconfig */,
+				F7CE00235507A61160E8E3D8 /* Pods-GariHub.release.xcconfig */,
+				39921ADD51EEA78E0C4B30FF /* Pods-GariHub-GariHubUITests.debug.xcconfig */,
+				D7492F601B934DDC0EA99C92 /* Pods-GariHub-GariHubUITests.release.xcconfig */,
+				9A09B45D74B04B2445D22C55 /* Pods-GariHubTests.debug.xcconfig */,
+				0B86247175F1CC7DF48C3106 /* Pods-GariHubTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FAA7696B2514D03D00750625 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +129,8 @@
 				FAA7698D2514D04000750625 /* GariHubTests */,
 				FAA769982514D04000750625 /* GariHubUITests */,
 				FAA769752514D03D00750625 /* Products */,
+				FA6557D1755037DB29D0323D /* Pods */,
+				1211ECAB536DFAA8E3FC74C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +201,7 @@
 		FAA769AD2514D30300750625 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FA34E373251DAA1B008712B1 /* AuthTarget.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -184,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA7699E2514D04000750625 /* Build configuration list for PBXNativeTarget "GariHub" */;
 			buildPhases = (
+				6286E40794A3557086CADCA5 /* [CP] Check Pods Manifest.lock */,
 				FAA769702514D03D00750625 /* Sources */,
 				FAA769712514D03D00750625 /* Frameworks */,
 				FAA769722514D03D00750625 /* Resources */,
+				D9DD7F9BDD35D45544B8AF1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA769A12514D04000750625 /* Build configuration list for PBXNativeTarget "GariHubTests" */;
 			buildPhases = (
+				119585A444A4D757C9216DEE /* [CP] Check Pods Manifest.lock */,
 				FAA769862514D04000750625 /* Sources */,
 				FAA769872514D04000750625 /* Frameworks */,
 				FAA769882514D04000750625 /* Resources */,
@@ -219,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA769A42514D04000750625 /* Build configuration list for PBXNativeTarget "GariHubUITests" */;
 			buildPhases = (
+				FB3AD172B5051679B3475789 /* [CP] Check Pods Manifest.lock */,
 				FAA769912514D04000750625 /* Sources */,
 				FAA769922514D04000750625 /* Frameworks */,
 				FAA769932514D04000750625 /* Resources */,
+				ECC495E795B4E1230B1CEAD4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,12 +353,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		119585A444A4D757C9216DEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GariHubTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6286E40794A3557086CADCA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GariHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9DD7F9BDD35D45544B8AF1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECC495E795B4E1230B1CEAD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3AD172B5051679B3475789 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GariHub-GariHubUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAA769702514D03D00750625 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAA769782514D03D00750625 /* AppDelegate.swift in Sources */,
+				FA34E374251DAA1B008712B1 /* AuthTarget.swift in Sources */,
 				FAA769AA2514D0C500750625 /* LandingController.swift in Sources */,
 				0C89310D251B6D9A001E17AD /* RegistrationController.swift in Sources */,
 				0C893103251B5065001E17AD /* CampaignController.swift in Sources */,
@@ -476,6 +628,7 @@
 		};
 		FAA7699F2514D04000750625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B189BC68CCAE3022C40CF062 /* Pods-GariHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -495,6 +648,7 @@
 		};
 		FAA769A02514D04000750625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CE00235507A61160E8E3D8 /* Pods-GariHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +668,7 @@
 		};
 		FAA769A22514D04000750625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A09B45D74B04B2445D22C55 /* Pods-GariHubTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +691,7 @@
 		};
 		FAA769A32514D04000750625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B86247175F1CC7DF48C3106 /* Pods-GariHubTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +714,7 @@
 		};
 		FAA769A52514D04000750625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39921ADD51EEA78E0C4B30FF /* Pods-GariHub-GariHubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +735,7 @@
 		};
 		FAA769A62514D04000750625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7492F601B934DDC0EA99C92 /* Pods-GariHub-GariHubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
