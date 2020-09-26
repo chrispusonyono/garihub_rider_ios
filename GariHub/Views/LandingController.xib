@@ -32,6 +32,14 @@
                     <color key="pageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                     <color key="currentPageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </pageControl>
+                <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="VcB-4e-Mpc">
+                    <rect key="frame" x="150" y="742" width="134" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jLY-JF-wId"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="currentPageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pageControl>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>

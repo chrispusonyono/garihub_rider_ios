@@ -8,7 +8,6 @@ target 'GariHub' do
   # Pods for GariHub
   pod 'Moya'
 
-
   target 'GariHubTests' do
     inherit! :search_paths
     # Pods for testing

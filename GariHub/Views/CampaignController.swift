@@ -10,21 +10,20 @@ import UIKit
 
 class CampaignController: UIViewController {
 
+    @IBOutlet weak var skipButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        skipButton.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
+    }
+    
+    @objc func onTap(_ sender: UIButton) {
+        print("clicked")
+        let campaignTwo = CampaignTwo()
+        self.navigationController?.pushViewController(campaignTwo, animated: true)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
