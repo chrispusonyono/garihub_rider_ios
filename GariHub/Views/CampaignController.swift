@@ -22,7 +22,9 @@ class CampaignController: UIViewController {
     @objc func onTap(_ sender: UIButton) {
         print("clicked")
         let campaignTwo = CampaignTwo()
-        self.navigationController?.pushViewController(campaignTwo, animated: true)
+        campaignTwo.modalPresentationStyle = .fullScreen
+        self.present(campaignTwo, animated: true, completion: nil)
+        
     }
 
 

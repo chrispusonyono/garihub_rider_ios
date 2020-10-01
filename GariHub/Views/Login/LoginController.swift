@@ -10,21 +10,55 @@ import UIKit
 
 class LoginController: UIViewController {
 
+    @IBOutlet weak var emailAddress: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var forgotPasswordBtn: UILabel!
+    @IBOutlet weak var registerButton: UILabel!
+    @IBOutlet weak var signInBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initializeHideKeyboard()
+        setupViews()
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setupViews() {
+        signInBtn.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
+        
     }
-    */
+    @objc func onTap(_ sender: UIButton) {
+        self.showSpinner(onView: self.view)
+        guard let email = emailAddress.text else { return }
+        guard let password = passwordField.text else { return }
+        let request = LoginRequest(emailAddress: email, password: password)
+        
+        provider.request(.login(request: request)) {
+            result in
+            self.removeSpinner()
+            switch result {
+            case .failure(let error):
+                print(error.localizedDescription)
+            case .success(let response):
+                do {
+                    let loginResponse = try JSONDecoder().decode(LoginResponse.self, from: response.data)
+                    print(loginResponse)
+                } catch {
+                    DispatchQueue.main.async {
+                        let alertController = UIAlertController(title: "Error", message: "Login failed", preferredStyle: .alert)
+                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+                        alertController.addAction(defaultAction)
+                        self.present(alertController, animated: true, completion: nil)
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    
+    
+    
 
 }

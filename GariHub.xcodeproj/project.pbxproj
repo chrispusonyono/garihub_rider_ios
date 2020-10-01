@@ -24,6 +24,10 @@
 		FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */; };
 		FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC535251E32300081A19A /* RegistrationViewModel.swift */; };
 		FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC537251E329E0081A19A /* BaseAuthModel.swift */; };
+		FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E732525BDDF00AC4776 /* UIViewController+.swift */; };
+		FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E752525C53900AC4776 /* ClassNameProtocol.swift */; };
+		FA882E782525C80B00AC4776 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E772525C80B00AC4776 /* UITextField.swift */; };
+		FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E792525CA2D00AC4776 /* LoginRequest.swift */; };
 		FAA769782514D03D00750625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769772514D03D00750625 /* AppDelegate.swift */; };
 		FAA769812514D03F00750625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA769802514D03F00750625 /* Assets.xcassets */; };
 		FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA769822514D03F00750625 /* LaunchScreen.storyboard */; };
@@ -75,6 +79,10 @@
 		FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ValidatePhoneRequest.swift; path = GariHub/Views/ValidatePhoneRequest.swift; sourceTree = SOURCE_ROOT; };
 		FA7FC535251E32300081A19A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		FA7FC537251E329E0081A19A /* BaseAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthModel.swift; sourceTree = "<group>"; };
+		FA882E732525BDDF00AC4776 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		FA882E752525C53900AC4776 /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
+		FA882E772525C80B00AC4776 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		FA882E792525CA2D00AC4776 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRequest.swift; path = GariHub/Utils/LoginRequest.swift; sourceTree = SOURCE_ROOT; };
 		FAA769742514D03D00750625 /* GariHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GariHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA769772514D03D00750625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA769802514D03F00750625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -239,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */,
+				FA882E792525CA2D00AC4776 /* LoginRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,6 +271,9 @@
 			isa = PBXGroup;
 			children = (
 				FA293FA6251E410D00BC00AD /* Spinner.swift */,
+				FA882E732525BDDF00AC4776 /* UIViewController+.swift */,
+				FA882E752525C53900AC4776 /* ClassNameProtocol.swift */,
+				FA882E772525C80B00AC4776 /* UITextField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -513,8 +525,11 @@
 				FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */,
 				0C98F6842524BA8100000F35 /* LoginController.swift in Sources */,
 				0C893119251E1546001E17AD /* CampaignThree.swift in Sources */,
+				FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */,
 				FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */,
 				FAA769782514D03D00750625 /* AppDelegate.swift in Sources */,
+				FA882E782525C80B00AC4776 /* UITextField.swift in Sources */,
+				FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */,
 				FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */,
 				FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */,
 				0C893111251BAF1C001E17AD /* CampaignTwo.swift in Sources */,
@@ -522,6 +537,7 @@
 				0C89310D251B6D9A001E17AD /* RegistrationController.swift in Sources */,
 				0C893103251B5065001E17AD /* CampaignController.swift in Sources */,
 				FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */,
+				FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

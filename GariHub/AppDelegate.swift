@@ -18,9 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let campaign = CampaignController()
-        let navigationController = UINavigationController()
-        navigationController.pushViewController(campaign, animated: false)
-        window?.rootViewController = navigationController
+        window?.rootViewController = campaign
         window?.makeKeyAndVisible()
         return true
     }

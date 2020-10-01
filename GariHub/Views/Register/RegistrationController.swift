@@ -18,14 +18,40 @@ class RegistrationController: UIViewController {
     
     @IBOutlet weak var phoneNumber: UITextField!
     
+    @IBOutlet weak var loginButton: UILabel!
     @IBOutlet weak var activateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeHideKeyboard()
         activateButton.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
+        setupViews()
+
     }
     
+    func setupViews() {
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.loginFunction(sender:)))
+        loginButton.isUserInteractionEnabled = true
+        loginButton.addGestureRecognizer(tap)
+    
+    }
+    
+    
+    @objc func loginFunction(sender: UITapGestureRecognizer) {
+        let loginVC = LoginController()
+        loginVC.modalPresentationStyle = .fullScreen
+        self.present(loginVC, animated: true, completion: nil)
+    }
+    
+    func validations() {
+        if phoneNumber.text == "" {
+            self.showAlert(withTitle: "Phone number", withMessage: "Phone number cannot be blank")
+        }
+    }
+    
+    
     @objc func onTap(_ sender: UIButton) {
+        validations()
         self.showSpinner(onView: self.view)
         guard let phone = phoneNumber.text else { return }
         provider.request(.validatePhone(phoneNumber: phone)) {
@@ -56,19 +82,4 @@ class RegistrationController: UIViewController {
     
     
 
-}
-
-extension RegistrationController {
-    
-    func initializeHideKeyboard(){
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
-            target: self,
-            action: #selector(dismissMyKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissMyKeyboard(){
-        view.endEditing(true)
-    }
-    
 }

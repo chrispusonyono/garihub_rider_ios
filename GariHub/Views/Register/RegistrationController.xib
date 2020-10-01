@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationController" customModule="GariHub" customModuleProvider="target">
             <connections>
                 <outlet property="activateButton" destination="vdN-OC-XTQ" id="dhr-Z5-iak"/>
+                <outlet property="loginButton" destination="KFR-6u-SCw" id="AtL-SR-3dt"/>
                 <outlet property="phoneNumber" destination="8DR-wl-y0h" id="7sZ-hD-2so"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -20,7 +20,8 @@ class CampaignTwo: UIViewController {
 
     @objc func onTap(_ sender: UIButton) {
         let campaignThree = CampaignThree()
-        self.navigationController?.pushViewController(campaignThree, animated: true)
+        campaignThree.modalPresentationStyle = .fullScreen
+        self.present(campaignThree, animated: true, completion: nil)
         
     }
 }

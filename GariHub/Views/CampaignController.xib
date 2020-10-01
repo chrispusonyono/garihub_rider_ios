@@ -47,7 +47,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" red="1" green="0.74901960784313726" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="O8i-f0-QjX" firstAttribute="height" secondItem="NfS-qo-Q2J" secondAttribute="height" multiplier="1:2" id="7En-7l-Rlb"/>
                                         <constraint firstItem="NfS-qo-Q2J" firstAttribute="leading" secondItem="vWU-8M-RVU" secondAttribute="leading" constant="5" id="AEY-B2-9i8"/>
@@ -63,8 +63,9 @@
                                         <constraint firstAttribute="trailing" secondItem="NfS-qo-Q2J" secondAttribute="trailing" constant="5" id="wzh-5k-lTl"/>
                                     </constraints>
                                 </view>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55x-CH-qAh">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 3e (1)" translatesAutoresizingMaskIntoConstraints="NO" id="55x-CH-qAh">
                                     <rect key="frame" x="0.0" y="295.33333333333326" width="375" height="443"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="regular"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -112,4 +113,7 @@
             <point key="canvasLocation" x="511.59420289855075" y="758.70535714285711"/>
         </view>
     </objects>
+    <resources>
+        <image name="Group 3e (1)" width="115" height="57.333332061767578"/>
+    </resources>
 </document>

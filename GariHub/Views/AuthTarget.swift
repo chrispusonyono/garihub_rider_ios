@@ -11,6 +11,7 @@ import Moya
 
 enum AuthTarget {
     case validatePhone(phoneNumber: String)
+    case login(request: LoginRequest)
 }
 
 extension AuthTarget: TargetType {
@@ -22,6 +23,9 @@ extension AuthTarget: TargetType {
         switch self {
         case .validatePhone:
             return "/v1/user/validate-number"
+        case .login:
+            return "/v1/user/login"
+            
         }
     }
     
@@ -31,12 +35,19 @@ extension AuthTarget: TargetType {
             return [
                 "phoneNumber": phoneNumber
             ]
+        case .login(let request):
+            return [
+                "emailAddress": request.emailAddress,
+                "password": request.password
+            ]
         }
     }
     
     var method: Moya.Method {
         switch self {
         case .validatePhone:
+            return .post
+        case .login:
             return .post
         }
     }

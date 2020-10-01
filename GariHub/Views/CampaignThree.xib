@@ -57,11 +57,12 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d5n-eJ-8Da">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group3" translatesAutoresizingMaskIntoConstraints="NO" id="d5n-eJ-8Da">
                     <rect key="frame" x="0.0" y="340" width="414" height="477"/>
+                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.8666666666666667" green="0.8901960784313725" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="syN-tz-vco" secondAttribute="trailing" constant="115" id="6nm-rx-8b3"/>
                 <constraint firstAttribute="trailing" secondItem="d5n-eJ-8Da" secondAttribute="trailing" id="9uZ-wF-Qag"/>
@@ -84,4 +85,7 @@
             <point key="canvasLocation" x="1820" y="759"/>
         </view>
     </objects>
+    <resources>
+        <image name="group3" width="1336" height="549"/>
+    </resources>
 </document>
