@@ -156,26 +156,38 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNC-OB-Ozg" userLabel="Input">
                                             <rect key="frame" x="50" y="5" width="314" height="67"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i5S-QE-2wG" userLabel="A">
-                                                    <rect key="frame" x="0.0" y="0.0" width="78.5" height="67"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i5S-QE-2wG" userLabel="A">
+                                                    <rect key="frame" x="0.0" y="0.0" width="52.5" height="67"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOM-DV-Wvy" userLabel="B">
-                                                    <rect key="frame" x="78.5" y="0.0" width="78.5" height="67"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOM-DV-Wvy" userLabel="B">
+                                                    <rect key="frame" x="52.5" y="0.0" width="52" height="67"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HQj-CX-Y0v" userLabel="C">
-                                                    <rect key="frame" x="157" y="0.0" width="78.5" height="67"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HQj-CX-Y0v" userLabel="C">
+                                                    <rect key="frame" x="104.5" y="0.0" width="52.5" height="67"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8c2-C1-R4P" userLabel="D">
-                                                    <rect key="frame" x="235.5" y="0.0" width="78.5" height="67"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8c2-C1-R4P" userLabel="D">
+                                                    <rect key="frame" x="157" y="0.0" width="52.5" height="67"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BS8-sp-IYp" userLabel="E">
+                                                    <rect key="frame" x="209.5" y="0.0" width="52" height="67"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KDy-8X-Srf" userLabel="F">
+                                                    <rect key="frame" x="261.5" y="0.0" width="52.5" height="67"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -183,22 +195,30 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="HQj-CX-Y0v" firstAttribute="width" secondItem="i5S-QE-2wG" secondAttribute="width" id="3re-Kb-MpW"/>
-                                                <constraint firstItem="i5S-QE-2wG" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="6ec-UT-q8V"/>
-                                                <constraint firstItem="8c2-C1-R4P" firstAttribute="leading" secondItem="HQj-CX-Y0v" secondAttribute="trailing" id="6ka-sT-Zlu"/>
-                                                <constraint firstAttribute="bottom" secondItem="HQj-CX-Y0v" secondAttribute="bottom" id="8fG-Xe-mF8"/>
-                                                <constraint firstItem="8c2-C1-R4P" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="Bad-Al-LgC"/>
-                                                <constraint firstItem="HQj-CX-Y0v" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="JEM-ul-EvW"/>
-                                                <constraint firstItem="HQj-CX-Y0v" firstAttribute="leading" secondItem="uOM-DV-Wvy" secondAttribute="trailing" id="Kmk-LH-hxk"/>
-                                                <constraint firstItem="uOM-DV-Wvy" firstAttribute="width" secondItem="i5S-QE-2wG" secondAttribute="width" id="L6Y-pU-Jpe"/>
-                                                <constraint firstItem="8c2-C1-R4P" firstAttribute="width" secondItem="i5S-QE-2wG" secondAttribute="width" id="Tim-UK-9bS"/>
-                                                <constraint firstAttribute="bottom" secondItem="i5S-QE-2wG" secondAttribute="bottom" id="bDi-tU-ROA"/>
-                                                <constraint firstItem="uOM-DV-Wvy" firstAttribute="leading" secondItem="i5S-QE-2wG" secondAttribute="trailing" id="dXh-GV-bx6"/>
-                                                <constraint firstAttribute="trailing" secondItem="8c2-C1-R4P" secondAttribute="trailing" id="eYB-7z-6XZ"/>
-                                                <constraint firstItem="i5S-QE-2wG" firstAttribute="leading" secondItem="JNC-OB-Ozg" secondAttribute="leading" id="jpT-7q-wQX"/>
-                                                <constraint firstAttribute="bottom" secondItem="uOM-DV-Wvy" secondAttribute="bottom" id="k5y-X7-StC"/>
-                                                <constraint firstItem="uOM-DV-Wvy" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="t8T-7r-L1n"/>
-                                                <constraint firstAttribute="bottom" secondItem="8c2-C1-R4P" secondAttribute="bottom" id="wLM-D1-D1K"/>
+                                                <constraint firstItem="uOM-DV-Wvy" firstAttribute="width" secondItem="i5S-QE-2wG" secondAttribute="width" id="313-O3-9X3"/>
+                                                <constraint firstAttribute="trailing" secondItem="KDy-8X-Srf" secondAttribute="trailing" id="5hI-P0-9jd"/>
+                                                <constraint firstItem="KDy-8X-Srf" firstAttribute="leading" secondItem="BS8-sp-IYp" secondAttribute="trailing" id="7HE-hf-bwo"/>
+                                                <constraint firstItem="HQj-CX-Y0v" firstAttribute="leading" secondItem="uOM-DV-Wvy" secondAttribute="trailing" id="C1x-PX-9a8"/>
+                                                <constraint firstItem="BS8-sp-IYp" firstAttribute="leading" secondItem="8c2-C1-R4P" secondAttribute="trailing" id="EbE-Vj-mvB"/>
+                                                <constraint firstItem="BS8-sp-IYp" firstAttribute="width" secondItem="i5S-QE-2wG" secondAttribute="width" id="Ept-Qg-jev"/>
+                                                <constraint firstItem="8c2-C1-R4P" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="Gjk-YI-AYc"/>
+                                                <constraint firstItem="HQj-CX-Y0v" firstAttribute="width" secondItem="i5S-QE-2wG" secondAttribute="width" id="KZt-EO-RRV"/>
+                                                <constraint firstItem="KDy-8X-Srf" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="LfV-ym-kFI"/>
+                                                <constraint firstItem="uOM-DV-Wvy" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="LoB-01-vuk"/>
+                                                <constraint firstItem="uOM-DV-Wvy" firstAttribute="leading" secondItem="i5S-QE-2wG" secondAttribute="trailing" id="RDI-f6-pSd"/>
+                                                <constraint firstItem="HQj-CX-Y0v" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="STv-Eu-4Xf"/>
+                                                <constraint firstItem="8c2-C1-R4P" firstAttribute="width" secondItem="i5S-QE-2wG" secondAttribute="width" id="TuW-Ct-7Kv"/>
+                                                <constraint firstItem="KDy-8X-Srf" firstAttribute="width" secondItem="i5S-QE-2wG" secondAttribute="width" id="Vv0-ri-GnQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="i5S-QE-2wG" secondAttribute="bottom" id="WsX-CT-YgW"/>
+                                                <constraint firstAttribute="bottom" secondItem="BS8-sp-IYp" secondAttribute="bottom" id="Xee-QM-wpj"/>
+                                                <constraint firstAttribute="bottom" secondItem="HQj-CX-Y0v" secondAttribute="bottom" id="Xok-aM-00t"/>
+                                                <constraint firstItem="i5S-QE-2wG" firstAttribute="leading" secondItem="JNC-OB-Ozg" secondAttribute="leading" id="c3N-Lz-udc"/>
+                                                <constraint firstItem="8c2-C1-R4P" firstAttribute="leading" secondItem="HQj-CX-Y0v" secondAttribute="trailing" id="cVy-kd-5VV"/>
+                                                <constraint firstItem="i5S-QE-2wG" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="jTF-qi-wUm"/>
+                                                <constraint firstItem="BS8-sp-IYp" firstAttribute="top" secondItem="JNC-OB-Ozg" secondAttribute="top" id="mVI-ox-xkt"/>
+                                                <constraint firstAttribute="bottom" secondItem="KDy-8X-Srf" secondAttribute="bottom" id="mcg-zy-9xJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="uOM-DV-Wvy" secondAttribute="bottom" id="xiT-s0-bOO"/>
+                                                <constraint firstAttribute="bottom" secondItem="8c2-C1-R4P" secondAttribute="bottom" id="ywR-x7-hCa"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I din't receive OTP! Resend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UER-0V-cTH">
