@@ -12,6 +12,7 @@ import Moya
 enum AuthTarget {
     case validatePhone(phoneNumber: String)
     case login(request: LoginRequest)
+    case register(request: RegisterRequest)
 }
 
 extension AuthTarget: TargetType {
@@ -25,6 +26,8 @@ extension AuthTarget: TargetType {
             return "/v1/user/validate-number"
         case .login:
             return "/v1/user/login"
+        case .register:
+            return "/v1/user/register"
             
         }
     }
@@ -40,6 +43,16 @@ extension AuthTarget: TargetType {
                 "emailAddress": request.emailAddress,
                 "password": request.password
             ]
+        case .register(let request):
+            return [
+                "firstName": request.firstName,
+                "lastName": request.lastName,
+                "gender": request.gender,
+                "phoneNumber": request.phoneNumber,
+                "emailAddress": request.emailAddress,
+                "userType": request.userType,
+                "password": request.password
+            ]
         }
     }
     
@@ -48,6 +61,8 @@ extension AuthTarget: TargetType {
         case .validatePhone:
             return .post
         case .login:
+            return .post
+        case .register:
             return .post
         }
     }

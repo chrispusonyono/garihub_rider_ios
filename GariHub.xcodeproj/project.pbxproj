@@ -25,6 +25,11 @@
 		8F157BFD641ACF7A4A3FEBEE /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */; };
 		E21761D205494BE46571F669 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AE035F35090E8507F423E /* Pods_GariHub.framework */; };
 		FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA293FA6251E410D00BC00AD /* Spinner.swift */; };
+		FA47DB9F252750DA006FA060 /* EmailRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DB9D252750DA006FA060 /* EmailRegisterController.swift */; };
+		FA47DBA0252750DA006FA060 /* EmailRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA47DB9E252750DA006FA060 /* EmailRegisterController.xib */; };
+		FA47DBA32527543F006FA060 /* PasswordRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBA12527543F006FA060 /* PasswordRegisterController.swift */; };
+		FA47DBA42527543F006FA060 /* PasswordRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA47DBA22527543F006FA060 /* PasswordRegisterController.xib */; };
+		FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBA52527597D006FA060 /* RegisterRequest.swift */; };
 		FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */; };
 		FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC535251E32300081A19A /* RegistrationViewModel.swift */; };
 		FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC537251E329E0081A19A /* BaseAuthModel.swift */; };
@@ -84,6 +89,11 @@
 		CE579876559E9CE14FE5150E /* Pods-GariHub-GariHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D14C4368C1C00481BBFACEC7 /* Pods-GariHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.debug.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.debug.xcconfig"; sourceTree = "<group>"; };
 		FA293FA6251E410D00BC00AD /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		FA47DB9D252750DA006FA060 /* EmailRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterController.swift; sourceTree = "<group>"; };
+		FA47DB9E252750DA006FA060 /* EmailRegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailRegisterController.xib; sourceTree = "<group>"; };
+		FA47DBA12527543F006FA060 /* PasswordRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRegisterController.swift; sourceTree = "<group>"; };
+		FA47DBA22527543F006FA060 /* PasswordRegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordRegisterController.xib; sourceTree = "<group>"; };
+		FA47DBA52527597D006FA060 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterRequest.swift; path = GariHub/Views/Register/RegisterRequest.swift; sourceTree = SOURCE_ROOT; };
 		FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ValidatePhoneRequest.swift; path = GariHub/Views/ValidatePhoneRequest.swift; sourceTree = SOURCE_ROOT; };
 		FA7FC535251E32300081A19A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		FA7FC537251E329E0081A19A /* BaseAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthModel.swift; sourceTree = "<group>"; };
@@ -185,6 +195,10 @@
 				FA7FC537251E329E0081A19A /* BaseAuthModel.swift */,
 				0C531427252727680032C27F /* RegistrationTwoController.swift */,
 				0C531428252727680032C27F /* RegistrationTwoController.xib */,
+				FA47DB9D252750DA006FA060 /* EmailRegisterController.swift */,
+				FA47DB9E252750DA006FA060 /* EmailRegisterController.xib */,
+				FA47DBA12527543F006FA060 /* PasswordRegisterController.swift */,
+				FA47DBA22527543F006FA060 /* PasswordRegisterController.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -268,6 +282,7 @@
 			children = (
 				FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */,
 				FA882E792525CA2D00AC4776 /* LoginRequest.swift */,
+				FA47DBA52527597D006FA060 /* RegisterRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -408,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C98F68C2524E0CD00000F35 /* OTPController.xib in Resources */,
+				FA47DBA0252750DA006FA060 /* EmailRegisterController.xib in Resources */,
 				FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */,
 				0C98F6852524BA8100000F35 /* LoginController.xib in Resources */,
 				0C53142A252727680032C27F /* RegistrationTwoController.xib in Resources */,
@@ -417,6 +433,7 @@
 				FAA769812514D03F00750625 /* Assets.xcassets in Resources */,
 				0C893112251BAF1C001E17AD /* CampaignTwo.xib in Resources */,
 				0C893104251B5066001E17AD /* CampaignController.xib in Resources */,
+				FA47DBA42527543F006FA060 /* PasswordRegisterController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,13 +563,16 @@
 			files = (
 				FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */,
 				0C98F6842524BA8100000F35 /* LoginController.swift in Sources */,
+				FA47DBA32527543F006FA060 /* PasswordRegisterController.swift in Sources */,
 				0C893119251E1546001E17AD /* CampaignThree.swift in Sources */,
 				FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */,
 				FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */,
+				FA47DB9F252750DA006FA060 /* EmailRegisterController.swift in Sources */,
 				0C98F68B2524E0CD00000F35 /* OTPController.swift in Sources */,
 				FAA769782514D03D00750625 /* AppDelegate.swift in Sources */,
 				FA882E782525C80B00AC4776 /* UITextField.swift in Sources */,
 				FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */,
+				FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */,
 				FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */,
 				0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */,
 				FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */,
