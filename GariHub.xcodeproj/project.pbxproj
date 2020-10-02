@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BA51CE4B67EF27F910FACAE /* Pods_GariHub_GariHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23AD25952EC64C862C7809 /* Pods_GariHub_GariHubUITests.framework */; };
+		0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C531427252727680032C27F /* RegistrationTwoController.swift */; };
+		0C53142A252727680032C27F /* RegistrationTwoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C531428252727680032C27F /* RegistrationTwoController.xib */; };
 		0C893103251B5065001E17AD /* CampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C893101251B5065001E17AD /* CampaignController.swift */; };
 		0C893104251B5066001E17AD /* CampaignController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C893102251B5065001E17AD /* CampaignController.xib */; };
 		0C89310D251B6D9A001E17AD /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89310B251B6D9A001E17AD /* RegistrationController.swift */; };
@@ -18,6 +20,8 @@
 		0C89311A251E1546001E17AD /* CampaignThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C893118251E1546001E17AD /* CampaignThree.xib */; };
 		0C98F6842524BA8100000F35 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C98F6822524BA8100000F35 /* LoginController.swift */; };
 		0C98F6852524BA8100000F35 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C98F6832524BA8100000F35 /* LoginController.xib */; };
+		0C98F68B2524E0CD00000F35 /* OTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C98F6892524E0CD00000F35 /* OTPController.swift */; };
+		0C98F68C2524E0CD00000F35 /* OTPController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C98F68A2524E0CD00000F35 /* OTPController.xib */; };
 		8F157BFD641ACF7A4A3FEBEE /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */; };
 		E21761D205494BE46571F669 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AE035F35090E8507F423E /* Pods_GariHub.framework */; };
 		FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA293FA6251E410D00BC00AD /* Spinner.swift */; };
@@ -52,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C531427252727680032C27F /* RegistrationTwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTwoController.swift; sourceTree = "<group>"; };
+		0C531428252727680032C27F /* RegistrationTwoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationTwoController.xib; sourceTree = "<group>"; };
 		0C893101251B5065001E17AD /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
 		0C893102251B5065001E17AD /* CampaignController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CampaignController.xib; sourceTree = "<group>"; };
 		0C89310B251B6D9A001E17AD /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 		0C893118251E1546001E17AD /* CampaignThree.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CampaignThree.xib; sourceTree = "<group>"; };
 		0C98F6822524BA8100000F35 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		0C98F6832524BA8100000F35 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		0C98F6892524E0CD00000F35 /* OTPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPController.swift; sourceTree = "<group>"; };
+		0C98F68A2524E0CD00000F35 /* OTPController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPController.xib; sourceTree = "<group>"; };
 		4F8AE035F35090E8507F423E /* Pods_GariHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F23AD25952EC64C862C7809 /* Pods_GariHub_GariHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub_GariHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7545EEC4D30BB8066FF4DEFF /* Pods-GariHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.release.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +136,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		0C98F6862524DF6A00000F35 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				0C98F6892524E0CD00000F35 /* OTPController.swift */,
+				0C98F68A2524E0CD00000F35 /* OTPController.xib */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
 		79E7FD38D6AAEAE9C42F9A9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +175,8 @@
 				0C89310C251B6D9A001E17AD /* RegistrationController.xib */,
 				FA7FC535251E32300081A19A /* RegistrationViewModel.swift */,
 				FA7FC537251E329E0081A19A /* BaseAuthModel.swift */,
+				0C531427252727680032C27F /* RegistrationTwoController.swift */,
+				0C531428252727680032C27F /* RegistrationTwoController.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -221,6 +240,7 @@
 		FAA769A72514D0B200750625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0C98F6862524DF6A00000F35 /* OTP */,
 				0C98F6812524B9F000000F35 /* Login */,
 				FA7FC534251E32010081A19A /* Register */,
 				FAA769A82514D0C500750625 /* LandingController.swift */,
@@ -375,8 +395,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C98F68C2524E0CD00000F35 /* OTPController.xib in Resources */,
 				FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */,
 				0C98F6852524BA8100000F35 /* LoginController.xib in Resources */,
+				0C53142A252727680032C27F /* RegistrationTwoController.xib in Resources */,
 				0C89310E251B6D9A001E17AD /* RegistrationController.xib in Resources */,
 				0C89311A251E1546001E17AD /* CampaignThree.xib in Resources */,
 				FAA769AB2514D0C500750625 /* LandingController.xib in Resources */,
@@ -514,8 +536,10 @@
 				0C98F6842524BA8100000F35 /* LoginController.swift in Sources */,
 				0C893119251E1546001E17AD /* CampaignThree.swift in Sources */,
 				FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */,
+				0C98F68B2524E0CD00000F35 /* OTPController.swift in Sources */,
 				FAA769782514D03D00750625 /* AppDelegate.swift in Sources */,
 				FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */,
+				0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */,
 				FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */,
 				0C893111251BAF1C001E17AD /* CampaignTwo.swift in Sources */,
 				FAA769AA2514D0C500750625 /* LandingController.swift in Sources */,
