@@ -76,8 +76,6 @@ class RegistrationController: UIViewController {
                 }
         }
         
-        
-        
     }
     
     

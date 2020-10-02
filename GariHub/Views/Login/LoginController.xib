@@ -103,8 +103,17 @@
                                         <constraint firstAttribute="height" constant="0.5" id="tKq-Y5-bNJ"/>
                                     </constraints>
                                 </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops! There is no customer under this email address." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJY-Z7-c6s">
+                                    <rect key="frame" x="0.0" y="70.5" width="404" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="SzC-Id-3Ju"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttf-bb-9Ph">
-                                    <rect key="frame" x="0.0" y="75.5" width="404" height="25"/>
+                                    <rect key="frame" x="0.0" y="96.5" width="404" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="w5I-xd-BKi"/>
                                     </constraints>
@@ -113,7 +122,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="**********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgk-PI-UDG">
-                                    <rect key="frame" x="0.0" y="100.5" width="404" height="40"/>
+                                    <rect key="frame" x="0.0" y="121.5" width="404" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="fP0-St-Ifg"/>
                                     </constraints>
@@ -124,14 +133,14 @@
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8L-vf-nVa" userLabel="Line Two">
-                                    <rect key="frame" x="0.0" y="140.5" width="404" height="0.5"/>
+                                    <rect key="frame" x="0.0" y="161.5" width="404" height="0.5"/>
                                     <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="0.5" id="sxd-6a-81o"/>
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enk-Us-SB9">
-                                    <rect key="frame" x="0.0" y="151" width="404" height="21"/>
+                                    <rect key="frame" x="0.0" y="172" width="404" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="GCO-VL-sEZ"/>
                                     </constraints>
@@ -150,9 +159,13 @@
                                 <constraint firstAttribute="trailing" secondItem="n8l-PY-Mt4" secondAttribute="trailing" constant="15" id="CHS-Ay-Bcc"/>
                                 <constraint firstAttribute="trailing" secondItem="enk-Us-SB9" secondAttribute="trailing" id="DrR-Gu-n5g"/>
                                 <constraint firstItem="Ttf-bb-9Ph" firstAttribute="leading" secondItem="uQd-Wk-oHL" secondAttribute="leading" id="Foh-CT-Nzv"/>
+                                <constraint firstItem="Ttf-bb-9Ph" firstAttribute="top" secondItem="SJY-Z7-c6s" secondAttribute="bottom" constant="5" id="G31-4R-s9t"/>
+                                <constraint firstAttribute="trailing" secondItem="SJY-Z7-c6s" secondAttribute="trailing" id="H0P-s0-JUf"/>
                                 <constraint firstItem="yhd-pr-8V2" firstAttribute="leading" secondItem="uQd-Wk-oHL" secondAttribute="leading" id="Lmm-mR-tas"/>
+                                <constraint firstItem="SJY-Z7-c6s" firstAttribute="top" secondItem="gdu-7c-7JM" secondAttribute="bottom" constant="5" id="MiK-Eg-z0h"/>
                                 <constraint firstItem="n8l-PY-Mt4" firstAttribute="leading" secondItem="uQd-Wk-oHL" secondAttribute="leading" id="Rkj-we-BVN"/>
                                 <constraint firstAttribute="trailing" secondItem="gdu-7c-7JM" secondAttribute="trailing" id="ThK-YL-BAs"/>
+                                <constraint firstItem="SJY-Z7-c6s" firstAttribute="leading" secondItem="uQd-Wk-oHL" secondAttribute="leading" id="UKe-qy-UFi"/>
                                 <constraint firstItem="U8L-vf-nVa" firstAttribute="top" secondItem="xgk-PI-UDG" secondAttribute="bottom" id="WDx-rI-hUW"/>
                                 <constraint firstItem="xgk-PI-UDG" firstAttribute="top" secondItem="Ttf-bb-9Ph" secondAttribute="bottom" id="Whg-dB-hwS"/>
                                 <constraint firstItem="yhd-pr-8V2" firstAttribute="top" secondItem="n8l-PY-Mt4" secondAttribute="bottom" id="bNA-wJ-nuQ"/>
@@ -160,7 +173,6 @@
                                 <constraint firstAttribute="trailing" secondItem="xgk-PI-UDG" secondAttribute="trailing" id="ou5-qd-q6e"/>
                                 <constraint firstAttribute="trailing" secondItem="yhd-pr-8V2" secondAttribute="trailing" id="pbw-Gg-pLt"/>
                                 <constraint firstItem="n8l-PY-Mt4" firstAttribute="top" secondItem="uQd-Wk-oHL" secondAttribute="top" id="qAb-OL-3ff"/>
-                                <constraint firstItem="Ttf-bb-9Ph" firstAttribute="top" secondItem="gdu-7c-7JM" secondAttribute="bottom" constant="10" id="rMo-PF-6HT"/>
                                 <constraint firstItem="gdu-7c-7JM" firstAttribute="leading" secondItem="uQd-Wk-oHL" secondAttribute="leading" id="xnQ-vF-X2B"/>
                                 <constraint firstItem="enk-Us-SB9" firstAttribute="leading" secondItem="uQd-Wk-oHL" secondAttribute="leading" id="xqa-TT-yx0"/>
                             </constraints>
