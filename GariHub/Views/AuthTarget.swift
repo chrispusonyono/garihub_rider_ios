@@ -13,6 +13,7 @@ enum AuthTarget {
     case validatePhone(phoneNumber: String)
     case login(request: LoginRequest)
     case register(request: RegisterRequest)
+    case validateOTP(request: OTPRequest)
 }
 
 extension AuthTarget: TargetType {
@@ -28,6 +29,8 @@ extension AuthTarget: TargetType {
             return "/v1/user/login"
         case .register:
             return "/v1/user/register"
+        case .validateOTP:
+            return "/v1/user/verify-otp"
             
         }
     }
@@ -53,6 +56,11 @@ extension AuthTarget: TargetType {
                 "userType": request.userType,
                 "password": request.password
             ]
+        case .validateOTP(let request):
+            return [
+                "phoneNumber": request.phoneNumber,
+                "otpCode": request.otpCode
+            ]
         }
     }
     
@@ -63,6 +71,8 @@ extension AuthTarget: TargetType {
         case .login:
             return .post
         case .register:
+            return .post
+        case .validateOTP:
             return .post
         }
     }

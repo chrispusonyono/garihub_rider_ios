@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var router: OnboardingCoordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let campaign = CampaignController()
         window?.rootViewController = campaign
         window?.makeKeyAndVisible()
+        
+        self.router = .init()
+        self.router.setRoot(for: self.window ?? .init(frame: UIScreen.main.bounds))
         return true
     }
 

@@ -25,11 +25,21 @@
 		8F157BFD641ACF7A4A3FEBEE /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */; };
 		E21761D205494BE46571F669 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AE035F35090E8507F423E /* Pods_GariHub.framework */; };
 		FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA293FA6251E410D00BC00AD /* Spinner.swift */; };
+		FA41DD7D2529E909006C1F4B /* PasswordRegViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DD7C2529E909006C1F4B /* PasswordRegViewModel.swift */; };
+		FA41DD822529F075006C1F4B /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DD802529F075006C1F4B /* DashboardController.swift */; };
+		FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA41DD812529F075006C1F4B /* DashboardController.xib */; };
+		FA41DD852529F54F006C1F4B /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DD842529F54F006C1F4B /* DashboardViewModel.swift */; };
 		FA47DB9F252750DA006FA060 /* EmailRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DB9D252750DA006FA060 /* EmailRegisterController.swift */; };
 		FA47DBA0252750DA006FA060 /* EmailRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA47DB9E252750DA006FA060 /* EmailRegisterController.xib */; };
 		FA47DBA32527543F006FA060 /* PasswordRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBA12527543F006FA060 /* PasswordRegisterController.swift */; };
 		FA47DBA42527543F006FA060 /* PasswordRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA47DBA22527543F006FA060 /* PasswordRegisterController.xib */; };
 		FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBA52527597D006FA060 /* RegisterRequest.swift */; };
+		FA47DBAA252764F2006FA060 /* GariHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBA9252764F2006FA060 /* GariHubClient.swift */; };
+		FA47DBAC2527679C006FA060 /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBAB2527679C006FA060 /* OTPViewModel.swift */; };
+		FA47DBAE252769B9006FA060 /* OTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBAD252769B9006FA060 /* OTPRequest.swift */; };
+		FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBB02527707C006FA060 /* OnboardingCoordinator.swift */; };
+		FA47DBB32527804B006FA060 /* RegTwoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBB22527804B006FA060 /* RegTwoViewModel.swift */; };
+		FA47DBB52527862D006FA060 /* EmailRegViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBB42527862D006FA060 /* EmailRegViewModel.swift */; };
 		FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */; };
 		FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC535251E32300081A19A /* RegistrationViewModel.swift */; };
 		FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC537251E329E0081A19A /* BaseAuthModel.swift */; };
@@ -89,11 +99,21 @@
 		CE579876559E9CE14FE5150E /* Pods-GariHub-GariHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D14C4368C1C00481BBFACEC7 /* Pods-GariHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.debug.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.debug.xcconfig"; sourceTree = "<group>"; };
 		FA293FA6251E410D00BC00AD /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		FA41DD7C2529E909006C1F4B /* PasswordRegViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRegViewModel.swift; sourceTree = "<group>"; };
+		FA41DD802529F075006C1F4B /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
+		FA41DD812529F075006C1F4B /* DashboardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardController.xib; sourceTree = "<group>"; };
+		FA41DD842529F54F006C1F4B /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		FA47DB9D252750DA006FA060 /* EmailRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterController.swift; sourceTree = "<group>"; };
 		FA47DB9E252750DA006FA060 /* EmailRegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailRegisterController.xib; sourceTree = "<group>"; };
 		FA47DBA12527543F006FA060 /* PasswordRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRegisterController.swift; sourceTree = "<group>"; };
 		FA47DBA22527543F006FA060 /* PasswordRegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordRegisterController.xib; sourceTree = "<group>"; };
 		FA47DBA52527597D006FA060 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterRequest.swift; path = GariHub/Views/Register/RegisterRequest.swift; sourceTree = SOURCE_ROOT; };
+		FA47DBA9252764F2006FA060 /* GariHubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GariHubClient.swift; sourceTree = "<group>"; };
+		FA47DBAB2527679C006FA060 /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		FA47DBAD252769B9006FA060 /* OTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OTPRequest.swift; path = GariHub/Views/OTP/OTPRequest.swift; sourceTree = SOURCE_ROOT; };
+		FA47DBB02527707C006FA060 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		FA47DBB22527804B006FA060 /* RegTwoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegTwoViewModel.swift; sourceTree = "<group>"; };
+		FA47DBB42527862D006FA060 /* EmailRegViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegViewModel.swift; sourceTree = "<group>"; };
 		FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ValidatePhoneRequest.swift; path = GariHub/Views/ValidatePhoneRequest.swift; sourceTree = SOURCE_ROOT; };
 		FA7FC535251E32300081A19A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		FA7FC537251E329E0081A19A /* BaseAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthModel.swift; sourceTree = "<group>"; };
@@ -159,6 +179,7 @@
 			children = (
 				0C98F6892524E0CD00000F35 /* OTPController.swift */,
 				0C98F68A2524E0CD00000F35 /* OTPController.xib */,
+				FA47DBAB2527679C006FA060 /* OTPViewModel.swift */,
 			);
 			path = OTP;
 			sourceTree = "<group>";
@@ -186,6 +207,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FA41DD7E2529EF70006C1F4B /* Campaign */ = {
+			isa = PBXGroup;
+			children = (
+				FAA769A82514D0C500750625 /* LandingController.swift */,
+				FAA769A92514D0C500750625 /* LandingController.xib */,
+				0C893101251B5065001E17AD /* CampaignController.swift */,
+				0C893102251B5065001E17AD /* CampaignController.xib */,
+				0C89310F251BAF1C001E17AD /* CampaignTwo.swift */,
+				0C893110251BAF1C001E17AD /* CampaignTwo.xib */,
+				0C893117251E1546001E17AD /* CampaignThree.swift */,
+				0C893118251E1546001E17AD /* CampaignThree.xib */,
+			);
+			path = Campaign;
+			sourceTree = "<group>";
+		};
+		FA41DD7F2529F050006C1F4B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA41DD802529F075006C1F4B /* DashboardController.swift */,
+				FA41DD812529F075006C1F4B /* DashboardController.xib */,
+				FA41DD842529F54F006C1F4B /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		FA47DBAF25277053006FA060 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				FA47DBB02527707C006FA060 /* OnboardingCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		FA7FC534251E32010081A19A /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +253,9 @@
 				FA47DB9E252750DA006FA060 /* EmailRegisterController.xib */,
 				FA47DBA12527543F006FA060 /* PasswordRegisterController.swift */,
 				FA47DBA22527543F006FA060 /* PasswordRegisterController.xib */,
+				FA47DBB22527804B006FA060 /* RegTwoViewModel.swift */,
+				FA47DBB42527862D006FA060 /* EmailRegViewModel.swift */,
+				FA41DD7C2529E909006C1F4B /* PasswordRegViewModel.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -228,6 +285,7 @@
 		FAA769762514D03D00750625 /* GariHub */ = {
 			isa = PBXGroup;
 			children = (
+				FA47DBAF25277053006FA060 /* Coordinators */,
 				FAA769AF2514D31300750625 /* Utils */,
 				FAA769AE2514D30D00750625 /* Resources */,
 				FAA769AD2514D30300750625 /* Network */,
@@ -237,6 +295,7 @@
 				FAA769802514D03F00750625 /* Assets.xcassets */,
 				FAA769822514D03F00750625 /* LaunchScreen.storyboard */,
 				FAA769852514D03F00750625 /* Info.plist */,
+				FA47DBA9252764F2006FA060 /* GariHubClient.swift */,
 			);
 			path = GariHub;
 			sourceTree = "<group>";
@@ -262,17 +321,11 @@
 		FAA769A72514D0B200750625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA41DD7F2529F050006C1F4B /* Dashboard */,
 				0C98F6862524DF6A00000F35 /* OTP */,
 				0C98F6812524B9F000000F35 /* Login */,
 				FA7FC534251E32010081A19A /* Register */,
-				FAA769A82514D0C500750625 /* LandingController.swift */,
-				FAA769A92514D0C500750625 /* LandingController.xib */,
-				0C893101251B5065001E17AD /* CampaignController.swift */,
-				0C893102251B5065001E17AD /* CampaignController.xib */,
-				0C89310F251BAF1C001E17AD /* CampaignTwo.swift */,
-				0C893110251BAF1C001E17AD /* CampaignTwo.xib */,
-				0C893117251E1546001E17AD /* CampaignThree.swift */,
-				0C893118251E1546001E17AD /* CampaignThree.xib */,
+				FA41DD7E2529EF70006C1F4B /* Campaign */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +336,7 @@
 				FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */,
 				FA882E792525CA2D00AC4776 /* LoginRequest.swift */,
 				FA47DBA52527597D006FA060 /* RegisterRequest.swift */,
+				FA47DBAD252769B9006FA060 /* OTPRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -432,6 +486,7 @@
 				FAA769AB2514D0C500750625 /* LandingController.xib in Resources */,
 				FAA769812514D03F00750625 /* Assets.xcassets in Resources */,
 				0C893112251BAF1C001E17AD /* CampaignTwo.xib in Resources */,
+				FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */,
 				0C893104251B5066001E17AD /* CampaignController.xib in Resources */,
 				FA47DBA42527543F006FA060 /* PasswordRegisterController.xib in Resources */,
 			);
@@ -564,21 +619,30 @@
 				FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */,
 				0C98F6842524BA8100000F35 /* LoginController.swift in Sources */,
 				FA47DBA32527543F006FA060 /* PasswordRegisterController.swift in Sources */,
+				FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */,
 				0C893119251E1546001E17AD /* CampaignThree.swift in Sources */,
 				FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */,
 				FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */,
+				FA47DBAA252764F2006FA060 /* GariHubClient.swift in Sources */,
+				FA47DBB32527804B006FA060 /* RegTwoViewModel.swift in Sources */,
 				FA47DB9F252750DA006FA060 /* EmailRegisterController.swift in Sources */,
+				FA47DBAE252769B9006FA060 /* OTPRequest.swift in Sources */,
 				0C98F68B2524E0CD00000F35 /* OTPController.swift in Sources */,
 				FAA769782514D03D00750625 /* AppDelegate.swift in Sources */,
 				FA882E782525C80B00AC4776 /* UITextField.swift in Sources */,
+				FA47DBB52527862D006FA060 /* EmailRegViewModel.swift in Sources */,
+				FA41DD822529F075006C1F4B /* DashboardController.swift in Sources */,
 				FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */,
 				FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */,
 				FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */,
 				0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */,
 				FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */,
+				FA41DD852529F54F006C1F4B /* DashboardViewModel.swift in Sources */,
 				0C893111251BAF1C001E17AD /* CampaignTwo.swift in Sources */,
 				FAA769AA2514D0C500750625 /* LandingController.swift in Sources */,
+				FA41DD7D2529E909006C1F4B /* PasswordRegViewModel.swift in Sources */,
 				0C89310D251B6D9A001E17AD /* RegistrationController.swift in Sources */,
+				FA47DBAC2527679C006FA060 /* OTPViewModel.swift in Sources */,
 				0C893103251B5065001E17AD /* CampaignController.swift in Sources */,
 				FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */,
 				FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */,
@@ -748,7 +812,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ML9LTUG94M;
+				DEVELOPMENT_TEAM = LKU99754H5;
 				INFOPLIST_FILE = GariHub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -768,7 +832,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ML9LTUG94M;
+				DEVELOPMENT_TEAM = LKU99754H5;
 				INFOPLIST_FILE = GariHub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

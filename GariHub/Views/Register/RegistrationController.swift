@@ -15,6 +15,7 @@ let provider = MoyaProvider<AuthTarget>()
 
 class RegistrationController: UIViewController {
     
+    var viewModel: RegistrationViewModel?
     
     @IBOutlet weak var phoneNumber: UITextField!
     
@@ -28,12 +29,28 @@ class RegistrationController: UIViewController {
 
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
     func setupViews() {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.loginFunction(sender:)))
         loginButton.isUserInteractionEnabled = true
         loginButton.addGestureRecognizer(tap)
     
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     
@@ -49,11 +66,30 @@ class RegistrationController: UIViewController {
         }
     }
     
+    @objc
+    private func keyboardWillHide() {
+        guard view.frame.origin.y != 0 else { return }
+        
+        view.frame.origin.y = 0
+    }
+    
+    @objc
+    private func keyboardWillShow(notification: NSNotification) {
+        guard
+            let size = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
+            view.frame.origin.y == 0 else {  return }
+        
+        view.frame.origin.y -= (size.height / 2)
+    }
+    
     
     @objc func onTap(_ sender: UIButton) {
         validations()
         self.showSpinner(onView: self.view)
+//        guard let vm = self.viewModel else { return }
+        
         guard let phone = phoneNumber.text else { return }
+        
         provider.request(.validatePhone(phoneNumber: phone)) {
             result in
             self.removeSpinner()
@@ -61,9 +97,11 @@ class RegistrationController: UIViewController {
                 case .failure(let error):
                     print(error)
                 case .success(let response):
+                    print(response.data.base64EncodedString())
                     do {
                         let otpResponse = try JSONDecoder().decode(OTPResponse.self, from: response.data)
                         print(otpResponse)
+                        self.viewModel?.router.trigger(.otp(phoneNumber: phone))
                     } catch {
                         DispatchQueue.main.async {
                             let alertController = UIAlertController(title: "Error", message: "OTP was not sent", preferredStyle: .alert)

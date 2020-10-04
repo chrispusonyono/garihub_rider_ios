@@ -10,4 +10,15 @@ import Foundation
 import Moya
 
 
-
+class BaseAuthModel {
+    
+    let authPlugin: AccessTokenPlugin
+    let client: GariHubClient
+    let provider: MoyaProvider<AuthTarget>
+    
+    init(client: GariHubClient) {
+        self.authPlugin = AccessTokenPlugin { _ in client.token }
+        self.client = client
+        self.provider = MoyaProvider<AuthTarget>(plugins: [authPlugin, NetworkLoggerPlugin()])
+    }
+}

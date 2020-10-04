@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import XCoordinator
+
+class RegistrationViewModel: BaseAuthModel {
+    
+    let router: StrongRouter<OnboardingRoutes>
+
+    init(client: GariHubClient, router: StrongRouter<OnboardingRoutes>) {
+        self.router = router
+        super.init(client: client)
+    }
+    
+}

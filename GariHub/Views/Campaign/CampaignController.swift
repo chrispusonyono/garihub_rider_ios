@@ -20,7 +20,6 @@ class CampaignController: UIViewController {
     }
     
     @objc func onTap(_ sender: UIButton) {
-        print("clicked")
         let campaignTwo = CampaignTwo()
         campaignTwo.modalPresentationStyle = .fullScreen
         self.present(campaignTwo, animated: true, completion: nil)

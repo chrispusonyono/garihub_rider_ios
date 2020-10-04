@@ -7,6 +7,10 @@ target 'GariHub' do
 
   # Pods for GariHub
   pod 'Moya'
+  pod 'SwiftKeychainWrapper'
+  pod 'XCoordinator'
+
+
 
   target 'GariHubTests' do
     inherit! :search_paths

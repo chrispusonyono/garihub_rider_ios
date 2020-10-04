@@ -9,13 +9,13 @@
 import Foundation
 
 struct OTPResponse: Codable {
-    let id, firstName, lastName, gender: JSONNull?
-    let phoneNumber: String
-    let isRegistered, otpSent: Bool
-    let emailAddress, emailStatus, accountStatus, userType: JSONNull?
-    let createdAt, updatedAt: JSONNull?
-    let success: Bool
-    let message: JSONNull?
+     let id, firstName, lastName, gender: JSONNull?
+       let phoneNumber: String
+       let isRegistered, otpSent: Bool
+       let emailAddress, emailStatus, accountStatus, userType: JSONNull?
+       let createdAt, updatedAt: JSONNull?
+       let success: Bool
+       let message: String
 }
 
 // MARK: - Encode/decode helpers
