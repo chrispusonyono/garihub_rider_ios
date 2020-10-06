@@ -38,7 +38,7 @@ class PasswordRegisterController: UIViewController {
             case .success(let response):
                 do {
                     _ = try JSONDecoder().decode(RegisterResponse.self, from: response.data)
-                    self.viewModel?.router.trigger(.dashboard)
+                    self.viewModel?.router.trigger(.login)
                 } catch {
                     DispatchQueue.main.async {
                         let alertController = UIAlertController(title: "Error", message: "Registration failed, please try again later", preferredStyle: .alert)

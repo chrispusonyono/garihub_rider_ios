@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationTwoController" customModule="GariHub" customModuleProvider="target">
             <connections>
+                <outlet property="btnBox" destination="P3Y-Mh-2bD" id="IH6-v8-Ccs"/>
                 <outlet property="fullNameTextField" destination="YsY-xU-IPc" id="qVG-JQ-XDc"/>
                 <outlet property="gender" destination="OZy-hS-qrW" id="yUz-P9-5hA"/>
                 <outlet property="noGenderCheckBox" destination="o8z-uk-yTD" id="ccI-BO-YMN"/>
@@ -121,6 +122,15 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wew-TQ-cWt">
                                             <rect key="frame" x="3" y="3" width="14" height="14"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3Y-Mh-2bD">
+                                                    <rect key="frame" x="-8" y="-8" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="noGender:" destination="-1" eventType="touchUpInside" id="nk1-et-xdX"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         </view>
                                     </subviews>

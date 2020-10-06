@@ -57,9 +57,12 @@
 #import "MDCKeyboardWatcher.h"
 #import "MaterialMath.h"
 #import "MDCMath.h"
+<<<<<<< HEAD
 #import "MaterialShapeScheme.h"
 #import "MDCShapeCategory.h"
 #import "MDCShapeScheme.h"
+=======
+>>>>>>> wIP
 
 FOUNDATION_EXPORT double MaterialComponentsVersionNumber;
 FOUNDATION_EXPORT const unsigned char MaterialComponentsVersionString[];

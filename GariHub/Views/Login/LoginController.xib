@@ -103,7 +103,7 @@
                                         <constraint firstAttribute="height" constant="0.5" id="tKq-Y5-bNJ"/>
                                     </constraints>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops! There is no customer under this email address." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJY-Z7-c6s">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops! There is no customer under this email address." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJY-Z7-c6s">
                                     <rect key="frame" x="0.0" y="70.5" width="404" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="SzC-Id-3Ju"/>

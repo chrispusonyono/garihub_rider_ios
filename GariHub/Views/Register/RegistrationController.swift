@@ -55,9 +55,7 @@ class RegistrationController: UIViewController {
     
     
     @objc func loginFunction(sender: UITapGestureRecognizer) {
-        let loginVC = LoginController()
-        loginVC.modalPresentationStyle = .fullScreen
-        self.present(loginVC, animated: true, completion: nil)
+        self.viewModel?.router.trigger(.login)
     }
     
     func validations() {

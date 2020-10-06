@@ -9,6 +9,7 @@ target 'GariHub' do
   pod 'Moya'
   pod 'SwiftKeychainWrapper'
   pod 'XCoordinator'
+  pod 'MaterialComponents/BottomSheet'
 
 
 

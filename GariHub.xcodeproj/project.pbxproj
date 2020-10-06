@@ -25,6 +25,8 @@
 		8F157BFD641ACF7A4A3FEBEE /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */; };
 		E21761D205494BE46571F669 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AE035F35090E8507F423E /* Pods_GariHub.framework */; };
 		FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA293FA6251E410D00BC00AD /* Spinner.swift */; };
+		FA2D0962252C729700212F6D /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0960252C729700212F6D /* ResetPasswordController.swift */; };
+		FA2D0963252C729700212F6D /* ResetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D0961252C729700212F6D /* ResetPasswordController.xib */; };
 		FA41DD7D2529E909006C1F4B /* PasswordRegViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DD7C2529E909006C1F4B /* PasswordRegViewModel.swift */; };
 		FA41DD822529F075006C1F4B /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DD802529F075006C1F4B /* DashboardController.swift */; };
 		FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA41DD812529F075006C1F4B /* DashboardController.xib */; };
@@ -55,6 +57,7 @@
 		FAA769AA2514D0C500750625 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769A82514D0C500750625 /* LandingController.swift */; };
 		FAA769AB2514D0C500750625 /* LandingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA769A92514D0C500750625 /* LandingController.xib */; };
 		FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */; };
+		FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFF056252C6D8E003F222A /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,8 @@
 		CE579876559E9CE14FE5150E /* Pods-GariHub-GariHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D14C4368C1C00481BBFACEC7 /* Pods-GariHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.debug.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.debug.xcconfig"; sourceTree = "<group>"; };
 		FA293FA6251E410D00BC00AD /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		FA2D0960252C729700212F6D /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
+		FA2D0961252C729700212F6D /* ResetPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordController.xib; sourceTree = "<group>"; };
 		FA41DD7C2529E909006C1F4B /* PasswordRegViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRegViewModel.swift; sourceTree = "<group>"; };
 		FA41DD802529F075006C1F4B /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
 		FA41DD812529F075006C1F4B /* DashboardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardController.xib; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 		FAA769A82514D0C500750625 /* LandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		FAA769A92514D0C500750625 /* LandingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingController.xib; sourceTree = "<group>"; };
 		FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthTarget.swift; path = GariHub/Views/AuthTarget.swift; sourceTree = SOURCE_ROOT; };
+		FAEFF056252C6D8E003F222A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 			children = (
 				0C98F6822524BA8100000F35 /* LoginController.swift */,
 				0C98F6832524BA8100000F35 /* LoginController.xib */,
+				FAEFF056252C6D8E003F222A /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -205,6 +212,15 @@
 				C4EA49D1EB22EE509C6FE450 /* Pods-GariHubTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA2D095F252C723100212F6D /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D0960252C729700212F6D /* ResetPasswordController.swift */,
+				FA2D0961252C729700212F6D /* ResetPasswordController.xib */,
+			);
+			path = ResetPassword;
 			sourceTree = "<group>";
 		};
 		FA41DD7E2529EF70006C1F4B /* Campaign */ = {
@@ -321,6 +337,7 @@
 		FAA769A72514D0B200750625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA2D095F252C723100212F6D /* ResetPassword */,
 				FA41DD7F2529F050006C1F4B /* Dashboard */,
 				0C98F6862524DF6A00000F35 /* OTP */,
 				0C98F6812524B9F000000F35 /* Login */,
@@ -486,6 +503,7 @@
 				FAA769AB2514D0C500750625 /* LandingController.xib in Resources */,
 				FAA769812514D03F00750625 /* Assets.xcassets in Resources */,
 				0C893112251BAF1C001E17AD /* CampaignTwo.xib in Resources */,
+				FA2D0963252C729700212F6D /* ResetPasswordController.xib in Resources */,
 				FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */,
 				0C893104251B5066001E17AD /* CampaignController.xib in Resources */,
 				FA47DBA42527543F006FA060 /* PasswordRegisterController.xib in Resources */,
@@ -633,6 +651,8 @@
 				FA47DBB52527862D006FA060 /* EmailRegViewModel.swift in Sources */,
 				FA41DD822529F075006C1F4B /* DashboardController.swift in Sources */,
 				FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */,
+				FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */,
+				FA2D0962252C729700212F6D /* ResetPasswordController.swift in Sources */,
 				FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */,
 				FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */,
 				0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */,

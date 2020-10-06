@@ -1,5 +1,34 @@
 PODS:
   - Alamofire (5.2.2)
+  - MaterialComponents/Availability (116.0.1)
+  - MaterialComponents/BottomSheet (116.0.1):
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/Elevation (116.0.1):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Application (116.0.1)
+  - MaterialComponents/private/Color (116.0.1):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/KeyboardWatcher (116.0.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (116.0.1)
+  - MaterialComponents/ShadowElevations (116.0.1)
+  - MaterialComponents/ShadowLayer (116.0.1):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (116.0.1):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (116.0.1):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -10,6 +39,7 @@ PODS:
   - XCoordinator/Core (2.0.7)
 
 DEPENDENCIES:
+  - MaterialComponents/BottomSheet
   - Moya
   - SwiftKeychainWrapper
   - XCoordinator
@@ -17,16 +47,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - MaterialComponents
     - Moya
     - SwiftKeychainWrapper
     - XCoordinator
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  MaterialComponents: a8759fa4dd253b6026648730ec0252c428dee589
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
   XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
 
-PODFILE CHECKSUM: 625e16444ee3a0192322dee4ad3a511735854b03
+PODFILE CHECKSUM: 5f977aae4b7f4001b690829363955bc2f3128938
 
 COCOAPODS: 1.9.3

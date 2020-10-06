@@ -16,6 +16,7 @@ class RegistrationTwoController: UIViewController {
     @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var gender: UISegmentedControl!
     @IBOutlet weak var noGenderCheckBox: UIView!
+    @IBOutlet weak var btnBox: UIButton!
     @IBOutlet weak var submitButon: UIButton!
     
     override func viewDidLoad() {
@@ -32,6 +33,12 @@ class RegistrationTwoController: UIViewController {
         default:
             break
             }
+    }
+    @IBAction func noGender(_ sender: UIButton) {
+        if (btnBox.isSelected == true) {
+            btnBox.setBackgroundImage(UIImage(named: "checkbox"), for: .normal)
+        }
+        
     }
     @objc func onTap(_ sender: UIButton) {
         

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import MaterialComponents.MaterialBottomSheet
 
 class LoginController: UIViewController {
+    
+    var viewModel: LoginViewModel?
 
     @IBOutlet weak var emailAddress: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -25,7 +28,18 @@ class LoginController: UIViewController {
     
     func setupViews() {
         signInBtn.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.presentBottomSheet(_:)))
+        forgotPasswordBtn.isUserInteractionEnabled = true
+        forgotPasswordBtn.addGestureRecognizer(tap)
         
+    }
+    
+    @objc func presentBottomSheet(_ sender: UITapGestureRecognizer) {
+        let viewController = ResetPasswordController()
+        // Initialize the bottom sheet with the view controller just created
+        let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: viewController)
+        // Present the bottom sheet
+        present(bottomSheet, animated: true, completion: nil)
     }
     @objc func onTap(_ sender: UIButton) {
         self.showSpinner(onView: self.view)
@@ -42,6 +56,7 @@ class LoginController: UIViewController {
             case .success(let response):
                 do {
                     let loginResponse = try JSONDecoder().decode(LoginResponse.self, from: response.data)
+                    self.viewModel?.router.trigger(.dashboard)
                     print(loginResponse)
                 } catch {
                     DispatchQueue.main.async {
