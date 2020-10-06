@@ -14,9 +14,9 @@ class OTPController: UIViewController {
 
     var activeTextField: UITextField?
     
+    @IBOutlet weak var resendOTPbtn: UIView!
     @IBOutlet var textFields: [UITextField]!
     @IBOutlet var textFieldFooters: [UIView]!
-    @IBOutlet weak var resendOTPBtn: UILabel!
     @IBOutlet weak var submitBtn: UIButton!
     
     override func viewDidLoad() {
