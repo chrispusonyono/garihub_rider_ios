@@ -10,6 +10,7 @@ target 'GariHub' do
   pod 'SwiftKeychainWrapper'
   pod 'XCoordinator'
   pod 'MaterialComponents/BottomSheet'
+  pod 'MaterialComponents/BottomSheet+ShapeThemer'
 
 
 

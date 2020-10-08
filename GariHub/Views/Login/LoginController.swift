@@ -32,6 +32,14 @@ class LoginController: UIViewController {
         forgotPasswordBtn.isUserInteractionEnabled = true
         forgotPasswordBtn.addGestureRecognizer(tap)
         
+        let regTap = UITapGestureRecognizer(target: self, action: #selector(self.goToRegister(_:)))
+        registerButton.isUserInteractionEnabled = true
+        registerButton.addGestureRecognizer(regTap)
+        
+    }
+    
+    @objc func goToRegister(_ sender: UITapGestureRecognizer) {
+        self.viewModel?.router.trigger(.validatePhone)
     }
     
     @objc func presentBottomSheet(_ sender: UITapGestureRecognizer) {

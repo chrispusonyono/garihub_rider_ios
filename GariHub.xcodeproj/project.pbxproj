@@ -27,6 +27,9 @@
 		FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA293FA6251E410D00BC00AD /* Spinner.swift */; };
 		FA2D0962252C729700212F6D /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0960252C729700212F6D /* ResetPasswordController.swift */; };
 		FA2D0963252C729700212F6D /* ResetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D0961252C729700212F6D /* ResetPasswordController.xib */; };
+		FA2D096A252CB0E300212F6D /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0968252CB0E300212F6D /* DashboardCell.swift */; };
+		FA2D096B252CB0E300212F6D /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D0969252CB0E300212F6D /* DashboardCell.xib */; };
+		FA2D096E252F3D5800212F6D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D096D252F3D5800212F6D /* Location.swift */; };
 		FA41DD7D2529E909006C1F4B /* PasswordRegViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DD7C2529E909006C1F4B /* PasswordRegViewModel.swift */; };
 		FA41DD822529F075006C1F4B /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DD802529F075006C1F4B /* DashboardController.swift */; };
 		FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA41DD812529F075006C1F4B /* DashboardController.xib */; };
@@ -104,6 +107,9 @@
 		FA293FA6251E410D00BC00AD /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		FA2D0960252C729700212F6D /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
 		FA2D0961252C729700212F6D /* ResetPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordController.xib; sourceTree = "<group>"; };
+		FA2D0968252CB0E300212F6D /* DashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
+		FA2D0969252CB0E300212F6D /* DashboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
+		FA2D096D252F3D5800212F6D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		FA41DD7C2529E909006C1F4B /* PasswordRegViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRegViewModel.swift; sourceTree = "<group>"; };
 		FA41DD802529F075006C1F4B /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
 		FA41DD812529F075006C1F4B /* DashboardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardController.xib; sourceTree = "<group>"; };
@@ -223,6 +229,14 @@
 			path = ResetPassword;
 			sourceTree = "<group>";
 		};
+		FA2D096C252F3D3900212F6D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D096D252F3D5800212F6D /* Location.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		FA41DD7E2529EF70006C1F4B /* Campaign */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +258,8 @@
 				FA41DD802529F075006C1F4B /* DashboardController.swift */,
 				FA41DD812529F075006C1F4B /* DashboardController.xib */,
 				FA41DD842529F54F006C1F4B /* DashboardViewModel.swift */,
+				FA2D0968252CB0E300212F6D /* DashboardCell.swift */,
+				FA2D0969252CB0E300212F6D /* DashboardCell.xib */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -301,6 +317,7 @@
 		FAA769762514D03D00750625 /* GariHub */ = {
 			isa = PBXGroup;
 			children = (
+				FA2D096C252F3D3900212F6D /* Location */,
 				FA47DBAF25277053006FA060 /* Coordinators */,
 				FAA769AF2514D31300750625 /* Utils */,
 				FAA769AE2514D30D00750625 /* Resources */,
@@ -503,6 +520,7 @@
 				FAA769AB2514D0C500750625 /* LandingController.xib in Resources */,
 				FAA769812514D03F00750625 /* Assets.xcassets in Resources */,
 				0C893112251BAF1C001E17AD /* CampaignTwo.xib in Resources */,
+				FA2D096B252CB0E300212F6D /* DashboardCell.xib in Resources */,
 				FA2D0963252C729700212F6D /* ResetPasswordController.xib in Resources */,
 				FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */,
 				0C893104251B5066001E17AD /* CampaignController.xib in Resources */,
@@ -650,11 +668,13 @@
 				FA882E782525C80B00AC4776 /* UITextField.swift in Sources */,
 				FA47DBB52527862D006FA060 /* EmailRegViewModel.swift in Sources */,
 				FA41DD822529F075006C1F4B /* DashboardController.swift in Sources */,
+				FA2D096A252CB0E300212F6D /* DashboardCell.swift in Sources */,
 				FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */,
 				FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */,
 				FA2D0962252C729700212F6D /* ResetPasswordController.swift in Sources */,
 				FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */,
 				FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */,
+				FA2D096E252F3D5800212F6D /* Location.swift in Sources */,
 				0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */,
 				FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */,
 				FA41DD852529F54F006C1F4B /* DashboardViewModel.swift in Sources */,

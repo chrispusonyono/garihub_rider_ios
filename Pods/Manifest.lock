@@ -9,6 +9,9 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
+  - "MaterialComponents/BottomSheet+ShapeThemer (116.0.1)":
+    - MaterialComponents/BottomSheet
+    - MaterialComponents/schemes/Shape
   - MaterialComponents/Elevation (116.0.1):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
@@ -19,6 +22,9 @@ PODS:
   - MaterialComponents/private/KeyboardWatcher (116.0.1):
     - MaterialComponents/private/Application
   - MaterialComponents/private/Math (116.0.1)
+  - MaterialComponents/schemes/Shape (116.0.1):
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
   - MaterialComponents/ShadowElevations (116.0.1)
   - MaterialComponents/ShadowLayer (116.0.1):
     - MaterialComponents/ShadowElevations
@@ -40,6 +46,7 @@ PODS:
 
 DEPENDENCIES:
   - MaterialComponents/BottomSheet
+  - "MaterialComponents/BottomSheet+ShapeThemer"
   - Moya
   - SwiftKeychainWrapper
   - XCoordinator
@@ -59,6 +66,6 @@ SPEC CHECKSUMS:
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
   XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
 
-PODFILE CHECKSUM: 5f977aae4b7f4001b690829363955bc2f3128938
+PODFILE CHECKSUM: 35cea3bac674814631de0c21e86550e273a6883c
 
 COCOAPODS: 1.9.3
