@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="emailAddress" destination="yhd-pr-8V2" id="seo-da-USG"/>
                 <outlet property="forgotPasswordBtn" destination="enk-Us-SB9" id="xa6-Fg-N0b"/>
+                <outlet property="noUserError" destination="SJY-Z7-c6s" id="wa4-No-rEu"/>
                 <outlet property="passwordField" destination="xgk-PI-UDG" id="sMg-d5-m2b"/>
                 <outlet property="registerButton" destination="Rc7-ES-xdj" id="eq5-AF-nML"/>
                 <outlet property="signInBtn" destination="RFM-rT-IOf" id="TA6-fK-cUm"/>

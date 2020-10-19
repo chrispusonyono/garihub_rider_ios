@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BA51CE4B67EF27F910FACAE /* Pods_GariHub_GariHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23AD25952EC64C862C7809 /* Pods_GariHub_GariHubUITests.framework */; };
+		0C31D698252B7E560089253F /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C31D696252B7E560089253F /* Destination.swift */; };
+		0C31D699252B7E560089253F /* Destination.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C31D697252B7E560089253F /* Destination.xib */; };
 		0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C531427252727680032C27F /* RegistrationTwoController.swift */; };
 		0C53142A252727680032C27F /* RegistrationTwoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C531428252727680032C27F /* RegistrationTwoController.xib */; };
 		0C893103251B5065001E17AD /* CampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C893101251B5065001E17AD /* CampaignController.swift */; };
@@ -22,6 +24,8 @@
 		0C98F6852524BA8100000F35 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C98F6832524BA8100000F35 /* LoginController.xib */; };
 		0C98F68B2524E0CD00000F35 /* OTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C98F6892524E0CD00000F35 /* OTPController.swift */; };
 		0C98F68C2524E0CD00000F35 /* OTPController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C98F68A2524E0CD00000F35 /* OTPController.xib */; };
+		0CF160E1253DA51300250C6F /* DestinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF160DF253DA51200250C6F /* DestinationCell.swift */; };
+		0CF160E2253DA51300250C6F /* DestinationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF160E0253DA51300250C6F /* DestinationCell.xib */; };
 		8F157BFD641ACF7A4A3FEBEE /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */; };
 		E21761D205494BE46571F669 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AE035F35090E8507F423E /* Pods_GariHub.framework */; };
 		FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA293FA6251E410D00BC00AD /* Spinner.swift */; };
@@ -81,6 +85,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C31D696252B7E560089253F /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		0C31D697252B7E560089253F /* Destination.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Destination.xib; sourceTree = "<group>"; };
 		0C531427252727680032C27F /* RegistrationTwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTwoController.swift; sourceTree = "<group>"; };
 		0C531428252727680032C27F /* RegistrationTwoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationTwoController.xib; sourceTree = "<group>"; };
 		0C893101251B5065001E17AD /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 		0C98F6832524BA8100000F35 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
 		0C98F6892524E0CD00000F35 /* OTPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPController.swift; sourceTree = "<group>"; };
 		0C98F68A2524E0CD00000F35 /* OTPController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPController.xib; sourceTree = "<group>"; };
+		0CF160DF253DA51200250C6F /* DestinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCell.swift; sourceTree = "<group>"; };
+		0CF160E0253DA51300250C6F /* DestinationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationCell.xib; sourceTree = "<group>"; };
 		4F8AE035F35090E8507F423E /* Pods_GariHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F23AD25952EC64C862C7809 /* Pods_GariHub_GariHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub_GariHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7545EEC4D30BB8066FF4DEFF /* Pods-GariHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.release.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.release.xcconfig"; sourceTree = "<group>"; };
@@ -260,6 +268,10 @@
 				FA41DD842529F54F006C1F4B /* DashboardViewModel.swift */,
 				FA2D0968252CB0E300212F6D /* DashboardCell.swift */,
 				FA2D0969252CB0E300212F6D /* DashboardCell.xib */,
+				0C31D696252B7E560089253F /* Destination.swift */,
+				0C31D697252B7E560089253F /* Destination.xib */,
+				0CF160DF253DA51200250C6F /* DestinationCell.swift */,
+				0CF160E0253DA51300250C6F /* DestinationCell.xib */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -512,9 +524,11 @@
 			files = (
 				0C98F68C2524E0CD00000F35 /* OTPController.xib in Resources */,
 				FA47DBA0252750DA006FA060 /* EmailRegisterController.xib in Resources */,
+				0C31D699252B7E560089253F /* Destination.xib in Resources */,
 				FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */,
 				0C98F6852524BA8100000F35 /* LoginController.xib in Resources */,
 				0C53142A252727680032C27F /* RegistrationTwoController.xib in Resources */,
+				0CF160E2253DA51300250C6F /* DestinationCell.xib in Resources */,
 				0C89310E251B6D9A001E17AD /* RegistrationController.xib in Resources */,
 				0C89311A251E1546001E17AD /* CampaignThree.xib in Resources */,
 				FAA769AB2514D0C500750625 /* LandingController.xib in Resources */,
@@ -658,6 +672,7 @@
 				FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */,
 				0C893119251E1546001E17AD /* CampaignThree.swift in Sources */,
 				FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */,
+				0CF160E1253DA51300250C6F /* DestinationCell.swift in Sources */,
 				FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */,
 				FA47DBAA252764F2006FA060 /* GariHubClient.swift in Sources */,
 				FA47DBB32527804B006FA060 /* RegTwoViewModel.swift in Sources */,
@@ -679,6 +694,7 @@
 				FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */,
 				FA41DD852529F54F006C1F4B /* DashboardViewModel.swift in Sources */,
 				0C893111251BAF1C001E17AD /* CampaignTwo.swift in Sources */,
+				0C31D698252B7E560089253F /* Destination.swift in Sources */,
 				FAA769AA2514D0C500750625 /* LandingController.swift in Sources */,
 				FA41DD7D2529E909006C1F4B /* PasswordRegViewModel.swift in Sources */,
 				0C89310D251B6D9A001E17AD /* RegistrationController.swift in Sources */,

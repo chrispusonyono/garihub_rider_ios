@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPController" customModule="GariHub" customModuleProvider="target">
             <connections>
+                <outlet property="level0" destination="fEL-Gg-lfM" id="fw5-nq-u8G"/>
+                <outlet property="level1" destination="fEL-Gg-lfM" id="tEd-hS-tns"/>
+                <outlet property="level3" destination="h7H-Ub-HzC" id="mLq-NQ-MQm"/>
                 <outlet property="resendOTP" destination="DbM-aF-WqJ" id="YbW-AK-kMy"/>
                 <outlet property="resendOTPbtn" destination="XbN-ur-iaQ" id="aUs-q2-kk5"/>
                 <outlet property="submitBtn" destination="hEc-Vh-wae" id="jen-h0-ei8"/>
@@ -65,8 +68,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-4V-h73" userLabel="Middle">
                                                     <rect key="frame" x="20" y="20" width="97" height="97.5"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-yy-XnI">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baseline_lock_black_48pt" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-yy-XnI">
                                                             <rect key="frame" x="20" y="20" width="57" height="57.5"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -427,6 +431,7 @@
         </view>
     </objects>
     <resources>
+        <image name="baseline_lock_black_48pt" width="48" height="48"/>
         <image name="register" width="943" height="616"/>
     </resources>
 </document>

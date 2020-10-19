@@ -13,6 +13,7 @@ class LoginController: UIViewController {
     
     var viewModel: LoginViewModel?
 
+    @IBOutlet weak var noUserError: UILabel!
     @IBOutlet weak var emailAddress: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var forgotPasswordBtn: UILabel!
@@ -35,6 +36,9 @@ class LoginController: UIViewController {
         let regTap = UITapGestureRecognizer(target: self, action: #selector(self.goToRegister(_:)))
         registerButton.isUserInteractionEnabled = true
         registerButton.addGestureRecognizer(regTap)
+        noUserError.text = ""
+        signInBtn.layer.cornerRadius = 5
+        signInBtn.clipsToBounds = true
         
     }
     

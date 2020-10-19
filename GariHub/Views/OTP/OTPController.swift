@@ -20,11 +20,23 @@ class OTPController: UIViewController {
     @IBOutlet weak var submitBtn: UIButton!
     @IBOutlet weak var resendOTP: UILabel!
     
+    @IBOutlet weak var level2: UIView!
+    @IBOutlet weak var level1: UIView!
+    @IBOutlet weak var level0: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeHideKeyboard()
         submitBtn.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
         // Do any additional setup after loading the view.
+        
+        level0.layer.cornerRadius = 15
+        level0.clipsToBounds = true
+        
+        level1.layer.cornerRadius = 15
+        level1.clipsToBounds = true
+        
+        level2.layer.cornerRadius = 15
+        level2.clipsToBounds = true
     }
     
     override func viewDidLayoutSubviews() {
