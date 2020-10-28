@@ -25,14 +25,6 @@ class GariHubClient {
         return GariHubClient.shared.string(forKey: "token")
     }
     
-    var taxPayerType: String? {
-        get {
-            return GariHubClient.shared.string(forKey: "taxPayerType")
-        }
-        set {
-            GariHubClient.shared.set(newValue ?? "", forKey: "taxPayerType")
-        }
-    }
     
     var token: String {
         get {
