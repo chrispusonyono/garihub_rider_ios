@@ -17,20 +17,20 @@ enum AuthTarget {
 }
 
 extension AuthTarget: TargetType {
+        
     
-    
-    var baseURL: URL { return URL (string: "http://68.183.242.242/api")! }
+    var baseURL: URL { return URL (string: "http://68.183.242.242/")! }
     
     var path: String {
         switch self {
         case .validatePhone:
-            return "/v1/user/validate-number"
+            return "api/v1/user/validate-number"
         case .login:
-            return "/v1/user/login"
+            return "auth/realms/garihub-rider/protocol/openid-connect/token"
         case .register:
-            return "/v1/user/register"
+            return "api/v1/user/register"
         case .validateOTP:
-            return "/v1/user/verify-otp"
+            return "api/v1/user/verify-otp"
             
         }
     }
@@ -43,7 +43,9 @@ extension AuthTarget: TargetType {
             ]
         case .login(let request):
             return [
-                "emailAddress": request.emailAddress,
+                "clientID": request.clientID,
+                "grantType": request.grantType,
+                "username": request.username,
                 "password": request.password
             ]
         case .register(let request):
@@ -92,9 +94,16 @@ extension AuthTarget: TargetType {
 
     
     var headers: [String : String]? {
-        return [
-            "Content-Type": "application/json",
-        ]
+        switch self {
+        case .login:
+            return [
+                "Content-Type": "application/x-www-form-urlencoded",
+            ]
+        default:
+            return [
+                "Content-Type": "application/json",
+            ]
+        }
     }
     
     

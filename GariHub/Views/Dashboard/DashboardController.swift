@@ -72,14 +72,11 @@ extension DashboardController: UICollectionViewDataSource {
         
         return cell
     }
-    
-    
 }
 
 extension DashboardController: UICollectionViewDelegate {
     
 }
-
 
 extension DashboardController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

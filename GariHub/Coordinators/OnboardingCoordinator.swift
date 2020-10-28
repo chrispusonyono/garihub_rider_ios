@@ -9,7 +9,7 @@
 import Foundation
 import XCoordinator
 
-enum OnboardingRoutes: Route  {
+enum OnboardingRoutes:  Route  {
     case validatePhone
     case otp(phoneNumber: String)
     case registerTwo(phoneNumber: String)
