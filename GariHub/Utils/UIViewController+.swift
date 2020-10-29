@@ -43,6 +43,21 @@ extension  UIViewController: ClassNameProtocol {
         vSpinner = spinnerView
     }
     
+    func setupLeftBarButtonItem(selector: Selector) {
+        let templateImage = UIImage(named: "backward_arrow")?.withRenderingMode(.alwaysOriginal)
+        navigationItem.backBarButtonItem?.title = "Back"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: templateImage, style: .plain, target: self, action: selector)
+    }
+    
+    func setTitleLabel(_ text: String) {
+        
+        let label = UILabel()
+        label.textColor = UIColor.white
+        label.text = text
+        label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
+    }
+    
     func removeSpinner() {
         DispatchQueue.main.async {
             vSpinner?.removeFromSuperview()

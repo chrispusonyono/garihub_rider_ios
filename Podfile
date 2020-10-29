@@ -11,6 +11,9 @@ target 'GariHub' do
   pod 'XCoordinator'
   pod 'MaterialComponents/BottomSheet'
   pod 'MaterialComponents/BottomSheet+ShapeThemer'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'Google-Maps-iOS-Utils', '3.4.0'
 
 
 

@@ -56,6 +56,8 @@
 		FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E752525C53900AC4776 /* ClassNameProtocol.swift */; };
 		FA882E782525C80B00AC4776 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E772525C80B00AC4776 /* UITextField.swift */; };
 		FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E792525CA2D00AC4776 /* LoginRequest.swift */; };
+		FA8AFA35254C061700C7A37E /* BaseTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AFA34254C061700C7A37E /* BaseTextFieldController.swift */; };
+		FA8AFA37254C066400C7A37E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AFA36254C066400C7A37E /* UIColor+.swift */; };
 		FAA769782514D03D00750625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769772514D03D00750625 /* AppDelegate.swift */; };
 		FAA769812514D03F00750625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA769802514D03F00750625 /* Assets.xcassets */; };
 		FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA769822514D03F00750625 /* LaunchScreen.storyboard */; };
@@ -64,6 +66,7 @@
 		FAA769AA2514D0C500750625 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769A82514D0C500750625 /* LandingController.swift */; };
 		FAA769AB2514D0C500750625 /* LandingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA769A92514D0C500750625 /* LandingController.xib */; };
 		FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */; };
+		FAD965B3254ADCA7004F4C70 /* DestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */; };
 		FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFF056252C6D8E003F222A /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +143,8 @@
 		FA882E752525C53900AC4776 /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
 		FA882E772525C80B00AC4776 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		FA882E792525CA2D00AC4776 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRequest.swift; path = GariHub/Utils/LoginRequest.swift; sourceTree = SOURCE_ROOT; };
+		FA8AFA34254C061700C7A37E /* BaseTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldController.swift; sourceTree = "<group>"; };
+		FA8AFA36254C066400C7A37E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		FAA769742514D03D00750625 /* GariHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GariHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA769772514D03D00750625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA769802514D03F00750625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,6 +159,7 @@
 		FAA769A82514D0C500750625 /* LandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		FAA769A92514D0C500750625 /* LandingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingController.xib; sourceTree = "<group>"; };
 		FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthTarget.swift; path = GariHub/Views/AuthTarget.swift; sourceTree = SOURCE_ROOT; };
+		FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewModel.swift; sourceTree = "<group>"; };
 		FAEFF056252C6D8E003F222A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,8 +274,6 @@
 				FA41DD842529F54F006C1F4B /* DashboardViewModel.swift */,
 				FA2D0968252CB0E300212F6D /* DashboardCell.swift */,
 				FA2D0969252CB0E300212F6D /* DashboardCell.xib */,
-				0C31D696252B7E560089253F /* Destination.swift */,
-				0C31D697252B7E560089253F /* Destination.xib */,
 				0CF160DF253DA51200250C6F /* DestinationCell.swift */,
 				0CF160E0253DA51300250C6F /* DestinationCell.xib */,
 			);
@@ -366,6 +370,7 @@
 		FAA769A72514D0B200750625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAD965B1254ADC7C004F4C70 /* Destination */,
 				FA2D095F252C723100212F6D /* ResetPassword */,
 				FA41DD7F2529F050006C1F4B /* Dashboard */,
 				0C98F6862524DF6A00000F35 /* OTP */,
@@ -409,8 +414,20 @@
 				FA882E732525BDDF00AC4776 /* UIViewController+.swift */,
 				FA882E752525C53900AC4776 /* ClassNameProtocol.swift */,
 				FA882E772525C80B00AC4776 /* UITextField.swift */,
+				FA8AFA34254C061700C7A37E /* BaseTextFieldController.swift */,
+				FA8AFA36254C066400C7A37E /* UIColor+.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAD965B1254ADC7C004F4C70 /* Destination */ = {
+			isa = PBXGroup;
+			children = (
+				0C31D696252B7E560089253F /* Destination.swift */,
+				0C31D697252B7E560089253F /* Destination.xib */,
+				FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */,
+			);
+			path = Destination;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +442,7 @@
 				FAA769712514D03D00750625 /* Frameworks */,
 				FAA769722514D03D00750625 /* Resources */,
 				9063B83F80133AA048F16BA3 /* [CP] Embed Pods Frameworks */,
+				9FB7CBAFDEFEE46FB63E1729 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -463,6 +481,7 @@
 				FAA769922514D04000750625 /* Frameworks */,
 				FAA769932514D04000750625 /* Resources */,
 				8A01E8A50EABC78DBE09CA78 /* [CP] Embed Pods Frameworks */,
+				CD492D6CEACB836F53D5C9C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -615,6 +634,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9FB7CBAFDEFEE46FB63E1729 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AB9EF06DE101EC82E71CE8B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -635,6 +671,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD492D6CEACB836F53D5C9C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F2F071A81B08BEFDAD55FF1C /* [CP] Check Pods Manifest.lock */ = {
@@ -672,6 +725,7 @@
 				FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */,
 				0C893119251E1546001E17AD /* CampaignThree.swift in Sources */,
 				FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */,
+				FA8AFA35254C061700C7A37E /* BaseTextFieldController.swift in Sources */,
 				0CF160E1253DA51300250C6F /* DestinationCell.swift in Sources */,
 				FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */,
 				FA47DBAA252764F2006FA060 /* GariHubClient.swift in Sources */,
@@ -688,6 +742,7 @@
 				FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */,
 				FA2D0962252C729700212F6D /* ResetPasswordController.swift in Sources */,
 				FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */,
+				FA8AFA37254C066400C7A37E /* UIColor+.swift in Sources */,
 				FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */,
 				FA2D096E252F3D5800212F6D /* Location.swift in Sources */,
 				0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */,
@@ -702,6 +757,7 @@
 				0C893103251B5065001E17AD /* CampaignController.swift in Sources */,
 				FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */,
 				FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */,
+				FAD965B3254ADCA7004F4C70 /* DestinationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

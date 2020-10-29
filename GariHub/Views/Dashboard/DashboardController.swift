@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashboardController: UIViewController {
+class DashboardController: BaseTextFieldController {
     
     var viewModel: DashboardViewModel?
     
@@ -54,6 +54,12 @@ class DashboardController: UIViewController {
         orderType.setTitleTextAttributes(titleTextAttributes, for: .selected)
         searchBar.layer.cornerRadius = 10
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setAppNavigationBar()
+        
+    }
 
 }
 
@@ -75,6 +81,14 @@ extension DashboardController: UICollectionViewDataSource {
 }
 
 extension DashboardController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let vm = self.viewModel else { return }
+        
+        if indexPath.item == 0 {
+            vm.router.trigger(.destination)
+        }
+    }
     
 }
 

@@ -13,7 +13,7 @@ let provider = MoyaProvider<AuthTarget>()
 
 
 
-class RegistrationController: UIViewController {
+class RegistrationController: BaseTextFieldController {
     
     var viewModel: RegistrationViewModel?
     
@@ -26,13 +26,12 @@ class RegistrationController: UIViewController {
         initializeHideKeyboard()
         activateButton.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
         setupViews()
+        setTransparentNavigationBar()
 
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func setupViews() {
@@ -62,22 +61,6 @@ class RegistrationController: UIViewController {
         if phoneNumber.text == "" {
             self.showAlert(withTitle: "Phone number", withMessage: "Phone number cannot be blank")
         }
-    }
-    
-    @objc
-    private func keyboardWillHide() {
-        guard view.frame.origin.y != 0 else { return }
-        
-        view.frame.origin.y = 0
-    }
-    
-    @objc
-    private func keyboardWillShow(notification: NSNotification) {
-        guard
-            let size = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
-            view.frame.origin.y == 0 else {  return }
-        
-        view.frame.origin.y -= (size.height / 2)
     }
     
     

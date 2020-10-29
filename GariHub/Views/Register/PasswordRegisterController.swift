@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PasswordRegisterController: UIViewController {
+class PasswordRegisterController: BaseTextFieldController {
     
     var viewModel: PasswordRegViewModel?
     
@@ -20,6 +20,7 @@ class PasswordRegisterController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         submitButton.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
+        setTransparentNavigationBar()
     }
     
     @objc func onTap(_ sender: UIButton) {

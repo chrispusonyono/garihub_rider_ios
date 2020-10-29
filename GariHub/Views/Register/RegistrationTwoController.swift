@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationTwoController: UIViewController {
+class RegistrationTwoController: BaseTextFieldController {
     
     var viewModel: RegTwoViewModel?
     var genderStatus = "MALE"
@@ -22,6 +22,7 @@ class RegistrationTwoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         submitButon.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
+        setTransparentNavigationBar()
     }
     
     @IBAction func selectGender(_ sender: UISegmentedControl) {
@@ -48,14 +49,5 @@ class RegistrationTwoController: UIViewController {
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
 
 }

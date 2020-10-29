@@ -10,13 +10,14 @@ import Foundation
 import XCoordinator
 
 enum OnboardingRoutes:  Route  {
-    case validatePhone
-    case otp(phoneNumber: String)
-    case registerTwo(phoneNumber: String)
-    case emailReg(phoneNumber: String, fullName:String, gender: String)
-    case passReg(phoneNumber: String, fullName:String, gender: String, email: String)
+    case destination
     case dashboard
+    case emailReg(phoneNumber: String, fullName:String, gender: String)
     case login
+    case otp(phoneNumber: String)
+    case passReg(phoneNumber: String, fullName:String, gender: String, email: String)
+    case registerTwo(phoneNumber: String)
+    case validatePhone
     
 }
 
@@ -26,12 +27,21 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
     init() {
         self.client = GariHubClient()
         let navigationController = UINavigationController()
+        navigationController.navigationBar.backgroundColor = UIColor.appYellow
+        navigationController.navigationBar.barTintColor = UIColor.appYellow
+        navigationController.navigationBar.tintColor = .black
+        
         super.init(rootViewController: navigationController, initialRoute: .validatePhone)
 
     }
     
     override func prepareTransition(for route: OnboardingRoutes) -> NavigationTransition {
         switch route {
+        case .destination:
+            let viewModel = DestinationViewModel(client: client, router: self.strongRouter)
+            let destination = Destination()
+            destination.viewModel = viewModel
+            return .set([destination])
         case .otp(let phoneNumber):
             let viewModel = OTPViewModel(client: client, phoneNumber: phoneNumber, router: self.strongRouter)
             let otpController = OTPController()

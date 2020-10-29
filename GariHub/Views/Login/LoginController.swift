@@ -9,7 +9,7 @@
 import UIKit
 import MaterialComponents.MaterialBottomSheet
 
-class LoginController: UIViewController {
+class LoginController: BaseTextFieldController {
     
     var viewModel: LoginViewModel?
 
@@ -24,6 +24,7 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         initializeHideKeyboard()
         setupViews()
+        setTransparentNavigationBar()
         // Do any additional setup after loading the view.
     }
     
@@ -40,9 +41,6 @@ class LoginController: UIViewController {
         signInBtn.layer.cornerRadius = 5
         signInBtn.clipsToBounds = true
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-        
     }
     
     @objc func goToRegister(_ sender: UITapGestureRecognizer) {
@@ -55,22 +53,6 @@ class LoginController: UIViewController {
         let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: viewController)
         // Present the bottom sheet
         present(bottomSheet, animated: true, completion: nil)
-    }
-    
-    @objc
-    private func keyboardWillHide() {
-        guard view.frame.origin.y != 0 else { return }
-        
-        view.frame.origin.y = 0
-    }
-    
-    @objc
-    private func keyboardWillShow(notification: NSNotification) {
-        guard
-            let size = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
-            view.frame.origin.y == 0 else {  return }
-        
-        view.frame.origin.y -= (size.height / 2)
     }
     
     func validateFields() {

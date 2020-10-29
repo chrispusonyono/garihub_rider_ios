@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmailRegisterController: UIViewController {
+class EmailRegisterController: BaseTextFieldController {
     
     var viewModel: EmailRegViewModel?
 
@@ -18,6 +18,7 @@ class EmailRegisterController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         submitBtn.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
+        setTransparentNavigationBar()
     }
     
     @objc func onTap(_ sender: UIButton) {
@@ -27,16 +28,6 @@ class EmailRegisterController: UIViewController {
         
         self.viewModel?.router.trigger(.passReg(phoneNumber: vm.phoneNumber, fullName: vm.fullName, gender: vm.gender, email: email))
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-    
 
 }
