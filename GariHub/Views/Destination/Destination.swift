@@ -14,6 +14,8 @@ import GooglePlaces
 class Destination: BaseTextFieldController {
     
     var viewModel: DestinationViewModel?
+    var resultsViewController: GMSAutocompleteViewController?
+    
     
     var locationManager:CLLocationManager!
 
@@ -50,6 +52,9 @@ class Destination: BaseTextFieldController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(gesture:)))
         getDestination.addGestureRecognizer(tapGesture)
         getDestination.isUserInteractionEnabled = true
+        
+        resultsViewController = GMSAutocompleteViewController()
+        
     }
     
     
@@ -64,7 +69,7 @@ class Destination: BaseTextFieldController {
             let placeID = destination
             // Specify the place data types to return.
             let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) |
-              UInt(GMSPlaceField.placeID.rawValue))!
+                UInt(GMSPlaceField.placeID.rawValue))!
             let placesClient = GMSPlacesClient()
 
             placesClient.fetchPlace(fromPlaceID: placeID, placeFields: fields, sessionToken: nil, callback: {

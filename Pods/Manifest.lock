@@ -1,30 +1,33 @@
 PODS:
-  - Alamofire (5.2.2)
-  - Google-Maps-iOS-Utils (3.4.0):
-    - Google-Maps-iOS-Utils/Clustering (= 3.4.0)
-    - Google-Maps-iOS-Utils/Geometry (= 3.4.0)
-    - Google-Maps-iOS-Utils/Heatmap (= 3.4.0)
-    - Google-Maps-iOS-Utils/QuadTree (= 3.4.0)
+  - Alamofire (5.3.0)
+  - Google-Maps-iOS-Utils (3.4.1):
+    - Google-Maps-iOS-Utils/Clustering (= 3.4.1)
+    - Google-Maps-iOS-Utils/Geometry (= 3.4.1)
+    - Google-Maps-iOS-Utils/Heatmap (= 3.4.1)
+    - Google-Maps-iOS-Utils/QuadTree (= 3.4.1)
     - GoogleMaps
-  - Google-Maps-iOS-Utils/Clustering (3.4.0):
+  - Google-Maps-iOS-Utils/Clustering (3.4.1):
     - Google-Maps-iOS-Utils/QuadTree
     - GoogleMaps
-  - Google-Maps-iOS-Utils/Geometry (3.4.0):
+  - Google-Maps-iOS-Utils/Geometry (3.4.1):
     - GoogleMaps
-  - Google-Maps-iOS-Utils/Heatmap (3.4.0):
+  - Google-Maps-iOS-Utils/Heatmap (3.4.1):
     - Google-Maps-iOS-Utils/QuadTree
     - GoogleMaps
-  - Google-Maps-iOS-Utils/QuadTree (3.4.0):
+  - Google-Maps-iOS-Utils/QuadTree (3.4.1):
     - GoogleMaps
-  - GoogleMaps (3.10.0):
-    - GoogleMaps/Maps (= 3.10.0)
-  - GoogleMaps/Base (3.10.0)
-  - GoogleMaps/Maps (3.10.0):
+  - GoogleMaps (3.1.0):
+    - GoogleMaps/Maps (= 3.1.0)
+  - GoogleMaps/Base (3.1.0)
+  - GoogleMaps/Maps (3.1.0):
     - GoogleMaps/Base
-  - GooglePlaces (3.10.0):
-    - GoogleMaps/Base (= 3.10.0)
-  - MaterialComponents/Availability (116.0.1)
-  - MaterialComponents/BottomSheet (116.0.1):
+  - GooglePlacePicker (3.1.0):
+    - GoogleMaps (= 3.1.0)
+    - GooglePlaces (= 3.1.0)
+  - GooglePlaces (3.1.0):
+    - GoogleMaps/Base (= 3.1.0)
+  - MaterialComponents/Availability (118.2.0)
+  - MaterialComponents/BottomSheet (118.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/private/KeyboardWatcher
     - MaterialComponents/private/Math
@@ -32,29 +35,29 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
-  - "MaterialComponents/BottomSheet+ShapeThemer (116.0.1)":
+  - "MaterialComponents/BottomSheet+ShapeThemer (118.2.0)":
     - MaterialComponents/BottomSheet
     - MaterialComponents/schemes/Shape
-  - MaterialComponents/Elevation (116.0.1):
+  - MaterialComponents/Elevation (118.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/private/Application (116.0.1)
-  - MaterialComponents/private/Color (116.0.1):
+  - MaterialComponents/private/Application (118.2.0)
+  - MaterialComponents/private/Color (118.2.0):
     - MaterialComponents/Availability
-  - MaterialComponents/private/KeyboardWatcher (116.0.1):
+  - MaterialComponents/private/KeyboardWatcher (118.2.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (116.0.1)
-  - MaterialComponents/schemes/Shape (116.0.1):
+  - MaterialComponents/private/Math (118.2.0)
+  - MaterialComponents/schemes/Shape (118.2.0):
     - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
-  - MaterialComponents/ShadowElevations (116.0.1)
-  - MaterialComponents/ShadowLayer (116.0.1):
+  - MaterialComponents/ShadowElevations (118.2.0)
+  - MaterialComponents/ShadowLayer (118.2.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (116.0.1):
+  - MaterialComponents/ShapeLibrary (118.2.0):
     - MaterialComponents/private/Math
     - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (116.0.1):
+  - MaterialComponents/Shapes (118.2.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
@@ -62,14 +65,15 @@ PODS:
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
-  - SwiftKeychainWrapper (3.4.0)
+  - SwiftKeychainWrapper (4.0.1)
   - XCoordinator (2.0.7):
     - XCoordinator/Core (= 2.0.7)
   - XCoordinator/Core (2.0.7)
 
 DEPENDENCIES:
-  - Google-Maps-iOS-Utils (= 3.4.0)
+  - Google-Maps-iOS-Utils
   - GoogleMaps
+  - GooglePlacePicker
   - GooglePlaces
   - MaterialComponents/BottomSheet
   - "MaterialComponents/BottomSheet+ShapeThemer"
@@ -82,6 +86,7 @@ SPEC REPOS:
     - Alamofire
     - Google-Maps-iOS-Utils
     - GoogleMaps
+    - GooglePlacePicker
     - GooglePlaces
     - MaterialComponents
     - Moya
@@ -89,15 +94,16 @@ SPEC REPOS:
     - XCoordinator
 
 SPEC CHECKSUMS:
-  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
-  Google-Maps-iOS-Utils: 2b4971019b7e9b3c92b4635d218552d9e093df4b
-  GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
-  GooglePlaces: 9a6f5f3a0c88da2aa1bf7426a65d3e004f5e69a1
-  MaterialComponents: a8759fa4dd253b6026648730ec0252c428dee589
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  Google-Maps-iOS-Utils: 9a3bfc50dab84dda55ab7fd1c3af39120798ea57
+  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
+  GooglePlacePicker: fa975116ac202ac29822c0a79758ea1c4db5a95f
+  GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
+  MaterialComponents: fc3dba46cf3ae8495728a875778b47d0c6ec7ed5
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
-  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
 
-PODFILE CHECKSUM: 09737ff1bcc07a093c6e08bae6a0b61037c378c6
+PODFILE CHECKSUM: 3244f664c97ffb2dd3bfd32020df332792fa5a92
 
 COCOAPODS: 1.9.3

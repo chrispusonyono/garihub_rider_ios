@@ -65,9 +65,14 @@
 		FAA7699A2514D04000750625 /* GariHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769992514D04000750625 /* GariHubUITests.swift */; };
 		FAA769AA2514D0C500750625 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769A82514D0C500750625 /* LandingController.swift */; };
 		FAA769AB2514D0C500750625 /* LandingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA769A92514D0C500750625 /* LandingController.xib */; };
+		FAA8B24325528FC5001484E7 /* MapsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8B24125528FC5001484E7 /* MapsController.swift */; };
+		FAA8B24425528FC5001484E7 /* MapsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA8B24225528FC5001484E7 /* MapsController.xib */; };
+		FAA8B24725529235001484E7 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8B24625529235001484E7 /* MapsViewModel.swift */; };
 		FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */; };
 		FAD965B3254ADCA7004F4C70 /* DestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */; };
 		FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFF056252C6D8E003F222A /* LoginViewModel.swift */; };
+		FAFE78AB2553E7F60082D053 /* BookRideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE78A92553E7F60082D053 /* BookRideController.swift */; };
+		FAFE78AC2553E7F60082D053 /* BookRideController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFE78AA2553E7F60082D053 /* BookRideController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,9 +163,14 @@
 		FAA7699B2514D04000750625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA769A82514D0C500750625 /* LandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		FAA769A92514D0C500750625 /* LandingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingController.xib; sourceTree = "<group>"; };
+		FAA8B24125528FC5001484E7 /* MapsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsController.swift; sourceTree = "<group>"; };
+		FAA8B24225528FC5001484E7 /* MapsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsController.xib; sourceTree = "<group>"; };
+		FAA8B24625529235001484E7 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
 		FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthTarget.swift; path = GariHub/Views/AuthTarget.swift; sourceTree = SOURCE_ROOT; };
 		FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewModel.swift; sourceTree = "<group>"; };
 		FAEFF056252C6D8E003F222A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FAFE78A92553E7F60082D053 /* BookRideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRideController.swift; sourceTree = "<group>"; };
+		FAFE78AA2553E7F60082D053 /* BookRideController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookRideController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +380,8 @@
 		FAA769A72514D0B200750625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAFE78A82553E7DC0082D053 /* Book Ride */,
+				FAA8B245255290BB001484E7 /* Maps */,
 				FAD965B1254ADC7C004F4C70 /* Destination */,
 				FA2D095F252C723100212F6D /* ResetPassword */,
 				FA41DD7F2529F050006C1F4B /* Dashboard */,
@@ -420,6 +432,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		FAA8B245255290BB001484E7 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8B24125528FC5001484E7 /* MapsController.swift */,
+				FAA8B24225528FC5001484E7 /* MapsController.xib */,
+				FAA8B24625529235001484E7 /* MapsViewModel.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
 		FAD965B1254ADC7C004F4C70 /* Destination */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +450,15 @@
 				FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */,
 			);
 			path = Destination;
+			sourceTree = "<group>";
+		};
+		FAFE78A82553E7DC0082D053 /* Book Ride */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE78A92553E7F60082D053 /* BookRideController.swift */,
+				FAFE78AA2553E7F60082D053 /* BookRideController.xib */,
+			);
+			path = "Book Ride";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,6 +572,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFE78AC2553E7F60082D053 /* BookRideController.xib in Resources */,
 				0C98F68C2524E0CD00000F35 /* OTPController.xib in Resources */,
 				FA47DBA0252750DA006FA060 /* EmailRegisterController.xib in Resources */,
 				0C31D699252B7E560089253F /* Destination.xib in Resources */,
@@ -557,6 +589,7 @@
 				FA2D0963252C729700212F6D /* ResetPasswordController.xib in Resources */,
 				FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */,
 				0C893104251B5066001E17AD /* CampaignController.xib in Resources */,
+				FAA8B24425528FC5001484E7 /* MapsController.xib in Resources */,
 				FA47DBA42527543F006FA060 /* PasswordRegisterController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,12 +756,15 @@
 				0C98F6842524BA8100000F35 /* LoginController.swift in Sources */,
 				FA47DBA32527543F006FA060 /* PasswordRegisterController.swift in Sources */,
 				FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */,
+				FAA8B24325528FC5001484E7 /* MapsController.swift in Sources */,
 				0C893119251E1546001E17AD /* CampaignThree.swift in Sources */,
 				FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */,
 				FA8AFA35254C061700C7A37E /* BaseTextFieldController.swift in Sources */,
 				0CF160E1253DA51300250C6F /* DestinationCell.swift in Sources */,
 				FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */,
+				FAFE78AB2553E7F60082D053 /* BookRideController.swift in Sources */,
 				FA47DBAA252764F2006FA060 /* GariHubClient.swift in Sources */,
+				FAA8B24725529235001484E7 /* MapsViewModel.swift in Sources */,
 				FA47DBB32527804B006FA060 /* RegTwoViewModel.swift in Sources */,
 				FA47DB9F252750DA006FA060 /* EmailRegisterController.swift in Sources */,
 				FA47DBAE252769B9006FA060 /* OTPRequest.swift in Sources */,

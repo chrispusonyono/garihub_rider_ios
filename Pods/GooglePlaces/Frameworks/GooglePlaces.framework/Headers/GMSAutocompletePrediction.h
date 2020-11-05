@@ -2,7 +2,7 @@
 //  GMSAutocompletePrediction.h
 //  Google Places SDK for iOS
 //
-//  Copyright 2016 Google LLC
+//  Copyright 2016 Google Inc.
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
 //  Service: https://developers.google.com/maps/terms
@@ -89,17 +89,6 @@ extern NSString *const kGMSAutocompleteMatchAttribute;
  * documented at <https://developers.google.com/places/ios-sdk/supported_types>.
  */
 @property(nonatomic, copy, readonly) NSArray<NSString *> *types;
-
-/**
- * The straight line distance in meters between the origin and this prediction if a valid origin is
- * specified in the |GMSAutocompleteFilter| of the request.
- */
-@property(nonatomic, readonly, nullable) NSNumber *distanceMeters;
-
-/**
- * Initializer is not available.
- */
-- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

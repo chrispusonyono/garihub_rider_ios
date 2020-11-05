@@ -14,6 +14,7 @@ enum OnboardingRoutes:  Route  {
     case dashboard
     case emailReg(phoneNumber: String, fullName:String, gender: String)
     case login
+    case maps
     case otp(phoneNumber: String)
     case passReg(phoneNumber: String, fullName:String, gender: String, email: String)
     case registerTwo(phoneNumber: String)
@@ -42,16 +43,19 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
             let destination = Destination()
             destination.viewModel = viewModel
             return .set([destination])
+            
         case .otp(let phoneNumber):
             let viewModel = OTPViewModel(client: client, phoneNumber: phoneNumber, router: self.strongRouter)
             let otpController = OTPController()
             otpController.viewModel = viewModel
             return .set([otpController])
+            
         case .validatePhone:
             let viewModel = RegistrationViewModel(client: client, router: self.strongRouter)
             let regVC = RegistrationController()
             regVC.viewModel = viewModel
             return .set([regVC])
+            
         case .registerTwo(let phoneNumber):
             let viewModel = RegTwoViewModel(client: client, router: self.strongRouter, phoneNumber: phoneNumber)
             let regTwoVC = RegistrationTwoController()
@@ -63,6 +67,7 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
             let emailRegVc = EmailRegisterController()
             emailRegVc.viewModel = viewModel
             return .set([emailRegVc])
+            
         case .passReg(let phoneNumber, let fullName, let gender, let email):
             let viewModel = PasswordRegViewModel(client: client, router: self.strongRouter, phoneNumber: phoneNumber, fullName: fullName, gender: gender, emailAddress: email)
             let passRegVc = PasswordRegisterController()
@@ -74,11 +79,18 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
             let dashboard = DashboardController()
             dashboard.viewModel = viewModel
             return .set([dashboard])
+            
         case .login:
             let viewModel = LoginViewModel(client: client, router: self.strongRouter)
             let loginVC = LoginController()
             loginVC.viewModel = viewModel
             return .set([loginVC])
+            
+        case .maps:
+            let viewModel = MapsViewModel(client: client, router: self.strongRouter)
+            let mapsVC = MapsController()
+            mapsVC.viewModel = viewModel
+            return .set([mapsVC])
         }
     }
 }

@@ -13,7 +13,8 @@ target 'GariHub' do
   pod 'MaterialComponents/BottomSheet+ShapeThemer'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod 'Google-Maps-iOS-Utils', '3.4.0'
+  pod 'Google-Maps-iOS-Utils'
+  pod 'GooglePlacePicker'
 
 
 

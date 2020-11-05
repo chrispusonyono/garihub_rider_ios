@@ -2,7 +2,7 @@
 //  GMSPlacesClient.h
 //  Google Places SDK for iOS
 //
-//  Copyright 2016 Google LLC
+//  Copyright 2016 Google Inc.
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
 //  Service: https://developers.google.com/maps/terms
@@ -11,10 +11,14 @@
 #import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
 
+#if __has_feature(modules)
+@import GoogleMapsBase;
+#else
+#import <GoogleMapsBase/GoogleMapsBase.h>
+#endif
 #import "GMSAutocompleteBoundsMode.h"
 #import "GMSPlace.h"
 #import "GMSPlaceFieldMask.h"
-#import "GMSPlacesDeprecationUtils.h"
 #import "GMSPlacesErrors.h"
 
 @class GMSAutocompleteFilter;
@@ -112,9 +116,9 @@ typedef void (^GMSPlacePhotoImageResultCallback)(UIImage *_Nullable photo,
 
 /**
  * Provides your API key to the Google Places SDK for iOS. This key is generated for your
- * application via the Google Cloud Platform Console, and is paired with your application's
- * bundle ID to identify it. This should be called by your application before using
- * GMSPlacesClient (e.g., in application:didFinishLaunchingWithOptions:).
+ * application via the Google APIs Console, and is paired with your application's bundle ID to
+ * identify it. This should be called by your application before using GMSPlacesClient.
+ * (e.g., in application:didFinishLaunchingWithOptions:).
  *
  * @return YES if the APIKey was successfully provided.
  */
@@ -127,15 +131,9 @@ typedef void (^GMSPlacePhotoImageResultCallback)(UIImage *_Nullable photo,
 + (NSString *)openSourceLicenseInfo;
 
 /**
- * Returns the version for this release of the Google Places SDK for iOS.. For example, "1.0.0".
+ * Returns the version for this release of the Google Places SDK for iOS.
  */
 + (NSString *)SDKVersion;
-
-/**
- * Returns the long version for this release of the Google Places SDK for iOS.. For example, "1.0.0
- * (102.1)".
- */
-+ (NSString *)SDKLongVersion;
 
 /**
  * Get details for a place. This method is non-blocking.
@@ -171,7 +169,7 @@ typedef void (^GMSPlacePhotoImageResultCallback)(UIImage *_Nullable photo,
  * Image data may be cached by the SDK. If the requested photo does not exist in the cache then a
  * network lookup will be performed.
  *
- * @param photoMetadata The |GMSPlacePhotoMetadata| for which to load a |UIImage|.
+ * @param photo The photo for which to load a |UIImage|.
  * @param callback The callback to invoke with the loaded |UIImage|.
  */
 - (void)loadPlacePhoto:(GMSPlacePhotoMetadata *)photoMetadata
@@ -194,7 +192,7 @@ typedef void (^GMSPlacePhotoImageResultCallback)(UIImage *_Nullable photo,
  * integer before use. If an image is requested which is larger than the maximum size available a
  * smaller image may be returned.
  *
- * @param photoMetadata The |GMSPlacePhotoMetadata| for which to load a |UIImage|.
+ * @param photo The photo for which to load a |UIImage|.
  * @param maxSize The maximum size of the image.
  * @param scale The scale to load the image at.
  * @param callback The callback to invoke with the loaded |UIImage|.
@@ -235,9 +233,7 @@ typedef void (^GMSPlacePhotoImageResultCallback)(UIImage *_Nullable photo,
 - (void)autocompleteQuery:(NSString *)query
                    bounds:(nullable GMSCoordinateBounds *)bounds
                    filter:(nullable GMSAutocompleteFilter *)filter
-                 callback:(GMSAutocompletePredictionsCallback)callback
-    __GMS_PLACES_AVAILABLE_BUT_DEPRECATED_MSG(
-        "Method deprecated in favor of findAutocompletePredictionsFromQuery:filter:sessionToken:callback");
+                 callback:(GMSAutocompletePredictionsCallback)callback;
 
 /**
  * Autocompletes a given text query. Results may optionally be biased towards a certain location,
@@ -258,9 +254,7 @@ typedef void (^GMSPlacePhotoImageResultCallback)(UIImage *_Nullable photo,
                    bounds:(nullable GMSCoordinateBounds *)bounds
                boundsMode:(GMSAutocompleteBoundsMode)boundsMode
                    filter:(nullable GMSAutocompleteFilter *)filter
-                 callback:(GMSAutocompletePredictionsCallback)callback
-    __GMS_PLACES_AVAILABLE_BUT_DEPRECATED_MSG(
-        "Method deprecated in favor of findAutocompletePredictionsFromQuery:filter:sessionToken:callback");
+                 callback:(GMSAutocompletePredictionsCallback)callback;
 
 /**
  * Find Autocomplete predictions from text query. Results may optionally be biased towards a
@@ -282,26 +276,7 @@ typedef void (^GMSPlacePhotoImageResultCallback)(UIImage *_Nullable photo,
                                       bounds:(nullable GMSCoordinateBounds *)bounds
                                   boundsMode:(GMSAutocompleteBoundsMode)boundsMode
                                       filter:(nullable GMSAutocompleteFilter *)filter
-                                sessionToken:(nullable GMSAutocompleteSessionToken *)sessionToken
-                                    callback:(GMSAutocompletePredictionsCallback)callback
-    __GMS_PLACES_AVAILABLE_BUT_DEPRECATED_MSG(
-        "Method deprecated in favor of findAutocompletePredictionsFromQuery:filter:sessionToken:callback");
-
-/**
- * Find Autocomplete predictions from text query. Results may optionally be biased towards a
- * certain location or restricted to an area. This method is non-blocking.
- *
- * The supplied callback will be invoked with an array of autocompletion predictions upon success
- * and an NSError upon an error.
- *
- * @param query The partial text to autocomplete.
- * @param filter The filter to apply to the results. This parameter may be nil.
- * @param sessionToken The |GMSAutocompleteSessionToken| to associate request to a billing session.
- * @param callback The callback to invoke with the predictions.
- */
-- (void)findAutocompletePredictionsFromQuery:(NSString *)query
-                                      filter:(nullable GMSAutocompleteFilter *)filter
-                                sessionToken:(nullable GMSAutocompleteSessionToken *)sessionToken
+                                sessionToken:(GMSAutocompleteSessionToken *)sessionToken
                                     callback:(GMSAutocompletePredictionsCallback)callback;
 
 /**

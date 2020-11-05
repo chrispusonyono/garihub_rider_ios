@@ -86,7 +86,7 @@ extension DashboardController: UICollectionViewDelegate {
         guard let vm = self.viewModel else { return }
         
         if indexPath.item == 0 {
-            vm.router.trigger(.destination)
+            vm.router.trigger(.maps)
         }
     }
     

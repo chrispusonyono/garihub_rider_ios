@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 Google LLC. All rights reserved.
+ * Copyright 2016 Google Inc. All rights reserved.
  *
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -16,8 +16,6 @@
 #import "GooglePlacesDemos/Samples/Autocomplete/AutocompleteWithSearchViewController.h"
 
 #import <GooglePlaces/GooglePlaces.h>
-
-NSString *const kSearchBarAccessibilityIdentifier = @"searchBarAccessibilityIdentifier";
 
 @interface AutocompleteWithSearchViewController () <GMSAutocompleteResultsViewControllerDelegate,
                                                     UISearchBarDelegate>
@@ -40,6 +38,8 @@ NSString *const kSearchBarAccessibilityIdentifier = @"searchBarAccessibilityIden
   [super viewDidLoad];
 
   _acViewController = [[GMSAutocompleteResultsViewController alloc] init];
+  _acViewController.autocompleteBoundsMode = self.autocompleteBoundsMode;
+  _acViewController.autocompleteBounds = self.autocompleteBounds;
   _acViewController.autocompleteFilter = self.autocompleteFilter;
   _acViewController.placeFields = self.placeFields;
   _acViewController.delegate = self;
@@ -52,7 +52,6 @@ NSString *const kSearchBarAccessibilityIdentifier = @"searchBarAccessibilityIden
   _searchController.searchBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
   _searchController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
   _searchController.searchBar.delegate = self;
-  _searchController.searchBar.accessibilityIdentifier = kSearchBarAccessibilityIdentifier;
 
   [_searchController.searchBar sizeToFit];
   self.navigationItem.titleView = _searchController.searchBar;
