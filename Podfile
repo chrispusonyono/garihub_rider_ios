@@ -15,6 +15,7 @@ target 'GariHub' do
   pod 'GooglePlaces'
   pod 'Google-Maps-iOS-Utils'
   pod 'GooglePlacePicker'
+  pod 'BRQBottomSheet'
 
 
 

@@ -53,6 +53,11 @@ class DashboardController: BaseTextFieldController {
         orderType.setTitleTextAttributes(titleTextAttributes, for: .normal)
         orderType.setTitleTextAttributes(titleTextAttributes, for: .selected)
         searchBar.layer.cornerRadius = 10
+        
+        guard let vm = self.viewModel else { return }
+        guard vm.client.isLoggedIn else {
+            return
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

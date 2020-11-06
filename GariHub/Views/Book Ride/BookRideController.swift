@@ -23,7 +23,7 @@ class BookRideController: UIViewController {
         let session = URLSession.shared
         
 //        let url = URL(string: "http://maps.googleapis.com/maps/api/directions/json?origin=\(source.latitude),\(source.longitude)&destination=\(destination.latitude),\(destination.longitude)&sensor=false&mode=driving")!
-//        
+//
     }
 
 }

@@ -28,6 +28,15 @@
 		0CF160E2253DA51300250C6F /* DestinationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF160E0253DA51300250C6F /* DestinationCell.xib */; };
 		8F157BFD641ACF7A4A3FEBEE /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */; };
 		E21761D205494BE46571F669 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AE035F35090E8507F423E /* Pods_GariHub.framework */; };
+		FA22F276255533A00045618C /* PickupLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F275255533A00045618C /* PickupLocationView.swift */; };
+		FA22F278255533C30045618C /* PickupLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA22F277255533C30045618C /* PickupLocationView.xib */; };
+		FA22F27A25553AC80045618C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F27925553AC80045618C /* UIView+.swift */; };
+		FA22F27C25553C5F0045618C /* ModalControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F27B25553C5F0045618C /* ModalControllerDelegate.swift */; };
+		FA22F27E25553DA70045618C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F27D25553DA70045618C /* BaseViewController.swift */; };
+		FA22F28025553F070045618C /* ModalTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F27F25553F070045618C /* ModalTransitioningDelegate.swift */; };
+		FA22F282255542EB0045618C /* ModalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F281255542EB0045618C /* ModalInteractiveTransition.swift */; };
+		FA22F284255542FB0045618C /* ModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F283255542FB0045618C /* ModalTransitionAnimator.swift */; };
+		FA22F2862555431C0045618C /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F2852555431C0045618C /* ModalPresentationController.swift */; };
 		FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA293FA6251E410D00BC00AD /* Spinner.swift */; };
 		FA2D0962252C729700212F6D /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0960252C729700212F6D /* ResetPasswordController.swift */; };
 		FA2D0963252C729700212F6D /* ResetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D0961252C729700212F6D /* ResetPasswordController.xib */; };
@@ -73,6 +82,8 @@
 		FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFF056252C6D8E003F222A /* LoginViewModel.swift */; };
 		FAFE78AB2553E7F60082D053 /* BookRideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE78A92553E7F60082D053 /* BookRideController.swift */; };
 		FAFE78AC2553E7F60082D053 /* BookRideController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFE78AA2553E7F60082D053 /* BookRideController.xib */; };
+		FAFE78AF2553F5DF0082D053 /* PickupLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE78AD2553F5DF0082D053 /* PickupLocationController.swift */; };
+		FAFE78B02553F5DF0082D053 /* PickupLocationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFE78AE2553F5DF0082D053 /* PickupLocationController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +131,15 @@
 		C4EA49D1EB22EE509C6FE450 /* Pods-GariHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHubTests.release.xcconfig"; path = "Target Support Files/Pods-GariHubTests/Pods-GariHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE579876559E9CE14FE5150E /* Pods-GariHub-GariHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D14C4368C1C00481BBFACEC7 /* Pods-GariHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.debug.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.debug.xcconfig"; sourceTree = "<group>"; };
+		FA22F275255533A00045618C /* PickupLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocationView.swift; sourceTree = "<group>"; };
+		FA22F277255533C30045618C /* PickupLocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickupLocationView.xib; sourceTree = "<group>"; };
+		FA22F27925553AC80045618C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		FA22F27B25553C5F0045618C /* ModalControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalControllerDelegate.swift; sourceTree = "<group>"; };
+		FA22F27D25553DA70045618C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FA22F27F25553F070045618C /* ModalTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalTransitioningDelegate.swift; path = "../../../../NRS/nrs-ios/nrs/Utils/UIKit+/ModalViewController/ModalTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		FA22F281255542EB0045618C /* ModalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalInteractiveTransition.swift; path = "../../../../NRS/nrs-ios/nrs/Utils/UIKit+/ModalViewController/ModalInteractiveTransition.swift"; sourceTree = "<group>"; };
+		FA22F283255542FB0045618C /* ModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalTransitionAnimator.swift; path = "../../../../NRS/nrs-ios/nrs/Utils/UIKit+/ModalViewController/ModalTransitionAnimator.swift"; sourceTree = "<group>"; };
+		FA22F2852555431C0045618C /* ModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalPresentationController.swift; path = "../../../../NRS/nrs-ios/nrs/Utils/UIKit+/ModalViewController/ModalPresentationController.swift"; sourceTree = "<group>"; };
 		FA293FA6251E410D00BC00AD /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		FA2D0960252C729700212F6D /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
 		FA2D0961252C729700212F6D /* ResetPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordController.xib; sourceTree = "<group>"; };
@@ -171,6 +191,8 @@
 		FAEFF056252C6D8E003F222A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FAFE78A92553E7F60082D053 /* BookRideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRideController.swift; sourceTree = "<group>"; };
 		FAFE78AA2553E7F60082D053 /* BookRideController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookRideController.xib; sourceTree = "<group>"; };
+		FAFE78AD2553F5DF0082D053 /* PickupLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocationController.swift; sourceTree = "<group>"; };
+		FAFE78AE2553F5DF0082D053 /* PickupLocationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickupLocationController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +264,13 @@
 				C4EA49D1EB22EE509C6FE450 /* Pods-GariHubTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA22F274255533630045618C /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 		FA2D095F252C723100212F6D /* ResetPassword */ = {
@@ -355,6 +384,7 @@
 				FAA769822514D03F00750625 /* LaunchScreen.storyboard */,
 				FAA769852514D03F00750625 /* Info.plist */,
 				FA47DBA9252764F2006FA060 /* GariHubClient.swift */,
+				FA22F27D25553DA70045618C /* BaseViewController.swift */,
 			);
 			path = GariHub;
 			sourceTree = "<group>";
@@ -380,6 +410,7 @@
 		FAA769A72514D0B200750625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA22F274255533630045618C /* Modals */,
 				FAFE78A82553E7DC0082D053 /* Book Ride */,
 				FAA8B245255290BB001484E7 /* Maps */,
 				FAD965B1254ADC7C004F4C70 /* Destination */,
@@ -423,11 +454,17 @@
 			isa = PBXGroup;
 			children = (
 				FA293FA6251E410D00BC00AD /* Spinner.swift */,
+				FA22F27F25553F070045618C /* ModalTransitioningDelegate.swift */,
 				FA882E732525BDDF00AC4776 /* UIViewController+.swift */,
 				FA882E752525C53900AC4776 /* ClassNameProtocol.swift */,
 				FA882E772525C80B00AC4776 /* UITextField.swift */,
 				FA8AFA34254C061700C7A37E /* BaseTextFieldController.swift */,
 				FA8AFA36254C066400C7A37E /* UIColor+.swift */,
+				FA22F281255542EB0045618C /* ModalInteractiveTransition.swift */,
+				FA22F27925553AC80045618C /* UIView+.swift */,
+				FA22F283255542FB0045618C /* ModalTransitionAnimator.swift */,
+				FA22F2852555431C0045618C /* ModalPresentationController.swift */,
+				FA22F27B25553C5F0045618C /* ModalControllerDelegate.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -435,9 +472,13 @@
 		FAA8B245255290BB001484E7 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				FA22F275255533A00045618C /* PickupLocationView.swift */,
 				FAA8B24125528FC5001484E7 /* MapsController.swift */,
 				FAA8B24225528FC5001484E7 /* MapsController.xib */,
 				FAA8B24625529235001484E7 /* MapsViewModel.swift */,
+				FAFE78AD2553F5DF0082D053 /* PickupLocationController.swift */,
+				FAFE78AE2553F5DF0082D053 /* PickupLocationController.xib */,
+				FA22F277255533C30045618C /* PickupLocationView.xib */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -582,6 +623,7 @@
 				0CF160E2253DA51300250C6F /* DestinationCell.xib in Resources */,
 				0C89310E251B6D9A001E17AD /* RegistrationController.xib in Resources */,
 				0C89311A251E1546001E17AD /* CampaignThree.xib in Resources */,
+				FA22F278255533C30045618C /* PickupLocationView.xib in Resources */,
 				FAA769AB2514D0C500750625 /* LandingController.xib in Resources */,
 				FAA769812514D03F00750625 /* Assets.xcassets in Resources */,
 				0C893112251BAF1C001E17AD /* CampaignTwo.xib in Resources */,
@@ -590,6 +632,7 @@
 				FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */,
 				0C893104251B5066001E17AD /* CampaignController.xib in Resources */,
 				FAA8B24425528FC5001484E7 /* MapsController.xib in Resources */,
+				FAFE78B02553F5DF0082D053 /* PickupLocationController.xib in Resources */,
 				FA47DBA42527543F006FA060 /* PasswordRegisterController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -757,17 +800,21 @@
 				FA47DBA32527543F006FA060 /* PasswordRegisterController.swift in Sources */,
 				FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */,
 				FAA8B24325528FC5001484E7 /* MapsController.swift in Sources */,
+				FA22F282255542EB0045618C /* ModalInteractiveTransition.swift in Sources */,
 				0C893119251E1546001E17AD /* CampaignThree.swift in Sources */,
 				FA882E762525C53900AC4776 /* ClassNameProtocol.swift in Sources */,
 				FA8AFA35254C061700C7A37E /* BaseTextFieldController.swift in Sources */,
 				0CF160E1253DA51300250C6F /* DestinationCell.swift in Sources */,
 				FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */,
+				FA22F284255542FB0045618C /* ModalTransitionAnimator.swift in Sources */,
 				FAFE78AB2553E7F60082D053 /* BookRideController.swift in Sources */,
 				FA47DBAA252764F2006FA060 /* GariHubClient.swift in Sources */,
+				FA22F27E25553DA70045618C /* BaseViewController.swift in Sources */,
 				FAA8B24725529235001484E7 /* MapsViewModel.swift in Sources */,
 				FA47DBB32527804B006FA060 /* RegTwoViewModel.swift in Sources */,
 				FA47DB9F252750DA006FA060 /* EmailRegisterController.swift in Sources */,
 				FA47DBAE252769B9006FA060 /* OTPRequest.swift in Sources */,
+				FA22F2862555431C0045618C /* ModalPresentationController.swift in Sources */,
 				0C98F68B2524E0CD00000F35 /* OTPController.swift in Sources */,
 				FAA769782514D03D00750625 /* AppDelegate.swift in Sources */,
 				FA882E782525C80B00AC4776 /* UITextField.swift in Sources */,
@@ -776,6 +823,9 @@
 				FA2D096A252CB0E300212F6D /* DashboardCell.swift in Sources */,
 				FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */,
 				FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */,
+				FA22F27C25553C5F0045618C /* ModalControllerDelegate.swift in Sources */,
+				FA22F27A25553AC80045618C /* UIView+.swift in Sources */,
+				FAFE78AF2553F5DF0082D053 /* PickupLocationController.swift in Sources */,
 				FA2D0962252C729700212F6D /* ResetPasswordController.swift in Sources */,
 				FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */,
 				FA8AFA37254C066400C7A37E /* UIColor+.swift in Sources */,
@@ -788,12 +838,14 @@
 				0C31D698252B7E560089253F /* Destination.swift in Sources */,
 				FAA769AA2514D0C500750625 /* LandingController.swift in Sources */,
 				FA41DD7D2529E909006C1F4B /* PasswordRegViewModel.swift in Sources */,
+				FA22F28025553F070045618C /* ModalTransitioningDelegate.swift in Sources */,
 				0C89310D251B6D9A001E17AD /* RegistrationController.swift in Sources */,
 				FA47DBAC2527679C006FA060 /* OTPViewModel.swift in Sources */,
 				0C893103251B5065001E17AD /* CampaignController.swift in Sources */,
 				FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */,
 				FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */,
 				FAD965B3254ADCA7004F4C70 /* DestinationViewModel.swift in Sources */,
+				FA22F276255533A00045618C /* PickupLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

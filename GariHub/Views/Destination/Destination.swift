@@ -25,6 +25,7 @@ class Destination: BaseTextFieldController {
     @IBOutlet weak var backButton: UIImageView!
     @IBOutlet weak var recentDestinationView: UIView!
     
+    @IBOutlet weak var stopPoint: UITextField!
     @IBOutlet weak var getDestination: UIImageView!
     
     override func viewDidLoad() {
@@ -49,12 +50,33 @@ class Destination: BaseTextFieldController {
     }
     
     func setupViews() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(gesture:)))
-        getDestination.addGestureRecognizer(tapGesture)
-        getDestination.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.autocompleteClicked(_:)))
+        stopPoint.addGestureRecognizer(tapGesture)
+        stopPoint.isUserInteractionEnabled = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.autocompleteClicked(_:)))
+//        stopPoint.addGestureRecognizer(tap)
+//        stopPoint.isUserInteractionEnabled = true
+        destinationLocation.addGestureRecognizer(tap)
+        destinationLocation.isUserInteractionEnabled = true
         
         resultsViewController = GMSAutocompleteViewController()
         
+    }
+    
+    @objc func autocompleteClicked(_ sender: UITapGestureRecognizer) {
+        
+        let autocompleteController = GMSAutocompleteViewController()
+        autocompleteController.delegate = self
+        
+        // data types to return
+        let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) | UInt(GMSPlaceField.placeID.rawValue))!
+        autocompleteController.placeFields = fields
+        let filter = GMSAutocompleteFilter()
+        filter.type = .establishment
+        filter.country = "KE"
+        autocompleteController.autocompleteFilter = filter
+        present(autocompleteController, animated: true, completion: nil)
     }
     
     
@@ -116,6 +138,38 @@ class Destination: BaseTextFieldController {
     }
 
 
+}
+
+extension Destination: GMSAutocompleteViewControllerDelegate {
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+        print("Place name: \(String(describing: place.name))")
+        print("Place ID \(String(describing: place.placeID))")
+        print("Place attributions \(String(describing: place.attributions))")
+        self.destinationLocation.text = place.name
+        self.stopPoint.text = place.name
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
+        print("Error: ", error.localizedDescription)
+    }
+    
+    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+    func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+    
+    
+    
 }
 
 

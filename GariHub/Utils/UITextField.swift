@@ -9,9 +9,6 @@
 import Foundation
 import UIKit
 
-extension UIView: ClassNameProtocol {
-    
-}
 
 extension UITextView {
     @IBInspectable var doneAccessory: Bool{

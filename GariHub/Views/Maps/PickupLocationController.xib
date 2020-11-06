@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickupLocationController" customModule="GariHub" customModuleProvider="target">
+            <connections>
+                <outlet property="locationLabel" destination="OaV-wh-geN" id="uzT-e7-0EB"/>
+                <outlet property="searchImage" destination="nq7-y9-iMt" id="R2c-fB-dIe"/>
+                <outlet property="startButton" destination="imd-IK-qb5" id="kUV-Lf-eZP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XJ-BP-Lb4">
+                    <rect key="frame" x="20" y="44" width="374" height="300"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mur-cW-Ysv">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyu-Iv-qMr">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garihub Go" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXf-Z8-giV">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="bai-kl-Rzc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="JXf-Z8-giV" firstAttribute="centerY" secondItem="pyu-Iv-qMr" secondAttribute="centerY" id="7GR-YZ-LUT"/>
+                                        <constraint firstItem="JXf-Z8-giV" firstAttribute="centerX" secondItem="pyu-Iv-qMr" secondAttribute="centerX" id="GY7-M4-4AP"/>
+                                        <constraint firstItem="JXf-Z8-giV" firstAttribute="leading" secondItem="pyu-Iv-qMr" secondAttribute="leading" id="Vb3-60-YMP"/>
+                                        <constraint firstItem="JXf-Z8-giV" firstAttribute="width" secondItem="pyu-Iv-qMr" secondAttribute="width" id="ga1-Gg-QC1"/>
+                                        <constraint firstItem="JXf-Z8-giV" firstAttribute="top" secondItem="pyu-Iv-qMr" secondAttribute="top" id="oBu-Ch-SlE"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your pickup location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHC-RG-zeX">
+                                    <rect key="frame" x="0.0" y="50" width="374" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="eEe-ax-qEB"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSU-JO-lwm">
+                                    <rect key="frame" x="0.0" y="70" width="374" height="50"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWi-ws-bPw">
+                                            <rect key="frame" x="12.5" y="8" width="349" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unnamed Road" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaV-wh-geN">
+                                                    <rect key="frame" x="0.0" y="2" width="269" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search-interface-symbol" translatesAutoresizingMaskIntoConstraints="NO" id="nq7-y9-iMt">
+                                            <rect key="frame" x="342" y="8" width="32" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Q4S-Uf-Sbu"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lw2-vd-5eI">
+                                    <rect key="frame" x="0.0" y="120" width="374" height="180"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imd-IK-qb5">
+                                            <rect key="frame" x="0.0" y="65" width="374" height="50"/>
+                                            <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Get Started">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="imd-IK-qb5" firstAttribute="centerY" secondItem="lw2-vd-5eI" secondAttribute="centerY" id="08b-HR-DmX"/>
+                                        <constraint firstItem="imd-IK-qb5" firstAttribute="width" secondItem="lw2-vd-5eI" secondAttribute="width" id="PeN-vk-MuB"/>
+                                        <constraint firstItem="imd-IK-qb5" firstAttribute="height" secondItem="lw2-vd-5eI" secondAttribute="height" multiplier="0.277778" id="YJW-ty-JRD"/>
+                                        <constraint firstItem="imd-IK-qb5" firstAttribute="centerX" secondItem="lw2-vd-5eI" secondAttribute="centerX" id="cwf-N9-asc"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="SHC-RG-zeX" firstAttribute="leading" secondItem="mur-cW-Ysv" secondAttribute="leading" id="3dT-Il-7K7"/>
+                                <constraint firstAttribute="trailing" secondItem="NSU-JO-lwm" secondAttribute="trailing" id="4z4-cw-3Q0"/>
+                                <constraint firstItem="lw2-vd-5eI" firstAttribute="leading" secondItem="mur-cW-Ysv" secondAttribute="leading" id="Mb5-xL-ZPW"/>
+                                <constraint firstAttribute="trailing" secondItem="lw2-vd-5eI" secondAttribute="trailing" id="OgV-se-Lgv"/>
+                                <constraint firstItem="NSU-JO-lwm" firstAttribute="top" secondItem="SHC-RG-zeX" secondAttribute="bottom" id="Wgy-o3-gR9"/>
+                                <constraint firstItem="SHC-RG-zeX" firstAttribute="top" secondItem="pyu-Iv-qMr" secondAttribute="bottom" id="cO3-mA-KQO"/>
+                                <constraint firstAttribute="trailing" secondItem="SHC-RG-zeX" secondAttribute="trailing" id="eRN-Of-Kuu"/>
+                                <constraint firstItem="lw2-vd-5eI" firstAttribute="leading" secondItem="mur-cW-Ysv" secondAttribute="leading" id="mOi-rM-LPP"/>
+                                <constraint firstItem="lw2-vd-5eI" firstAttribute="top" secondItem="NSU-JO-lwm" secondAttribute="bottom" id="pV2-OY-set"/>
+                                <constraint firstItem="NSU-JO-lwm" firstAttribute="top" secondItem="SHC-RG-zeX" secondAttribute="bottom" id="sDz-bS-MDL"/>
+                                <constraint firstAttribute="trailing" secondItem="lw2-vd-5eI" secondAttribute="trailing" id="wct-fc-5Fg"/>
+                                <constraint firstItem="NSU-JO-lwm" firstAttribute="leading" secondItem="mur-cW-Ysv" secondAttribute="leading" id="zyw-ye-4Yn"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="128-C1-Sfd"/>
+                        <constraint firstAttribute="bottom" secondItem="mur-cW-Ysv" secondAttribute="bottom" id="IyB-dc-ejD"/>
+                        <constraint firstItem="mur-cW-Ysv" firstAttribute="centerY" secondItem="7XJ-BP-Lb4" secondAttribute="centerY" id="QRX-Oh-arV"/>
+                        <constraint firstItem="mur-cW-Ysv" firstAttribute="centerX" secondItem="7XJ-BP-Lb4" secondAttribute="centerX" id="b9q-cD-p9i"/>
+                        <constraint firstItem="mur-cW-Ysv" firstAttribute="top" secondItem="7XJ-BP-Lb4" secondAttribute="top" id="bgP-sn-DEb"/>
+                        <constraint firstItem="mur-cW-Ysv" firstAttribute="top" secondItem="7XJ-BP-Lb4" secondAttribute="top" id="e5E-sD-7P4"/>
+                        <constraint firstAttribute="bottom" secondItem="mur-cW-Ysv" secondAttribute="bottom" id="h3E-6R-NTC"/>
+                        <constraint firstItem="mur-cW-Ysv" firstAttribute="leading" secondItem="7XJ-BP-Lb4" secondAttribute="leading" id="j3O-aW-2Da"/>
+                        <constraint firstItem="mur-cW-Ysv" firstAttribute="width" secondItem="7XJ-BP-Lb4" secondAttribute="width" id="loo-mu-ljg"/>
+                        <constraint firstAttribute="trailing" secondItem="mur-cW-Ysv" secondAttribute="trailing" id="zzU-gP-2bE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7XJ-BP-Lb4" secondAttribute="trailing" constant="20" id="HyV-SD-psj"/>
+                <constraint firstItem="7XJ-BP-Lb4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Otp-pA-7cV"/>
+                <constraint firstItem="7XJ-BP-Lb4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="myf-BG-Ke4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-107.24637681159422" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search-interface-symbol" width="128" height="128"/>
+    </resources>
+</document>

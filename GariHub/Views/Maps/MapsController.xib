@@ -20,17 +20,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yms-em-F20" customClass="GMSMapView">
-                    <rect key="frame" x="0.0" y="94" width="414" height="792"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Yms-em-F20" secondAttribute="bottom" constant="10" id="99w-nc-fpE"/>
-                <constraint firstItem="Yms-em-F20" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="YFH-pF-stN"/>
-                <constraint firstItem="Yms-em-F20" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dJO-7i-Kda"/>
-                <constraint firstItem="Yms-em-F20" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g88-A2-dej"/>
-                <constraint firstItem="Yms-em-F20" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="24" id="nGR-BP-Cl1"/>
+                <constraint firstItem="Yms-em-F20" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.912946" id="7OE-tk-WvM"/>
+                <constraint firstItem="Yms-em-F20" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="DO5-Qr-Jpc"/>
+                <constraint firstItem="Yms-em-F20" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="FDL-W7-EVB"/>
+                <constraint firstItem="Yms-em-F20" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Yhf-M3-XGB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

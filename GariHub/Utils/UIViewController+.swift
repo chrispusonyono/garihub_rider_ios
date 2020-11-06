@@ -13,7 +13,7 @@ import UIKit
 var vSpinner : UIView?
 
 
-extension  UIViewController: ClassNameProtocol {
+extension  UIViewController {
 
     func showAlert(withTitle title: String, withMessage message:String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
