@@ -60,12 +60,15 @@ class BaseTextFieldController: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = UIColor.clear
         self.navigationController?.navigationBar.barTintColor = UIColor.clear
         self.navigationController?.navigationBar.tintColor = UIColor.clear
+        
     }
     
     func setAppNavigationBar() {
-        self.navigationController?.navigationBar.backgroundColor = UIColor.appYellow
-        self.navigationController?.navigationBar.barTintColor = UIColor.appYellow
-        self.navigationController?.navigationBar.tintColor = UIColor.appYellow
+        self.navigationController?.navigationBar.backgroundColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationItem.backBarButtonItem?.tintColor = .appYellow
+        self.navigationController?.navigationItem.leftBarButtonItem?.tintColor = .appYellow
     }
     
     func setTransparentNavigationBar() {

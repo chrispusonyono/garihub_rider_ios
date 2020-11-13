@@ -18,13 +18,15 @@ class Destination: BaseTextFieldController {
     
     
     var locationManager:CLLocationManager!
-
-
+    
+    
     @IBOutlet weak var currentLocation: UITextField!
     @IBOutlet weak var destinationLocation: UITextField!
     @IBOutlet weak var backButton: UIImageView!
     @IBOutlet weak var recentDestinationView: UIView!
     
+    @IBOutlet weak var stopview: UIView!
+    @IBOutlet weak var stopStack: UIStackView!
     @IBOutlet weak var stopPoint: UITextField!
     @IBOutlet weak var getDestination: UIImageView!
     
@@ -53,13 +55,13 @@ class Destination: BaseTextFieldController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.autocompleteClicked(_:)))
         stopPoint.addGestureRecognizer(tapGesture)
         stopPoint.isUserInteractionEnabled = true
-        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.autocompleteClicked(_:)))
-//        stopPoint.addGestureRecognizer(tap)
-//        stopPoint.isUserInteractionEnabled = true
         destinationLocation.addGestureRecognizer(tap)
         destinationLocation.isUserInteractionEnabled = true
-        
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(_:)))
+        getDestination.addGestureRecognizer(imageTap)
+        getDestination.isUserInteractionEnabled = true
+        resultsViewController?.delegate = self
         resultsViewController = GMSAutocompleteViewController()
         
     }
@@ -70,7 +72,7 @@ class Destination: BaseTextFieldController {
         autocompleteController.delegate = self
         
         // data types to return
-        let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) | UInt(GMSPlaceField.placeID.rawValue))!
+        let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) | UInt(GMSPlaceField.placeID.rawValue) | UInt(GMSPlaceField.coordinate.rawValue) | UInt(GMSPlaceField.addressComponents.rawValue) | UInt(GMSPlaceField.formattedAddress.rawValue))!
         autocompleteController.placeFields = fields
         let filter = GMSAutocompleteFilter()
         filter.type = .establishment
@@ -81,33 +83,12 @@ class Destination: BaseTextFieldController {
     
     
     
-    @objc func imageTapped(gesture: UIGestureRecognizer) {
-    // if the tapped view is a UIImageView then set it to imageview
+    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
         
-        if (gesture.view as? UIImageView) != nil {
-            print("Image Tapped")
-            guard let destination = destinationLocation.text else { return }
-            // A hotel in Saigon with an attribution.
-            let placeID = destination
-            // Specify the place data types to return.
-            let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) |
-                UInt(GMSPlaceField.placeID.rawValue))!
-            let placesClient = GMSPlacesClient()
+        stopview.isHidden = false
+        stopStack.isHidden = false
+        
 
-            placesClient.fetchPlace(fromPlaceID: placeID, placeFields: fields, sessionToken: nil, callback: {
-              (place: GMSPlace?, error: Error?) in
-              if let error = error {
-                print("An error occurred: \(error.localizedDescription)")
-                return
-              }
-              if let place = place {
-                print("The selected place is: \(String(describing: place.name))")
-              }
-            })
-
-        }
-        
-        
     }
     
     
@@ -136,8 +117,8 @@ class Destination: BaseTextFieldController {
         initializeHideKeyboard()
         recentDestinationView.layer.cornerRadius = 20
     }
-
-
+    
+    
 }
 
 extension Destination: GMSAutocompleteViewControllerDelegate {
@@ -146,9 +127,31 @@ extension Destination: GMSAutocompleteViewControllerDelegate {
         print("Place name: \(String(describing: place.name))")
         print("Place ID \(String(describing: place.placeID))")
         print("Place attributions \(String(describing: place.attributions))")
+
+        let lat = place.coordinate.latitude
+        print("dest lat\(lat)")
+        let long = place.coordinate.longitude
+        print("dest long\(long)")
+        
+        var latitude = ""
+        var longitude = ""
+        
+        latitude = String(lat)
+        longitude = String(long)
+        
+        let locationDict = ["lat": latitude, "long": longitude]
+        
+        UserDefaults.standard.set(locationDict, forKey: "destinationLocation")
+        
         self.destinationLocation.text = place.name
-        self.stopPoint.text = place.name
-        dismiss(animated: true, completion: nil)
+        DispatchQueue.main.async {
+            self.stopPoint.text = place.name
+        }
+        dismiss(animated: true, completion: {
+            let bookRide = BookRideController()
+            self.navigationController?.pushViewController(bookRide, animated: true)
+        })
+        
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
@@ -156,6 +159,7 @@ extension Destination: GMSAutocompleteViewControllerDelegate {
     }
     
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+        print("Was cancelled")
         dismiss(animated: true, completion: nil)
         
     }
@@ -175,17 +179,32 @@ extension Destination: GMSAutocompleteViewControllerDelegate {
 
 extension Destination: CLLocationManagerDelegate {
     
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation: CLLocation = locations[0] as CLLocation
         
+        var myLocation = ""
+        
         print("user latitude = \(userLocation.coordinate.latitude)")
         print("user longitude = \(userLocation.coordinate.longitude)")
-            
+        
         
         let lat = userLocation.coordinate.latitude
         let long = userLocation.coordinate.longitude
         
+        
         let position: CLLocationCoordinate2D = CLLocationCoordinate2DMake(lat, long)
+        
+        var latitude = ""
+        var longitude = ""
+        
+        latitude = String(position.latitude)
+        longitude = String(position.longitude)
+        
+        let locationDict = ["lat": latitude, "long": longitude]
+        print(locationDict)
+        UserDefaults.standard.set(locationDict, forKey: "currentLocation")
         
         let geocoder = GMSGeocoder()
         geocoder.reverseGeocodeCoordinate(position) { response, error in
@@ -196,7 +215,8 @@ extension Destination: CLLocationManagerDelegate {
                 if let places = response?.results(){
                     if let place = places.first {
                         if let lines = place.lines {
-                            self.currentLocation.text = "\(lines[0])"
+                            myLocation = "\(lines[0])"
+                            self.currentLocation.text = myLocation
                         }
                     } else {
                         print("GEOCODE: nil first in places")
@@ -206,8 +226,8 @@ extension Destination: CLLocationManagerDelegate {
                 }
             }
         }
-
+        
     }
     
-
+    
 }

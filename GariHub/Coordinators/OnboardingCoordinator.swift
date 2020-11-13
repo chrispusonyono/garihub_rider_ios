@@ -10,6 +10,7 @@ import Foundation
 import XCoordinator
 
 enum OnboardingRoutes:  Route  {
+    case bookRide
     case destination
     case dashboard
     case emailReg(phoneNumber: String, fullName:String, gender: String)
@@ -32,12 +33,17 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
         navigationController.navigationBar.barTintColor = UIColor.appYellow
         navigationController.navigationBar.tintColor = .black
         
-        super.init(rootViewController: navigationController, initialRoute: .validatePhone)
+        super.init(rootViewController: navigationController, initialRoute: .maps)
 
     }
     
     override func prepareTransition(for route: OnboardingRoutes) -> NavigationTransition {
         switch route {
+        case .bookRide:
+            let viewModel = BookRideViewModel(client: client, router: self.strongRouter)
+            let bookRide = BookRideController()
+            bookRide.viewModel = viewModel
+            return .set([bookRide])
         case .destination:
             let viewModel = DestinationViewModel(client: client, router: self.strongRouter)
             let destination = Destination()

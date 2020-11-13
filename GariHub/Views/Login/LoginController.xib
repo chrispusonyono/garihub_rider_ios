@@ -128,7 +128,7 @@
                                         <constraint firstAttribute="height" constant="40" id="fP0-St-Ifg"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
                                     </userDefinedRuntimeAttributes>

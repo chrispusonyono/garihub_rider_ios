@@ -78,6 +78,7 @@
 		FAA8B24425528FC5001484E7 /* MapsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA8B24225528FC5001484E7 /* MapsController.xib */; };
 		FAA8B24725529235001484E7 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8B24625529235001484E7 /* MapsViewModel.swift */; };
 		FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */; };
+		FAD1C10A255E9DD7002A4897 /* BookRideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1C109255E9DD7002A4897 /* BookRideViewModel.swift */; };
 		FAD965B3254ADCA7004F4C70 /* DestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */; };
 		FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFF056252C6D8E003F222A /* LoginViewModel.swift */; };
 		FAFE78AB2553E7F60082D053 /* BookRideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE78A92553E7F60082D053 /* BookRideController.swift */; };
@@ -187,6 +188,7 @@
 		FAA8B24225528FC5001484E7 /* MapsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsController.xib; sourceTree = "<group>"; };
 		FAA8B24625529235001484E7 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
 		FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthTarget.swift; path = GariHub/Views/AuthTarget.swift; sourceTree = SOURCE_ROOT; };
+		FAD1C109255E9DD7002A4897 /* BookRideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRideViewModel.swift; sourceTree = "<group>"; };
 		FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewModel.swift; sourceTree = "<group>"; };
 		FAEFF056252C6D8E003F222A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FAFE78A92553E7F60082D053 /* BookRideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRideController.swift; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 			children = (
 				FAFE78A92553E7F60082D053 /* BookRideController.swift */,
 				FAFE78AA2553E7F60082D053 /* BookRideController.xib */,
+				FAD1C109255E9DD7002A4897 /* BookRideViewModel.swift */,
 			);
 			path = "Book Ride";
 			sourceTree = "<group>";
@@ -820,6 +823,7 @@
 				FA882E782525C80B00AC4776 /* UITextField.swift in Sources */,
 				FA47DBB52527862D006FA060 /* EmailRegViewModel.swift in Sources */,
 				FA41DD822529F075006C1F4B /* DashboardController.swift in Sources */,
+				FAD1C10A255E9DD7002A4897 /* BookRideViewModel.swift in Sources */,
 				FA2D096A252CB0E300212F6D /* DashboardCell.swift in Sources */,
 				FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */,
 				FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */,

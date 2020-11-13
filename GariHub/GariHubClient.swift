@@ -24,7 +24,7 @@ class GariHubClient {
     private var savedToken: String? {
         return GariHubClient.shared.string(forKey: "token")
     }
-    
+        
     
     var token: String {
         get {

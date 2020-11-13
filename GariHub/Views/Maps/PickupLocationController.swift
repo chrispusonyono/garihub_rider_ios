@@ -57,8 +57,6 @@ class PickupLocationController: UIViewController {
     }
     
     @objc func moveToNext(_ sender: UIButton) {
-    
-        print("Access denied")
         dismiss(animated: true, completion: {
            let destination = Destination()
             self.delegate?.parentController.navigationController?.pushViewController(destination, animated: true)

@@ -15,6 +15,8 @@
                 <outlet property="getDestination" destination="6fS-2d-BNN" id="f28-gW-z1Z"/>
                 <outlet property="recentDestinationView" destination="h5A-eB-HdT" id="7FV-uT-fj7"/>
                 <outlet property="stopPoint" destination="3Tu-ye-y2E" id="DIj-NG-Oim"/>
+                <outlet property="stopStack" destination="pig-bR-QrU" id="KFN-HL-Afv"/>
+                <outlet property="stopview" destination="DHD-R2-Eya" id="d5s-P3-vIi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,7 +29,7 @@
                     <rect key="frame" x="0.0" y="64" width="414" height="237.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b6v-gB-Y5H">
-                            <rect key="frame" x="20" y="17" width="374" height="203.5"/>
+                            <rect key="frame" x="20" y="52.5" width="374" height="133"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your ride details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="je3-Yv-eio">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
@@ -73,8 +75,8 @@
                                         <constraint firstAttribute="height" constant="0.5" id="p3V-ZM-pQ0"/>
                                     </constraints>
                                 </view>
-                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="214" translatesAutoresizingMaskIntoConstraints="NO" id="pig-bR-QrU">
-                                    <rect key="frame" x="0.0" y="143" width="374" height="50"/>
+                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="top" spacing="214" translatesAutoresizingMaskIntoConstraints="NO" id="pig-bR-QrU">
+                                    <rect key="frame" x="0.0" y="133" width="374" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add stop point" placeholder="Where to" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-ye-y2E">
                                             <rect key="frame" x="0.0" y="0.0" width="112" height="50"/>
@@ -98,8 +100,8 @@
                                         <constraint firstAttribute="height" constant="50" id="RpX-a2-JDe"/>
                                     </constraints>
                                 </stackView>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHD-R2-Eya">
-                                    <rect key="frame" x="0.0" y="203" width="374" height="0.5"/>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHD-R2-Eya">
+                                    <rect key="frame" x="0.0" y="133" width="374" height="0.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="0.5" id="dh5-lR-NsS"/>
