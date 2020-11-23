@@ -10,21 +10,20 @@ import Foundation
 import XCoordinator
 
 enum OnboardingRoutes:  Route  {
-    case bookRide
-    case destination
-    case dashboard
+    case root
     case emailReg(phoneNumber: String, fullName:String, gender: String)
     case login
-    case maps
     case otp(phoneNumber: String)
     case passReg(phoneNumber: String, fullName:String, gender: String, email: String)
     case registerTwo(phoneNumber: String)
     case validatePhone
+    case dismiss
     
 }
 
 class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
     let client: GariHubClient
+    var appCoordinatorDelegate: AppCoordinatorDelegate?
     
     init() {
         self.client = GariHubClient()
@@ -33,22 +32,17 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
         navigationController.navigationBar.barTintColor = UIColor.appYellow
         navigationController.navigationBar.tintColor = .black
         
-        super.init(rootViewController: navigationController, initialRoute: .maps)
+        super.init(rootViewController: navigationController, initialRoute: nil)
 
     }
     
     override func prepareTransition(for route: OnboardingRoutes) -> NavigationTransition {
+        
+        
         switch route {
-        case .bookRide:
-            let viewModel = BookRideViewModel(client: client, router: self.strongRouter)
-            let bookRide = BookRideController()
-            bookRide.viewModel = viewModel
-            return .set([bookRide])
-        case .destination:
-            let viewModel = DestinationViewModel(client: client, router: self.strongRouter)
-            let destination = Destination()
-            destination.viewModel = viewModel
-            return .set([destination])
+
+        case .dismiss:
+            return .none()
             
         case .otp(let phoneNumber):
             let viewModel = OTPViewModel(client: client, phoneNumber: phoneNumber, router: self.strongRouter)
@@ -79,50 +73,16 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
             let passRegVc = PasswordRegisterController()
             passRegVc.viewModel = viewModel
             return .set([passRegVc])
-            
-        case .dashboard:
-            let viewModel = DashboardViewModel(client: client, router: self.strongRouter)
-            let dashboard = DashboardController()
-            dashboard.viewModel = viewModel
-            return .set([dashboard])
+        
+        case .root:
+            self.appCoordinatorDelegate?.selectRoute(.dashboard)
+            return .none()
             
         case .login:
             let viewModel = LoginViewModel(client: client, router: self.strongRouter)
             let loginVC = LoginController()
             loginVC.viewModel = viewModel
             return .set([loginVC])
-            
-        case .maps:
-            let viewModel = MapsViewModel(client: client, router: self.strongRouter)
-            let mapsVC = MapsController()
-            mapsVC.viewModel = viewModel
-            return .set([mapsVC])
-        }
-    }
-}
-
-protocol AppCoordinatorDelegate {
-    func selectRoute(_ route: OnboardingRoutes)
-}
-
-extension OnboardingCoordinator: AppCoordinatorDelegate {
-    func selectRoute(_ route: OnboardingRoutes) {
-        self.strongRouter.trigger(route)
-    }
-}
-
-
-extension Transition {
-    static func dismissAll() -> Transition {
-        return Transition(presentables: [], animationInUse: nil) { rootViewController, options, completion in
-            guard let presentedViewController = rootViewController.presentedViewController else {
-                completion?()
-                return
-            }
-            presentedViewController.dismiss(animated: options.animated) {
-                Transition.dismissAll()
-                    .perform(on: rootViewController, with: options, completion: completion)
-            }
         }
     }
 }

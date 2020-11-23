@@ -19,10 +19,8 @@ class PickupLocationController: UIViewController {
     @IBOutlet weak var searchImage: UIImageView!
     
     var delegate: ModalControllerDelegate?
-
-        
-    var viewModel: MapsViewModel?
     
+    var viewModel: MapsViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +35,8 @@ class PickupLocationController: UIViewController {
         locationLabel.isUserInteractionEnabled = true
         
         startButton.addTarget(self, action: #selector(self.moveToNext(_:)), for: .touchUpInside)
-        
+        startButton.layer.cornerRadius = 5
+        self.view.layer.cornerRadius = 20
         
     }
     
@@ -58,13 +57,13 @@ class PickupLocationController: UIViewController {
     
     @objc func moveToNext(_ sender: UIButton) {
         dismiss(animated: true, completion: {
-           let destination = Destination()
+            let destination = Destination()
             self.delegate?.parentController.navigationController?.pushViewController(destination, animated: true)
         })
         
         
     }
-
+    
 }
 
 
@@ -88,6 +87,7 @@ extension PickupLocationController: GMSAutocompleteViewControllerDelegate {
         print("Place attributions \(String(describing: place.attributions))")
         
         dismiss(animated: true, completion: nil)
+        
     }
     
     func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {

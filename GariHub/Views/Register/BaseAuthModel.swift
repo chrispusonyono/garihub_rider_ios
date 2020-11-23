@@ -22,3 +22,15 @@ class BaseAuthModel {
         self.provider = MoyaProvider<AuthTarget>(plugins: [authPlugin, NetworkLoggerPlugin()])
     }
 }
+
+class BaseRideModel {
+    let authPlugin: AccessTokenPlugin
+    let client: GariHubClient
+    let provider: MoyaProvider<RidesTarget>
+    
+    init(client: GariHubClient) {
+        self.authPlugin = AccessTokenPlugin { _ in client.token }
+        self.client = client
+        self.provider = MoyaProvider<RidesTarget>(plugins: [authPlugin, NetworkLoggerPlugin()])
+    }
+}

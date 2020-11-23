@@ -10,13 +10,7 @@ import UIKit
 
 class DashboardCell: UICollectionViewCell {
     
+    @IBOutlet weak var moduleIcon: UIImageView!
     
-    @IBOutlet weak var dashImage: UIImageView!
-    @IBOutlet weak var vehicleType: UILabel!
-    @IBOutlet weak var processName: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
 }

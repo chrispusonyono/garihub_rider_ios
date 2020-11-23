@@ -10,9 +10,9 @@ import Foundation
 import XCoordinator
 
 class MapsViewModel: BaseAuthModel {
-    let router: StrongRouter<OnboardingRoutes>
+    let router: StrongRouter<HomeRoutes>
     
-    init(client: GariHubClient, router: StrongRouter<OnboardingRoutes>) {
+    init(client: GariHubClient, router: StrongRouter<HomeRoutes>) {
         self.router = router
         super.init(client: client)
     }

@@ -9,10 +9,10 @@
 import Foundation
 import XCoordinator
 
-class BookRideViewModel: BaseAuthModel {
-    let router: StrongRouter<OnboardingRoutes>
+class BookRideViewModel: BaseRideModel {
+    let router: StrongRouter<HomeRoutes>
     
-    init(client: GariHubClient, router: StrongRouter<OnboardingRoutes>) {
+    init(client: GariHubClient, router: StrongRouter<HomeRoutes>) {
         self.router = router
         super.init(client: client)
     }

@@ -126,6 +126,27 @@ extension Transition {
             }
         }
     }
+    
+    public static func embed(_ presentable: Presentable, in container: Container, animation: TransitionAnimation?) -> Transition {
+           Transition(presentables: [presentable], animationInUse: animation) { rootViewController, options, completion in
+               rootViewController.embed(presentable.viewController,
+                                        in: container,
+                                        with: options
+               ) {
+                   presentable.presented(from: rootViewController)
+                   completion?()
+               }
+           }
+       }
+       
+       public static func unembed(_ presentable: Presentable, animation: TransitionAnimation?) -> Transition {
+           Transition(presentables: [presentable], animationInUse: animation) { rootViewController, options, completion in
+               
+               rootViewController.unembed(presentable.viewController, with: options) {
+                   completion?()
+               }
+           }
+       }
 
     ///
     /// Transition to call dismiss on the rootViewController. Also take a look at the `dismiss` transition,

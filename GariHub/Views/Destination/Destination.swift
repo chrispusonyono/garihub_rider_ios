@@ -110,7 +110,7 @@ class Destination: BaseTextFieldController {
     
     @objc func goBack(sender: UITapGestureRecognizer) {
         guard let vm = self.viewModel else { return }
-        vm.router.trigger(.dashboard)
+        vm.router.trigger(.root)
     }
     
     private func initialize(){

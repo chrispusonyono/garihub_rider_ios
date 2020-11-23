@@ -14,12 +14,6 @@ protocol ModalControllerDelegate: class {
     var parentController: UIViewController { get }
 }
 
-//extension BaseViewController: ModalControllerDelegate {
-//
-//    func removeModalController() {
-//        self.modalController?.dismiss(animated: true, completion: {
-//            self.dismiss(animated: true, completion: nil)
-//        })
-//    }
-//
-//}
+protocol BookRideDelegate: class {
+    func bookRideRequest()
+}

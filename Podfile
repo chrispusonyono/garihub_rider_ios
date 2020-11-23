@@ -16,6 +16,8 @@ target 'GariHub' do
   pod 'Google-Maps-iOS-Utils'
   pod 'GooglePlacePicker'
   pod 'BRQBottomSheet'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
 
 
 

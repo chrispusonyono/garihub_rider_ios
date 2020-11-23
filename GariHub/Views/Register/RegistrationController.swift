@@ -10,7 +10,7 @@ import UIKit
 import Moya
 
 let provider = MoyaProvider<AuthTarget>()
-
+let rProvider = MoyaProvider<RidesTarget>()
 
 
 class RegistrationController: BaseTextFieldController {
@@ -78,7 +78,6 @@ class RegistrationController: BaseTextFieldController {
                 case .failure(let error):
                     print(error)
                 case .success(let response):
-                    print(response.data.base64EncodedString())
                     do {
                         let otpResponse = try JSONDecoder().decode(OTPResponse.self, from: response.data)
                         print(otpResponse)

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BA51CE4B67EF27F910FACAE /* Pods_GariHub_GariHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23AD25952EC64C862C7809 /* Pods_GariHub_GariHubUITests.framework */; };
 		0C31D698252B7E560089253F /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C31D696252B7E560089253F /* Destination.swift */; };
 		0C31D699252B7E560089253F /* Destination.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C31D697252B7E560089253F /* Destination.xib */; };
 		0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C531427252727680032C27F /* RegistrationTwoController.swift */; };
@@ -26,8 +25,9 @@
 		0C98F68C2524E0CD00000F35 /* OTPController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C98F68A2524E0CD00000F35 /* OTPController.xib */; };
 		0CF160E1253DA51300250C6F /* DestinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF160DF253DA51200250C6F /* DestinationCell.swift */; };
 		0CF160E2253DA51300250C6F /* DestinationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF160E0253DA51300250C6F /* DestinationCell.xib */; };
-		8F157BFD641ACF7A4A3FEBEE /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */; };
-		E21761D205494BE46571F669 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AE035F35090E8507F423E /* Pods_GariHub.framework */; };
+		3B4D36E924AE6B838280A360 /* Pods_GariHub_GariHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FE02584A6FADE7DB446AD1 /* Pods_GariHub_GariHubUITests.framework */; };
+		AD370955F04819D001D7AF2B /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C16092703D653BFC0283B9 /* Pods_GariHubTests.framework */; };
+		D107220747B43223C582B4BF /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1595DA2EA72D7C064B2F22E5 /* Pods_GariHub.framework */; };
 		FA22F276255533A00045618C /* PickupLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F275255533A00045618C /* PickupLocationView.swift */; };
 		FA22F278255533C30045618C /* PickupLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA22F277255533C30045618C /* PickupLocationView.xib */; };
 		FA22F27A25553AC80045618C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F27925553AC80045618C /* UIView+.swift */; };
@@ -58,6 +58,8 @@
 		FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBB02527707C006FA060 /* OnboardingCoordinator.swift */; };
 		FA47DBB32527804B006FA060 /* RegTwoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBB22527804B006FA060 /* RegTwoViewModel.swift */; };
 		FA47DBB52527862D006FA060 /* EmailRegViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47DBB42527862D006FA060 /* EmailRegViewModel.swift */; };
+		FA505B66257CF24200EBD239 /* Animation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA505B65257CF24100EBD239 /* Animation+.swift */; };
+		FA5D8C78256D329F009A7597 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA5D8C77256D329E009A7597 /* GoogleService-Info.plist */; };
 		FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */; };
 		FA7FC536251E32300081A19A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC535251E32300081A19A /* RegistrationViewModel.swift */; };
 		FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC537251E329E0081A19A /* BaseAuthModel.swift */; };
@@ -67,6 +69,10 @@
 		FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E792525CA2D00AC4776 /* LoginRequest.swift */; };
 		FA8AFA35254C061700C7A37E /* BaseTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AFA34254C061700C7A37E /* BaseTextFieldController.swift */; };
 		FA8AFA37254C066400C7A37E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AFA36254C066400C7A37E /* UIColor+.swift */; };
+		FA9F4E652562927C0053D9BF /* SelectVehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F4E632562927C0053D9BF /* SelectVehicleController.swift */; };
+		FA9F4E662562927C0053D9BF /* SelectVehicleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9F4E642562927C0053D9BF /* SelectVehicleController.xib */; };
+		FA9F4E6925629E9D0053D9BF /* SelectVehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F4E6725629E9D0053D9BF /* SelectVehicleCell.swift */; };
+		FA9F4E6A25629E9D0053D9BF /* SelectVehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9F4E6825629E9D0053D9BF /* SelectVehicleCell.xib */; };
 		FAA769782514D03D00750625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769772514D03D00750625 /* AppDelegate.swift */; };
 		FAA769812514D03F00750625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA769802514D03F00750625 /* Assets.xcassets */; };
 		FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA769822514D03F00750625 /* LaunchScreen.storyboard */; };
@@ -77,10 +83,28 @@
 		FAA8B24325528FC5001484E7 /* MapsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8B24125528FC5001484E7 /* MapsController.swift */; };
 		FAA8B24425528FC5001484E7 /* MapsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA8B24225528FC5001484E7 /* MapsController.xib */; };
 		FAA8B24725529235001484E7 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8B24625529235001484E7 /* MapsViewModel.swift */; };
+		FAB60275257D181E0015B609 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB60274257D181E0015B609 /* HomeCoordinator.swift */; };
+		FAB60277257D20550015B609 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB60276257D20550015B609 /* AppCoordinator.swift */; };
 		FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */; };
 		FAD1C10A255E9DD7002A4897 /* BookRideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1C109255E9DD7002A4897 /* BookRideViewModel.swift */; };
 		FAD965B3254ADCA7004F4C70 /* DestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */; };
+		FADE53262564094D007A4BD2 /* DriverLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE53242564094D007A4BD2 /* DriverLocationController.swift */; };
+		FADE53272564094D007A4BD2 /* DriverLocationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE53252564094D007A4BD2 /* DriverLocationController.xib */; };
+		FADE532A256412D6007A4BD2 /* GetLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE5328256412D6007A4BD2 /* GetLocationController.swift */; };
+		FADE532B256412D6007A4BD2 /* GetLocationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE5329256412D6007A4BD2 /* GetLocationController.xib */; };
+		FADE532E25641B15007A4BD2 /* DriverFoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE532C25641B15007A4BD2 /* DriverFoundController.swift */; };
+		FADE532F25641B15007A4BD2 /* DriverFoundController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE532D25641B15007A4BD2 /* DriverFoundController.xib */; };
+		FADE533225641E45007A4BD2 /* DriverInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE533025641E45007A4BD2 /* DriverInfoController.swift */; };
+		FADE533325641E45007A4BD2 /* DriverInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE533125641E45007A4BD2 /* DriverInfoController.xib */; };
+		FADE533525643E36007A4BD2 /* BookRideRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE533425643E36007A4BD2 /* BookRideRequest.swift */; };
+		FADE53372565177B007A4BD2 /* RidesTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE53362565177B007A4BD2 /* RidesTarget.swift */; };
+		FADE533925653996007A4BD2 /* SelectVehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE533825653996007A4BD2 /* SelectVehicleViewModel.swift */; };
+		FADE533B25654388007A4BD2 /* DriverDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE533A25654388007A4BD2 /* DriverDetailResponse.swift */; };
 		FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFF056252C6D8E003F222A /* LoginViewModel.swift */; };
+		FAF7BDB2256E785D00160211 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7BDB0256E785D00160211 /* SideMenuController.swift */; };
+		FAF7BDB3256E785D00160211 /* SideMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF7BDB1256E785D00160211 /* SideMenuController.xib */; };
+		FAF7BDB5256E862B00160211 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7BDB4256E862B00160211 /* SideMenuViewModel.swift */; };
+		FAF7BDB7256E889000160211 /* SideMenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7BDB6256E889000160211 /* SideMenuCoordinator.swift */; };
 		FAFE78AB2553E7F60082D053 /* BookRideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE78A92553E7F60082D053 /* BookRideController.swift */; };
 		FAFE78AC2553E7F60082D053 /* BookRideController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFE78AA2553E7F60082D053 /* BookRideController.xib */; };
 		FAFE78AF2553F5DF0082D053 /* PickupLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE78AD2553F5DF0082D053 /* PickupLocationController.swift */; };
@@ -123,15 +147,15 @@
 		0C98F68A2524E0CD00000F35 /* OTPController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPController.xib; sourceTree = "<group>"; };
 		0CF160DF253DA51200250C6F /* DestinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCell.swift; sourceTree = "<group>"; };
 		0CF160E0253DA51300250C6F /* DestinationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationCell.xib; sourceTree = "<group>"; };
-		4F8AE035F35090E8507F423E /* Pods_GariHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F23AD25952EC64C862C7809 /* Pods_GariHub_GariHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub_GariHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7545EEC4D30BB8066FF4DEFF /* Pods-GariHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.release.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.release.xcconfig"; sourceTree = "<group>"; };
-		77C1AF1ED8099C73E51E0F07 /* Pods-GariHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHubTests.debug.xcconfig"; path = "Target Support Files/Pods-GariHubTests/Pods-GariHubTests.debug.xcconfig"; sourceTree = "<group>"; };
-		86A7A2B675D4546DBF05DB88 /* Pods-GariHub-GariHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.release.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4EA49D1EB22EE509C6FE450 /* Pods-GariHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHubTests.release.xcconfig"; path = "Target Support Files/Pods-GariHubTests/Pods-GariHubTests.release.xcconfig"; sourceTree = "<group>"; };
-		CE579876559E9CE14FE5150E /* Pods-GariHub-GariHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D14C4368C1C00481BBFACEC7 /* Pods-GariHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.debug.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.debug.xcconfig"; sourceTree = "<group>"; };
+		1595DA2EA72D7C064B2F22E5 /* Pods_GariHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C16092703D653BFC0283B9 /* Pods_GariHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		170F2178DC7A9632DAF7E1F0 /* Pods-GariHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHubTests.release.xcconfig"; path = "Target Support Files/Pods-GariHubTests/Pods-GariHubTests.release.xcconfig"; sourceTree = "<group>"; };
+		43CF63A1EB5595FF670E692D /* Pods-GariHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHubTests.debug.xcconfig"; path = "Target Support Files/Pods-GariHubTests/Pods-GariHubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A395FAB874733629ED1E177 /* Pods-GariHub-GariHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3FE02584A6FADE7DB446AD1 /* Pods_GariHub_GariHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHub_GariHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E065748435A875FE58E49C79 /* Pods-GariHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.debug.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.debug.xcconfig"; sourceTree = "<group>"; };
+		F0CE8A8AC63FB5C463002F52 /* Pods-GariHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub.release.xcconfig"; path = "Target Support Files/Pods-GariHub/Pods-GariHub.release.xcconfig"; sourceTree = "<group>"; };
+		F581D53E9CA3AF5522F20C9F /* Pods-GariHub-GariHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.release.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA22F275255533A00045618C /* PickupLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocationView.swift; sourceTree = "<group>"; };
 		FA22F277255533C30045618C /* PickupLocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickupLocationView.xib; sourceTree = "<group>"; };
 		FA22F27925553AC80045618C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -162,6 +186,8 @@
 		FA47DBB02527707C006FA060 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		FA47DBB22527804B006FA060 /* RegTwoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegTwoViewModel.swift; sourceTree = "<group>"; };
 		FA47DBB42527862D006FA060 /* EmailRegViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegViewModel.swift; sourceTree = "<group>"; };
+		FA505B65257CF24100EBD239 /* Animation+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Animation+.swift"; path = "../../../../NRS/nrs-ios/nrs/Utils/UIKit+/XCoordinator+/Animation+.swift"; sourceTree = "<group>"; };
+		FA5D8C77256D329E009A7597 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA7FC532251E2FDE0081A19A /* ValidatePhoneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ValidatePhoneRequest.swift; path = GariHub/Views/ValidatePhoneRequest.swift; sourceTree = SOURCE_ROOT; };
 		FA7FC535251E32300081A19A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		FA7FC537251E329E0081A19A /* BaseAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthModel.swift; sourceTree = "<group>"; };
@@ -171,6 +197,10 @@
 		FA882E792525CA2D00AC4776 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRequest.swift; path = GariHub/Utils/LoginRequest.swift; sourceTree = SOURCE_ROOT; };
 		FA8AFA34254C061700C7A37E /* BaseTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldController.swift; sourceTree = "<group>"; };
 		FA8AFA36254C066400C7A37E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		FA9F4E632562927C0053D9BF /* SelectVehicleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicleController.swift; sourceTree = "<group>"; };
+		FA9F4E642562927C0053D9BF /* SelectVehicleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectVehicleController.xib; sourceTree = "<group>"; };
+		FA9F4E6725629E9D0053D9BF /* SelectVehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicleCell.swift; sourceTree = "<group>"; };
+		FA9F4E6825629E9D0053D9BF /* SelectVehicleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectVehicleCell.xib; sourceTree = "<group>"; };
 		FAA769742514D03D00750625 /* GariHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GariHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA769772514D03D00750625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA769802514D03F00750625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -187,10 +217,28 @@
 		FAA8B24125528FC5001484E7 /* MapsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsController.swift; sourceTree = "<group>"; };
 		FAA8B24225528FC5001484E7 /* MapsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsController.xib; sourceTree = "<group>"; };
 		FAA8B24625529235001484E7 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
+		FAB60274257D181E0015B609 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		FAB60276257D20550015B609 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthTarget.swift; path = GariHub/Views/AuthTarget.swift; sourceTree = SOURCE_ROOT; };
 		FAD1C109255E9DD7002A4897 /* BookRideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRideViewModel.swift; sourceTree = "<group>"; };
 		FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewModel.swift; sourceTree = "<group>"; };
+		FADE53242564094D007A4BD2 /* DriverLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLocationController.swift; sourceTree = "<group>"; };
+		FADE53252564094D007A4BD2 /* DriverLocationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverLocationController.xib; sourceTree = "<group>"; };
+		FADE5328256412D6007A4BD2 /* GetLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationController.swift; sourceTree = "<group>"; };
+		FADE5329256412D6007A4BD2 /* GetLocationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetLocationController.xib; sourceTree = "<group>"; };
+		FADE532C25641B15007A4BD2 /* DriverFoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverFoundController.swift; sourceTree = "<group>"; };
+		FADE532D25641B15007A4BD2 /* DriverFoundController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverFoundController.xib; sourceTree = "<group>"; };
+		FADE533025641E45007A4BD2 /* DriverInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoController.swift; sourceTree = "<group>"; };
+		FADE533125641E45007A4BD2 /* DriverInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverInfoController.xib; sourceTree = "<group>"; };
+		FADE533425643E36007A4BD2 /* BookRideRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookRideRequest.swift; path = "GariHub/Views/Driver Location/BookRideRequest.swift"; sourceTree = SOURCE_ROOT; };
+		FADE53362565177B007A4BD2 /* RidesTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RidesTarget.swift; path = "GariHub/Views/Driver Location/RidesTarget.swift"; sourceTree = SOURCE_ROOT; };
+		FADE533825653996007A4BD2 /* SelectVehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicleViewModel.swift; sourceTree = "<group>"; };
+		FADE533A25654388007A4BD2 /* DriverDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverDetailResponse.swift; path = "GariHub/Views/Book Ride/DriverDetailResponse.swift"; sourceTree = SOURCE_ROOT; };
 		FAEFF056252C6D8E003F222A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FAF7BDB0256E785D00160211 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
+		FAF7BDB1256E785D00160211 /* SideMenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuController.xib; sourceTree = "<group>"; };
+		FAF7BDB4256E862B00160211 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		FAF7BDB6256E889000160211 /* SideMenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCoordinator.swift; sourceTree = "<group>"; };
 		FAFE78A92553E7F60082D053 /* BookRideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRideController.swift; sourceTree = "<group>"; };
 		FAFE78AA2553E7F60082D053 /* BookRideController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookRideController.xib; sourceTree = "<group>"; };
 		FAFE78AD2553F5DF0082D053 /* PickupLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocationController.swift; sourceTree = "<group>"; };
@@ -202,7 +250,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21761D205494BE46571F669 /* Pods_GariHub.framework in Frameworks */,
+				D107220747B43223C582B4BF /* Pods_GariHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +258,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F157BFD641ACF7A4A3FEBEE /* Pods_GariHubTests.framework in Frameworks */,
+				AD370955F04819D001D7AF2B /* Pods_GariHubTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA51CE4B67EF27F910FACAE /* Pods_GariHub_GariHubUITests.framework in Frameworks */,
+				3B4D36E924AE6B838280A360 /* Pods_GariHub_GariHubUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,12 +293,12 @@
 			path = OTP;
 			sourceTree = "<group>";
 		};
-		79E7FD38D6AAEAE9C42F9A9E /* Frameworks */ = {
+		38EB34B678EC6BB4182686C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4F8AE035F35090E8507F423E /* Pods_GariHub.framework */,
-				5F23AD25952EC64C862C7809 /* Pods_GariHub_GariHubUITests.framework */,
-				BB3B7E613764FAF2D6593875 /* Pods_GariHubTests.framework */,
+				1595DA2EA72D7C064B2F22E5 /* Pods_GariHub.framework */,
+				D3FE02584A6FADE7DB446AD1 /* Pods_GariHub_GariHubUITests.framework */,
+				16C16092703D653BFC0283B9 /* Pods_GariHubTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -258,12 +306,12 @@
 		F5736EA3738B4771E08FE56B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D14C4368C1C00481BBFACEC7 /* Pods-GariHub.debug.xcconfig */,
-				7545EEC4D30BB8066FF4DEFF /* Pods-GariHub.release.xcconfig */,
-				CE579876559E9CE14FE5150E /* Pods-GariHub-GariHubUITests.debug.xcconfig */,
-				86A7A2B675D4546DBF05DB88 /* Pods-GariHub-GariHubUITests.release.xcconfig */,
-				77C1AF1ED8099C73E51E0F07 /* Pods-GariHubTests.debug.xcconfig */,
-				C4EA49D1EB22EE509C6FE450 /* Pods-GariHubTests.release.xcconfig */,
+				E065748435A875FE58E49C79 /* Pods-GariHub.debug.xcconfig */,
+				F0CE8A8AC63FB5C463002F52 /* Pods-GariHub.release.xcconfig */,
+				5A395FAB874733629ED1E177 /* Pods-GariHub-GariHubUITests.debug.xcconfig */,
+				F581D53E9CA3AF5522F20C9F /* Pods-GariHub-GariHubUITests.release.xcconfig */,
+				43CF63A1EB5595FF670E692D /* Pods-GariHubTests.debug.xcconfig */,
+				170F2178DC7A9632DAF7E1F0 /* Pods-GariHubTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -325,6 +373,9 @@
 			isa = PBXGroup;
 			children = (
 				FA47DBB02527707C006FA060 /* OnboardingCoordinator.swift */,
+				FAF7BDB6256E889000160211 /* SideMenuCoordinator.swift */,
+				FAB60274257D181E0015B609 /* HomeCoordinator.swift */,
+				FAB60276257D20550015B609 /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -357,7 +408,7 @@
 				FAA769982514D04000750625 /* GariHubUITests */,
 				FAA769752514D03D00750625 /* Products */,
 				F5736EA3738B4771E08FE56B /* Pods */,
-				79E7FD38D6AAEAE9C42F9A9E /* Frameworks */,
+				38EB34B678EC6BB4182686C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -385,6 +436,7 @@
 				FAA769802514D03F00750625 /* Assets.xcassets */,
 				FAA769822514D03F00750625 /* LaunchScreen.storyboard */,
 				FAA769852514D03F00750625 /* Info.plist */,
+				FA5D8C77256D329E009A7597 /* GoogleService-Info.plist */,
 				FA47DBA9252764F2006FA060 /* GariHubClient.swift */,
 				FA22F27D25553DA70045618C /* BaseViewController.swift */,
 			);
@@ -412,6 +464,8 @@
 		FAA769A72514D0B200750625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAF7BDAF256E782E00160211 /* Menu Rider */,
+				FADE532325640933007A4BD2 /* Driver Location */,
 				FA22F274255533630045618C /* Modals */,
 				FAFE78A82553E7DC0082D053 /* Book Ride */,
 				FAA8B245255290BB001484E7 /* Maps */,
@@ -433,6 +487,8 @@
 				FA882E792525CA2D00AC4776 /* LoginRequest.swift */,
 				FA47DBA52527597D006FA060 /* RegisterRequest.swift */,
 				FA47DBAD252769B9006FA060 /* OTPRequest.swift */,
+				FADE533425643E36007A4BD2 /* BookRideRequest.swift */,
+				FADE533A25654388007A4BD2 /* DriverDetailResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				FAB652F4251E2C8A00D93C2B /* AuthTarget.swift */,
+				FADE53362565177B007A4BD2 /* RidesTarget.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -455,6 +512,7 @@
 		FAA769AF2514D31300750625 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FA505B65257CF24100EBD239 /* Animation+.swift */,
 				FA293FA6251E410D00BC00AD /* Spinner.swift */,
 				FA22F27F25553F070045618C /* ModalTransitioningDelegate.swift */,
 				FA882E732525BDDF00AC4776 /* UIViewController+.swift */,
@@ -495,12 +553,42 @@
 			path = Destination;
 			sourceTree = "<group>";
 		};
+		FADE532325640933007A4BD2 /* Driver Location */ = {
+			isa = PBXGroup;
+			children = (
+				FADE53242564094D007A4BD2 /* DriverLocationController.swift */,
+				FADE53252564094D007A4BD2 /* DriverLocationController.xib */,
+				FADE5328256412D6007A4BD2 /* GetLocationController.swift */,
+				FADE5329256412D6007A4BD2 /* GetLocationController.xib */,
+				FADE532C25641B15007A4BD2 /* DriverFoundController.swift */,
+				FADE532D25641B15007A4BD2 /* DriverFoundController.xib */,
+				FADE533025641E45007A4BD2 /* DriverInfoController.swift */,
+				FADE533125641E45007A4BD2 /* DriverInfoController.xib */,
+			);
+			path = "Driver Location";
+			sourceTree = "<group>";
+		};
+		FAF7BDAF256E782E00160211 /* Menu Rider */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7BDB0256E785D00160211 /* SideMenuController.swift */,
+				FAF7BDB1256E785D00160211 /* SideMenuController.xib */,
+				FAF7BDB4256E862B00160211 /* SideMenuViewModel.swift */,
+			);
+			path = "Menu Rider";
+			sourceTree = "<group>";
+		};
 		FAFE78A82553E7DC0082D053 /* Book Ride */ = {
 			isa = PBXGroup;
 			children = (
 				FAFE78A92553E7F60082D053 /* BookRideController.swift */,
 				FAFE78AA2553E7F60082D053 /* BookRideController.xib */,
 				FAD1C109255E9DD7002A4897 /* BookRideViewModel.swift */,
+				FA9F4E632562927C0053D9BF /* SelectVehicleController.swift */,
+				FA9F4E642562927C0053D9BF /* SelectVehicleController.xib */,
+				FA9F4E6725629E9D0053D9BF /* SelectVehicleCell.swift */,
+				FA9F4E6825629E9D0053D9BF /* SelectVehicleCell.xib */,
+				FADE533825653996007A4BD2 /* SelectVehicleViewModel.swift */,
 			);
 			path = "Book Ride";
 			sourceTree = "<group>";
@@ -512,12 +600,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA7699E2514D04000750625 /* Build configuration list for PBXNativeTarget "GariHub" */;
 			buildPhases = (
-				AB9EF06DE101EC82E71CE8B4 /* [CP] Check Pods Manifest.lock */,
+				EDB09E377464315BEF83C080 /* [CP] Check Pods Manifest.lock */,
 				FAA769702514D03D00750625 /* Sources */,
 				FAA769712514D03D00750625 /* Frameworks */,
 				FAA769722514D03D00750625 /* Resources */,
-				9063B83F80133AA048F16BA3 /* [CP] Embed Pods Frameworks */,
-				9FB7CBAFDEFEE46FB63E1729 /* [CP] Copy Pods Resources */,
+				25F74D69A82B89F8DE9C8EDA /* [CP] Embed Pods Frameworks */,
+				1764D9F3D5BEF0D1F02FC43C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,7 +620,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA769A12514D04000750625 /* Build configuration list for PBXNativeTarget "GariHubTests" */;
 			buildPhases = (
-				F2F071A81B08BEFDAD55FF1C /* [CP] Check Pods Manifest.lock */,
+				6010E0067E77E5B1A0C75FC1 /* [CP] Check Pods Manifest.lock */,
 				FAA769862514D04000750625 /* Sources */,
 				FAA769872514D04000750625 /* Frameworks */,
 				FAA769882514D04000750625 /* Resources */,
@@ -551,12 +639,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA769A42514D04000750625 /* Build configuration list for PBXNativeTarget "GariHubUITests" */;
 			buildPhases = (
-				08F4F8715BA79662DE1818C2 /* [CP] Check Pods Manifest.lock */,
+				E39D4CB8BEC6D6E86BE5F61E /* [CP] Check Pods Manifest.lock */,
 				FAA769912514D04000750625 /* Sources */,
 				FAA769922514D04000750625 /* Frameworks */,
 				FAA769932514D04000750625 /* Resources */,
-				8A01E8A50EABC78DBE09CA78 /* [CP] Embed Pods Frameworks */,
-				CD492D6CEACB836F53D5C9C7 /* [CP] Copy Pods Resources */,
+				E947C7402FDE60A6B8F93348 /* [CP] Embed Pods Frameworks */,
+				B6705A80A3D9B9F46305C940 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -620,12 +708,20 @@
 				0C98F68C2524E0CD00000F35 /* OTPController.xib in Resources */,
 				FA47DBA0252750DA006FA060 /* EmailRegisterController.xib in Resources */,
 				0C31D699252B7E560089253F /* Destination.xib in Resources */,
+				FADE532F25641B15007A4BD2 /* DriverFoundController.xib in Resources */,
 				FAA769842514D03F00750625 /* LaunchScreen.storyboard in Resources */,
 				0C98F6852524BA8100000F35 /* LoginController.xib in Resources */,
+				FADE533325641E45007A4BD2 /* DriverInfoController.xib in Resources */,
+				FADE53272564094D007A4BD2 /* DriverLocationController.xib in Resources */,
 				0C53142A252727680032C27F /* RegistrationTwoController.xib in Resources */,
 				0CF160E2253DA51300250C6F /* DestinationCell.xib in Resources */,
+				FA9F4E6A25629E9D0053D9BF /* SelectVehicleCell.xib in Resources */,
+				FA9F4E662562927C0053D9BF /* SelectVehicleController.xib in Resources */,
+				FA5D8C78256D329F009A7597 /* GoogleService-Info.plist in Resources */,
 				0C89310E251B6D9A001E17AD /* RegistrationController.xib in Resources */,
+				FAF7BDB3256E785D00160211 /* SideMenuController.xib in Resources */,
 				0C89311A251E1546001E17AD /* CampaignThree.xib in Resources */,
+				FADE532B256412D6007A4BD2 /* GetLocationController.xib in Resources */,
 				FA22F278255533C30045618C /* PickupLocationView.xib in Resources */,
 				FAA769AB2514D0C500750625 /* LandingController.xib in Resources */,
 				FAA769812514D03F00750625 /* Assets.xcassets in Resources */,
@@ -657,63 +753,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08F4F8715BA79662DE1818C2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GariHub-GariHubUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8A01E8A50EABC78DBE09CA78 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9063B83F80133AA048F16BA3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9FB7CBAFDEFEE46FB63E1729 /* [CP] Copy Pods Resources */ = {
+		1764D9F3D5BEF0D1F02FC43C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -730,46 +770,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AB9EF06DE101EC82E71CE8B4 /* [CP] Check Pods Manifest.lock */ = {
+		25F74D69A82B89F8DE9C8EDA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GariHub-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub/Pods-GariHub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD492D6CEACB836F53D5C9C7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F2F071A81B08BEFDAD55FF1C /* [CP] Check Pods Manifest.lock */ = {
+		6010E0067E77E5B1A0C75FC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -791,6 +809,84 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B6705A80A3D9B9F46305C940 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E39D4CB8BEC6D6E86BE5F61E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GariHub-GariHubUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E947C7402FDE60A6B8F93348 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDB09E377464315BEF83C080 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GariHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -801,6 +897,11 @@
 				FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */,
 				0C98F6842524BA8100000F35 /* LoginController.swift in Sources */,
 				FA47DBA32527543F006FA060 /* PasswordRegisterController.swift in Sources */,
+				FADE533225641E45007A4BD2 /* DriverInfoController.swift in Sources */,
+				FAF7BDB2256E785D00160211 /* SideMenuController.swift in Sources */,
+				FADE532E25641B15007A4BD2 /* DriverFoundController.swift in Sources */,
+				FADE533525643E36007A4BD2 /* BookRideRequest.swift in Sources */,
+				FADE532A256412D6007A4BD2 /* GetLocationController.swift in Sources */,
 				FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */,
 				FAA8B24325528FC5001484E7 /* MapsController.swift in Sources */,
 				FA22F282255542EB0045618C /* ModalInteractiveTransition.swift in Sources */,
@@ -817,31 +918,41 @@
 				FA47DBB32527804B006FA060 /* RegTwoViewModel.swift in Sources */,
 				FA47DB9F252750DA006FA060 /* EmailRegisterController.swift in Sources */,
 				FA47DBAE252769B9006FA060 /* OTPRequest.swift in Sources */,
+				FAF7BDB5256E862B00160211 /* SideMenuViewModel.swift in Sources */,
 				FA22F2862555431C0045618C /* ModalPresentationController.swift in Sources */,
 				0C98F68B2524E0CD00000F35 /* OTPController.swift in Sources */,
 				FAA769782514D03D00750625 /* AppDelegate.swift in Sources */,
 				FA882E782525C80B00AC4776 /* UITextField.swift in Sources */,
 				FA47DBB52527862D006FA060 /* EmailRegViewModel.swift in Sources */,
 				FA41DD822529F075006C1F4B /* DashboardController.swift in Sources */,
+				FA505B66257CF24200EBD239 /* Animation+.swift in Sources */,
+				FADE533925653996007A4BD2 /* SelectVehicleViewModel.swift in Sources */,
 				FAD1C10A255E9DD7002A4897 /* BookRideViewModel.swift in Sources */,
 				FA2D096A252CB0E300212F6D /* DashboardCell.swift in Sources */,
 				FA882E742525BDDF00AC4776 /* UIViewController+.swift in Sources */,
+				FAB60277257D20550015B609 /* AppCoordinator.swift in Sources */,
 				FAEFF057252C6D8E003F222A /* LoginViewModel.swift in Sources */,
 				FA22F27C25553C5F0045618C /* ModalControllerDelegate.swift in Sources */,
 				FA22F27A25553AC80045618C /* UIView+.swift in Sources */,
 				FAFE78AF2553F5DF0082D053 /* PickupLocationController.swift in Sources */,
 				FA2D0962252C729700212F6D /* ResetPasswordController.swift in Sources */,
 				FA47DBA62527597D006FA060 /* RegisterRequest.swift in Sources */,
+				FA9F4E6925629E9D0053D9BF /* SelectVehicleCell.swift in Sources */,
 				FA8AFA37254C066400C7A37E /* UIColor+.swift in Sources */,
 				FA7FC533251E2FDE0081A19A /* ValidatePhoneRequest.swift in Sources */,
+				FA9F4E652562927C0053D9BF /* SelectVehicleController.swift in Sources */,
+				FADE533B25654388007A4BD2 /* DriverDetailResponse.swift in Sources */,
 				FA2D096E252F3D5800212F6D /* Location.swift in Sources */,
 				0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */,
 				FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */,
 				FA41DD852529F54F006C1F4B /* DashboardViewModel.swift in Sources */,
+				FAB60275257D181E0015B609 /* HomeCoordinator.swift in Sources */,
 				0C893111251BAF1C001E17AD /* CampaignTwo.swift in Sources */,
+				FAF7BDB7256E889000160211 /* SideMenuCoordinator.swift in Sources */,
 				0C31D698252B7E560089253F /* Destination.swift in Sources */,
 				FAA769AA2514D0C500750625 /* LandingController.swift in Sources */,
 				FA41DD7D2529E909006C1F4B /* PasswordRegViewModel.swift in Sources */,
+				FADE53262564094D007A4BD2 /* DriverLocationController.swift in Sources */,
 				FA22F28025553F070045618C /* ModalTransitioningDelegate.swift in Sources */,
 				0C89310D251B6D9A001E17AD /* RegistrationController.swift in Sources */,
 				FA47DBAC2527679C006FA060 /* OTPViewModel.swift in Sources */,
@@ -849,6 +960,7 @@
 				FAB652F5251E2C8B00D93C2B /* AuthTarget.swift in Sources */,
 				FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */,
 				FAD965B3254ADCA7004F4C70 /* DestinationViewModel.swift in Sources */,
+				FADE53372565177B007A4BD2 /* RidesTarget.swift in Sources */,
 				FA22F276255533A00045618C /* PickupLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1012,7 +1124,7 @@
 		};
 		FAA7699F2514D04000750625 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14C4368C1C00481BBFACEC7 /* Pods-GariHub.debug.xcconfig */;
+			baseConfigurationReference = E065748435A875FE58E49C79 /* Pods-GariHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1032,7 +1144,7 @@
 		};
 		FAA769A02514D04000750625 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7545EEC4D30BB8066FF4DEFF /* Pods-GariHub.release.xcconfig */;
+			baseConfigurationReference = F0CE8A8AC63FB5C463002F52 /* Pods-GariHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1052,7 +1164,7 @@
 		};
 		FAA769A22514D04000750625 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77C1AF1ED8099C73E51E0F07 /* Pods-GariHubTests.debug.xcconfig */;
+			baseConfigurationReference = 43CF63A1EB5595FF670E692D /* Pods-GariHubTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1075,7 +1187,7 @@
 		};
 		FAA769A32514D04000750625 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4EA49D1EB22EE509C6FE450 /* Pods-GariHubTests.release.xcconfig */;
+			baseConfigurationReference = 170F2178DC7A9632DAF7E1F0 /* Pods-GariHubTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1098,7 +1210,7 @@
 		};
 		FAA769A52514D04000750625 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE579876559E9CE14FE5150E /* Pods-GariHub-GariHubUITests.debug.xcconfig */;
+			baseConfigurationReference = 5A395FAB874733629ED1E177 /* Pods-GariHub-GariHubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1119,7 +1231,7 @@
 		};
 		FAA769A62514D04000750625 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86A7A2B675D4546DBF05DB88 /* Pods-GariHub-GariHubUITests.release.xcconfig */;
+			baseConfigurationReference = F581D53E9CA3AF5522F20C9F /* Pods-GariHub-GariHubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

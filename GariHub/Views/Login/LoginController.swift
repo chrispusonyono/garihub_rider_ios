@@ -80,7 +80,7 @@ class LoginController: BaseTextFieldController {
         ]
         
         //Request configuration
-        var request = URLRequest(url: URL(string: "http://68.183.242.242/auth/realms/garihub-rider/protocol/openid-connect/token")!)
+        var request = URLRequest(url: URL(string: "http://dev.api.garihub.com/auth/realms/garihub-rider/protocol/openid-connect/token")!)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = requestHeaders
         request.httpBody = requestBodyComponents.query?.data(using: .utf8)
@@ -93,7 +93,7 @@ class LoginController: BaseTextFieldController {
                 self.viewModel?.client.token = loginResponse.accessToken
                 
                 DispatchQueue.main.async {
-                    self.viewModel?.router.trigger(.dashboard)
+                    self.viewModel?.router.trigger(.root)
                 }
                 
             } catch {
