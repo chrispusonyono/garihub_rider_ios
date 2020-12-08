@@ -7,6 +7,18 @@ target 'GariHub' do
 
   # Pods for GariHub
   pod 'Moya'
+  pod 'SwiftKeychainWrapper'
+  pod 'XCoordinator'
+  pod 'MaterialComponents/BottomSheet'
+  pod 'MaterialComponents/BottomSheet+ShapeThemer'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'Google-Maps-iOS-Utils'
+  pod 'GooglePlacePicker'
+  pod 'BRQBottomSheet'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+
 
 
   target 'GariHubTests' do
