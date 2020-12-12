@@ -13,6 +13,7 @@ import Firebase
 
 let API_KEY = "AIzaSyDy4XgOiSH1w6F6Nt92CvU3cRjYtWiJjT4"
 
+@available(iOS 12.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -20,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var router: AppCoordinator!
     var locationManager = LocationManager()
     let gcmMessageIDKey = "gcm.message_id"
-
-    
 
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -34,6 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let campaign = CampaignController()
         window?.rootViewController = campaign
         window?.makeKeyAndVisible()
+        
+        UINavigationBar.appearance().tintColor = .white
         
         
         if #available(iOS 10.0, *) {
@@ -59,13 +60,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func application(application: UIApplication,
-                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-      Messaging.messaging().apnsToken = deviceToken
+                             didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken
     }
     
     
 }
 
+@available(iOS 12.0, *)
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
     //Receive displayed notification for iOS devices
@@ -93,17 +95,18 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
 }
 
+@available(iOS 12.0, *)
 extension AppDelegate: MessagingDelegate {
-
+    
     
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         
         Messaging.messaging().token { token, error in
-          if let error = error {
-            print("Error fetching FCM registration token: \(error)")
-          } else if let token = token {
-            print("FCM registration token: \(token)")
-          }
+            if let error = error {
+                print("Error fetching FCM registration token: \(error)")
+            } else if let token = token {
+                print("FCM registration token: \(token)")
+            }
         }
         print("Firebase resgistration token: \(String(describing: fcmToken))")
         

@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="collectionView" destination="oH2-ms-GeK" id="Rn6-HV-2W5"/>
                 <outlet property="orderType" destination="odw-Mb-5gl" id="Zxd-ch-diE"/>
+                <outlet property="searchBar" destination="pUh-KV-ZoD" id="mMM-dS-zuS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

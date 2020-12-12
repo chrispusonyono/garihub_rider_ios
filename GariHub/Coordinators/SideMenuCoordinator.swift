@@ -38,7 +38,7 @@ class SideMenuCoordinator: RedirectionRouter<HomeRoutes, SideMenuRoutes> {
     override func mapToParentRoute(_ route: SideMenuRoutes) -> HomeRoutes {
         switch route {
         case .pop:
-            return .dismiss
+            return .popSideMenu(self)
         }
     }
 }

@@ -30,6 +30,8 @@ class SelectVehicleController: UIViewController {
         UIImage(named: "Asset 5@4x")!
     ]
     
+    var driverInfo: BookRideResponse?
+    
     var delegate: ModalControllerDelegate?
     var bookRideDelegate: BookRideDelegate?
     var viewModel: SelectVehicleViewModel?
@@ -64,7 +66,9 @@ class SelectVehicleController: UIViewController {
             let alertController = UIAlertController(title: "Success", message: "Your driver has been found. Click OK to proceed.", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: { _ in
                 self.dismiss(animated: true, completion: {
+                    
                     let driverLocation = DriverLocationController()
+                    driverLocation.driverInfo = self.driverInfo
                     self.delegate?.parentController.navigationController?.pushViewController(driverLocation, animated: true)
                 })
             })

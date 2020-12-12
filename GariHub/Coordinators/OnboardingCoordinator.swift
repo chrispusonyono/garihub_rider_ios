@@ -82,7 +82,9 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
             let viewModel = LoginViewModel(client: client, router: self.strongRouter)
             let loginVC = LoginController()
             loginVC.viewModel = viewModel
-            return .set([loginVC])
+            
+            self.appCoordinatorDelegate?.selectRoute(.push(loginVC))
+            return .none()
         }
     }
 }

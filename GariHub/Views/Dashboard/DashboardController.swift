@@ -20,7 +20,7 @@ class DashboardController: BaseTextFieldController {
         UIImage(named: "Group 6")!
     ]
     
-//    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var orderType: UISegmentedControl!
     
@@ -39,7 +39,7 @@ class DashboardController: BaseTextFieldController {
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         orderType.setTitleTextAttributes(titleTextAttributes, for: .normal)
         orderType.setTitleTextAttributes(titleTextAttributes, for: .selected)
-//        searchBar.layer.cornerRadius = 10
+        searchBar.layer.cornerRadius = 10
         
         guard let vm = self.viewModel else { return }
         guard vm.client.isLoggedIn else {
@@ -50,9 +50,9 @@ class DashboardController: BaseTextFieldController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.setAppNavigationBar()
         self.navigationItem.leftBarButtonItem = self.navigationItemFactory(action: #selector(self.mainMenuTapped(_:)), image: UIImage(named: "menu_icon"))
         self.navigationItem.title = "Dashboard"
+        self.setAppNavigationBar()
 
     }
     

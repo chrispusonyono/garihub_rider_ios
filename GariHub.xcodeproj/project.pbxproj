@@ -69,6 +69,7 @@
 		FA882E7A2525CA2D00AC4776 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E792525CA2D00AC4776 /* LoginRequest.swift */; };
 		FA8AFA35254C061700C7A37E /* BaseTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AFA34254C061700C7A37E /* BaseTextFieldController.swift */; };
 		FA8AFA37254C066400C7A37E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AFA36254C066400C7A37E /* UIColor+.swift */; };
+		FA97FC0C2585021F00C6ABF3 /* Sockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97FC0B2585021F00C6ABF3 /* Sockets.swift */; };
 		FA9F4E652562927C0053D9BF /* SelectVehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F4E632562927C0053D9BF /* SelectVehicleController.swift */; };
 		FA9F4E662562927C0053D9BF /* SelectVehicleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9F4E642562927C0053D9BF /* SelectVehicleController.xib */; };
 		FA9F4E6925629E9D0053D9BF /* SelectVehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F4E6725629E9D0053D9BF /* SelectVehicleCell.swift */; };
@@ -80,6 +81,8 @@
 		FAA7699A2514D04000750625 /* GariHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769992514D04000750625 /* GariHubUITests.swift */; };
 		FAA769AA2514D0C500750625 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA769A82514D0C500750625 /* LandingController.swift */; };
 		FAA769AB2514D0C500750625 /* LandingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA769A92514D0C500750625 /* LandingController.xib */; };
+		FAA88CF925879B330009C939 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA88CF725879B330009C939 /* SideMenuCell.swift */; };
+		FAA88CFA25879B330009C939 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA88CF825879B330009C939 /* SideMenuCell.xib */; };
 		FAA8B24325528FC5001484E7 /* MapsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8B24125528FC5001484E7 /* MapsController.swift */; };
 		FAA8B24425528FC5001484E7 /* MapsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA8B24225528FC5001484E7 /* MapsController.xib */; };
 		FAA8B24725529235001484E7 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8B24625529235001484E7 /* MapsViewModel.swift */; };
@@ -197,6 +200,7 @@
 		FA882E792525CA2D00AC4776 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRequest.swift; path = GariHub/Utils/LoginRequest.swift; sourceTree = SOURCE_ROOT; };
 		FA8AFA34254C061700C7A37E /* BaseTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldController.swift; sourceTree = "<group>"; };
 		FA8AFA36254C066400C7A37E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		FA97FC0B2585021F00C6ABF3 /* Sockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sockets.swift; sourceTree = "<group>"; };
 		FA9F4E632562927C0053D9BF /* SelectVehicleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicleController.swift; sourceTree = "<group>"; };
 		FA9F4E642562927C0053D9BF /* SelectVehicleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectVehicleController.xib; sourceTree = "<group>"; };
 		FA9F4E6725629E9D0053D9BF /* SelectVehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicleCell.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 		FAA7699B2514D04000750625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA769A82514D0C500750625 /* LandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		FAA769A92514D0C500750625 /* LandingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingController.xib; sourceTree = "<group>"; };
+		FAA88CF725879B330009C939 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		FAA88CF825879B330009C939 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		FAA8B24125528FC5001484E7 /* MapsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsController.swift; sourceTree = "<group>"; };
 		FAA8B24225528FC5001484E7 /* MapsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsController.xib; sourceTree = "<group>"; };
 		FAA8B24625529235001484E7 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
@@ -400,6 +406,14 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		FA97FC0A258501FF00C6ABF3 /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+				FA97FC0B2585021F00C6ABF3 /* Sockets.swift */,
+			);
+			path = Sockets;
+			sourceTree = "<group>";
+		};
 		FAA7696B2514D03D00750625 = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +439,7 @@
 		FAA769762514D03D00750625 /* GariHub */ = {
 			isa = PBXGroup;
 			children = (
+				FA97FC0A258501FF00C6ABF3 /* Sockets */,
 				FA2D096C252F3D3900212F6D /* Location */,
 				FA47DBAF25277053006FA060 /* Coordinators */,
 				FAA769AF2514D31300750625 /* Utils */,
@@ -574,6 +589,8 @@
 				FAF7BDB0256E785D00160211 /* SideMenuController.swift */,
 				FAF7BDB1256E785D00160211 /* SideMenuController.xib */,
 				FAF7BDB4256E862B00160211 /* SideMenuViewModel.swift */,
+				FAA88CF725879B330009C939 /* SideMenuCell.swift */,
+				FAA88CF825879B330009C939 /* SideMenuCell.xib */,
 			);
 			path = "Menu Rider";
 			sourceTree = "<group>";
@@ -727,6 +744,7 @@
 				FAA769812514D03F00750625 /* Assets.xcassets in Resources */,
 				0C893112251BAF1C001E17AD /* CampaignTwo.xib in Resources */,
 				FA2D096B252CB0E300212F6D /* DashboardCell.xib in Resources */,
+				FAA88CFA25879B330009C939 /* SideMenuCell.xib in Resources */,
 				FA2D0963252C729700212F6D /* ResetPasswordController.xib in Resources */,
 				FA41DD832529F075006C1F4B /* DashboardController.xib in Resources */,
 				0C893104251B5066001E17AD /* CampaignController.xib in Resources */,
@@ -895,6 +913,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA293FA7251E410D00BC00AD /* Spinner.swift in Sources */,
+				FAA88CF925879B330009C939 /* SideMenuCell.swift in Sources */,
 				0C98F6842524BA8100000F35 /* LoginController.swift in Sources */,
 				FA47DBA32527543F006FA060 /* PasswordRegisterController.swift in Sources */,
 				FADE533225641E45007A4BD2 /* DriverInfoController.swift in Sources */,
@@ -946,6 +965,7 @@
 				0C531429252727680032C27F /* RegistrationTwoController.swift in Sources */,
 				FA7FC538251E329E0081A19A /* BaseAuthModel.swift in Sources */,
 				FA41DD852529F54F006C1F4B /* DashboardViewModel.swift in Sources */,
+				FA97FC0C2585021F00C6ABF3 /* Sockets.swift in Sources */,
 				FAB60275257D181E0015B609 /* HomeCoordinator.swift in Sources */,
 				0C893111251BAF1C001E17AD /* CampaignTwo.swift in Sources */,
 				FAF7BDB7256E889000160211 /* SideMenuCoordinator.swift in Sources */,

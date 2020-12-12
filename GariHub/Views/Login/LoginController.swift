@@ -80,7 +80,7 @@ class LoginController: BaseTextFieldController {
         ]
         
         //Request configuration
-        var request = URLRequest(url: URL(string: "http://dev.api.garihub.com/auth/realms/garihub-rider/protocol/openid-connect/token")!)
+        var request = URLRequest(url: URL(string: "http://dev.garihub.com/auth/realms/garihub-rider/protocol/openid-connect/token")!)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = requestHeaders
         request.httpBody = requestBodyComponents.query?.data(using: .utf8)

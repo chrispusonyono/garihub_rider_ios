@@ -18,6 +18,7 @@ target 'GariHub' do
   pod 'BRQBottomSheet'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
+  pod 'Starscream', '~> 4.0.0'
 
 
 
