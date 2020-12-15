@@ -13,7 +13,16 @@ import UIKit
 var vSpinner : UIView?
 
 
-extension  UIViewController {
+extension  UIViewController: ClassNameProtocol {
+    
+    
+    func presentAlert(title: String, message: String, style: UIAlertController.Style = .actionSheet, action: UIAlertAction? = nil) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        alertController.addAction(action ?? defaultAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
 
     func showAlert(withTitle title: String, withMessage message:String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

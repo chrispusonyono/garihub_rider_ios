@@ -28,6 +28,7 @@ class PickupLocationController: UIViewController {
     }
     
     func setupViews() {
+        _ = self.view
         view.layer.cornerRadius = 25
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.autocompleteClicked(_:)))

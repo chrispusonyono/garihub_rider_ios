@@ -22,6 +22,8 @@ enum AppRoutes: Route {
 }
 
 
+@available(iOS 12.0, *)
+@available(iOS 12.0, *)
 class AppCoordinator: NavigationCoordinator<AppRoutes> {
     let client: GariHubClient
     
@@ -33,7 +35,7 @@ class AppCoordinator: NavigationCoordinator<AppRoutes> {
         navigationController.navigationBar.barTintColor = UIColor.black
         navigationController.navigationBar.tintColor = .black
         
-        super.init(rootViewController: navigationController, initialRoute: .dashboard)
+        super.init(rootViewController: navigationController, initialRoute: .landingPage)
     }
     
     override func prepareTransition(for route: AppRoutes) -> NavigationTransition {
@@ -75,6 +77,7 @@ protocol AppCoordinatorDelegate {
     func selectRoute(_ route: AppRoutes)
 }
 
+@available(iOS 12.0, *)
 extension AppCoordinator: AppCoordinatorDelegate {
     func selectRoute(_ route: AppRoutes) {
         self.strongRouter.trigger(route)

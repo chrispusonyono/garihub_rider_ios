@@ -27,7 +27,7 @@ class RegistrationController: BaseTextFieldController {
         activateButton.addTarget(self, action: #selector(self.onTap(_:)), for: .touchUpInside)
         setupViews()
         setTransparentNavigationBar()
-
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -39,14 +39,14 @@ class RegistrationController: BaseTextFieldController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.loginFunction(sender:)))
         loginButton.isUserInteractionEnabled = true
         loginButton.addGestureRecognizer(tap)
-    
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
@@ -58,22 +58,21 @@ class RegistrationController: BaseTextFieldController {
     }
     
     func validations() {
-        if phoneNumber.text == "" {
-            self.showAlert(withTitle: "Phone number", withMessage: "Phone number cannot be blank")
-        }
+        
     }
     
     
     @objc func onTap(_ sender: UIButton) {
-        validations()
-        self.showSpinner(onView: self.view)
-//        guard let vm = self.viewModel else { return }
-        
+    
         guard let phone = phoneNumber.text else { return }
         
-        provider.request(.validatePhone(phoneNumber: phone)) {
-            result in
-            self.removeSpinner()
+        if phoneNumber.text == "" {
+            self.showAlert(withTitle: "Phone number", withMessage: "Phone number cannot be blank")
+        } else {
+            self.showSpinner(onView: self.view)
+            provider.request(.validatePhone(phoneNumber: phone)) {
+                result in
+                self.removeSpinner()
                 switch result {
                 case .failure(let error):
                     print(error)
@@ -92,10 +91,13 @@ class RegistrationController: BaseTextFieldController {
                         }
                     }
                 }
+            }
         }
+        
+        
         
     }
     
     
-
+    
 }

@@ -21,6 +21,7 @@ enum HomeRoutes: Route {
 }
 
 
+@available(iOS 12.0, *)
 class HomeCoordinator: NavigationCoordinator<HomeRoutes> {
     
     let client: GariHubClient

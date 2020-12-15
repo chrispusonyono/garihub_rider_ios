@@ -144,6 +144,7 @@ PODS:
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
+  - Starscream (4.0.4)
   - SwiftKeychainWrapper (4.0.1)
   - XCoordinator (2.0.7):
     - XCoordinator/Core (= 2.0.7)
@@ -160,6 +161,7 @@ DEPENDENCIES:
   - MaterialComponents/BottomSheet
   - "MaterialComponents/BottomSheet+ShapeThemer"
   - Moya
+  - Starscream (~> 4.0.0)
   - SwiftKeychainWrapper
   - XCoordinator
 
@@ -185,6 +187,7 @@ SPEC REPOS:
     - Moya
     - nanopb
     - PromisesObjC
+    - Starscream
     - SwiftKeychainWrapper
     - XCoordinator
 
@@ -209,9 +212,10 @@ SPEC CHECKSUMS:
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
 
-PODFILE CHECKSUM: 035fc6a6a70e8374ace6a8915fad399ab19a2797
+PODFILE CHECKSUM: 7cb2f526b08cb60b8cdaba4885d0dff8f26528e5
 
 COCOAPODS: 1.9.3

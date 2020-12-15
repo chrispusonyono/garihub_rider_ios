@@ -12,9 +12,16 @@ import GoogleMaps
 import GooglePlaces
 import GooglePlacePicker
 import MaterialComponents.MaterialBottomSheet
+import Starscream
 
 
-class MapsController: UIViewController {
+@available(iOS 12.0, *)
+class MapsController: BaseTextFieldController {
+    
+    var socket: WebSocket!
+    var isConnected = false
+    let server = WebSocketServer()
+
     
     var viewModel: MapsViewModel?
     var locationManager: CLLocationManager!
@@ -28,7 +35,15 @@ class MapsController: UIViewController {
         super.viewDidLoad()
         setupMaps()
         setupViews()
-        
+        setupSocketService()
+    }
+    
+    func setupSocketService() {
+        var request = URLRequest(url: URL(string: "ws://dev.garihub.com/api/socket-service")!)
+        request.timeoutInterval = 5
+        socket = WebSocket(request: request)
+        socket.delegate = self
+        socket.connect()
     }
     
     func setupModal() {
@@ -46,6 +61,11 @@ class MapsController: UIViewController {
     }
     
     func setupMaps(){
+        _ = self.locationVC.view
+        
+        locationVC.locationLabel.text = "Unnamed Road"
+        locationVC.searchImage.image = UIImage(named: "search-interface-symbol")
+        
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -56,6 +76,15 @@ class MapsController: UIViewController {
         }
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    
+        self.setAppNavigationBar()
+    }
+    
+    
+    
     func setupViews() {
         let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: locationVC)
         bottomSheet.dismissOnBackgroundTap = false
@@ -65,6 +94,7 @@ class MapsController: UIViewController {
     
 }
 
+@available(iOS 12.0, *)
 extension MapsController: ModalControllerDelegate {
     
     var parentController: UIViewController {
@@ -77,6 +107,7 @@ extension MapsController: ModalControllerDelegate {
     }
 }
 
+@available(iOS 12.0, *)
 extension MapsController: GMSAutocompleteViewControllerDelegate {
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
@@ -104,6 +135,7 @@ extension MapsController: GMSAutocompleteViewControllerDelegate {
     }
 }
 
+@available(iOS 12.0, *)
 extension MapsController: GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
         UIView.animate(withDuration: 5.0, animations: { () -> Void in
@@ -111,9 +143,12 @@ extension MapsController: GMSMapViewDelegate {
     }
 }
 
+@available(iOS 12.0, *)
 extension MapsController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+
         let userLocation: CLLocation = locations[0] as CLLocation
         
         print("user latitude = \(userLocation.coordinate.latitude)")
@@ -149,7 +184,7 @@ extension MapsController: CLLocationManagerDelegate {
                     if let place = places.first {
                         if let lines = place.lines {
                             print("\(lines[0])")
-                            self.locationVC.locationLabel.text = lines[0]
+                            guard case self.locationVC.locationLabel.text = lines[0] else { return }
                         }
                     } else {
                         print("GEOCODE: nil first in places")
@@ -161,5 +196,50 @@ extension MapsController: CLLocationManagerDelegate {
         }
         
     }
+    
+}
+
+
+@available(iOS 12.0, *)
+extension MapsController: WebSocketDelegate{
+    func didReceive(event: WebSocketEvent, client: WebSocket) {
+        switch event {
+        case .connected(let headers):
+            isConnected = true
+            print("websocket is connected: \(headers)")
+        case .disconnected(let reason, let code):
+            isConnected = false
+            print("websocket is disconnected: \(reason) with code: \(code)")
+        case .text(let string):
+            print("Received text: \(string)")
+        case .binary(let data):
+            print("Received data: \(data.count)")
+        case .ping(_):
+            break
+        case .pong(_):
+            break
+        case .viabilityChanged(_):
+            break
+        case .reconnectSuggested(_):
+            break
+        case .cancelled:
+            isConnected = false
+        case .error(let error):
+            isConnected = false
+            handleError(error)
+        }
+    }
+    
+    
+    func handleError(_ error: Error?) {
+        if let e = error as? WSError {
+            print("websocket encountered an error: \(e.code)")
+        } else if let e = error {
+            print("websocket encountered an error kevin: \(e.localizedDescription)")
+        } else {
+            print("websocket encountered an error")
+        }
+    }
+    
     
 }

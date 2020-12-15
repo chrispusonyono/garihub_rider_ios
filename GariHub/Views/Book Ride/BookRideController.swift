@@ -18,6 +18,7 @@ class BookRideController: BaseTextFieldController {
     var viewModel: BookRideViewModel?
     
     let selectVehicle = SelectVehicleController()
+    let getDriver = DriverInfoController()
     var delegate: ModalControllerDelegate?
 
     
@@ -232,6 +233,7 @@ extension BookRideController: BookRideDelegate {
             do {
                 let bookRideResponse = try JSONDecoder().decode(BookRideResponse.self, from: data)
                 print(bookRideResponse)
+                self.selectVehicle.driverInfo = bookRideResponse
 
             }
             catch let DecodingError.dataCorrupted(context) {

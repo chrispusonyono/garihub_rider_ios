@@ -17,3 +17,7 @@ protocol ModalControllerDelegate: class {
 protocol BookRideDelegate: class {
     func bookRideRequest()
 }
+
+protocol CallDriverDelegate {
+    func callDriver()
+}
