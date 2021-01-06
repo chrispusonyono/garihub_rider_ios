@@ -63,7 +63,6 @@ class MapsController: BaseTextFieldController {
     func setupMaps(){
         _ = self.locationVC.view
         
-        locationVC.locationLabel.text = "Unnamed Road"
         locationVC.searchImage.image = UIImage(named: "search-interface-symbol")
         
         locationManager = CLLocationManager()

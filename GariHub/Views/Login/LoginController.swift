@@ -17,8 +17,10 @@ class LoginController: BaseTextFieldController {
     @IBOutlet weak var emailAddress: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var forgotPasswordBtn: UILabel!
-    @IBOutlet weak var registerButton: UILabel!
+    @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var signInBtn: UIButton!
+    @IBOutlet weak var passwordImage: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,17 +36,37 @@ class LoginController: BaseTextFieldController {
         forgotPasswordBtn.isUserInteractionEnabled = true
         forgotPasswordBtn.addGestureRecognizer(tap)
         
-        let regTap = UITapGestureRecognizer(target: self, action: #selector(self.goToRegister(_:)))
-        registerButton.isUserInteractionEnabled = true
-        registerButton.addGestureRecognizer(regTap)
+        let tapImage = UITapGestureRecognizer(target: self, action: #selector(self.togglePasswordTapped(_:)))
+        passwordImage.isUserInteractionEnabled = true
+        passwordImage.addGestureRecognizer(tapImage)
+        
+        registerButton.addTarget(self, action: #selector(self.goToRegister(_:)), for: .touchUpInside)
         noUserError.text = ""
         signInBtn.layer.cornerRadius = 5
         signInBtn.clipsToBounds = true
         
+        let regularString = NSMutableAttributedString(string: "I don't have an account!",
+        attributes: regularAttributes)
+        
+        regularString.append(NSAttributedString(string: " Register", attributes: boldGreenAttributes))
+        
+        registerButton.setAttributedTitle(regularString, for: .normal)
+        
     }
     
-    @objc func goToRegister(_ sender: UITapGestureRecognizer) {
+    @objc func goToRegister(_ sender: UIButton) {
         self.viewModel?.router.trigger(.validatePhone)
+        print("styff")
+    }
+
+    
+    @objc func togglePasswordTapped(_ sender: UITapGestureRecognizer) {
+        if self.passwordField.isSecureTextEntry {
+            self.passwordImage.image = UIImage(named: "hide_password_icon")
+        } else {
+            self.passwordImage.image = UIImage(named: "show_password_icon")
+        }
+        self.passwordField.isSecureTextEntry = !self.passwordField.isSecureTextEntry
     }
     
     @objc func presentBottomSheet(_ sender: UITapGestureRecognizer) {

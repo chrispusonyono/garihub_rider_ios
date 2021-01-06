@@ -2,7 +2,7 @@
 //  UIColor+.swift
 //  GariHub
 //
-//  Created by Kevin Lagat on 10/30/20.
+//  Created by Kevin Lagat on 10/30/20. 
 //  Copyright © 2020 Kevin Lagat. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import UIKit
 extension UIColor {
         
     static let appBlack = UIColor.hex("#000000")
-    static let appYellow = UIColor.hex("1B8241")
+    static let appYellow = UIColor.hex("fbcb00")
     static let filledColor = UIColor.hex("#4CBB17")
     static let inactiveColor = UIColor.hex("#CCCCCC")
     

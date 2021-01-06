@@ -83,18 +83,40 @@ class SelectVehicleController: UIViewController {
     
     func setupViews(){
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.selectPaymentMethod(_:)))
+        let tapMpesa = UITapGestureRecognizer(target: self, action: #selector(self.selectMpesa(_:)))
+        
         paymentCashView.isUserInteractionEnabled = true
         paymentCashView.addGestureRecognizer(tap)
         paymentMpesaView.isUserInteractionEnabled = true
-        paymentMpesaView.addGestureRecognizer(tap)
+        paymentMpesaView.addGestureRecognizer(tapMpesa)
     }
     
     @objc func selectPaymentMethod(_ sender: UITapGestureRecognizer) {
         
+        if self.cashCheck.isHidden {
+            self.cashCheck.isHidden = false
+            self.paymentCashView.layer.backgroundColor = UIColor.lightGray.cgColor
+        }
+//        else {
+//            self.cashCheck.isHidden = true
+//            self.paymentCashView.layer.backgroundColor = UIColor.white.cgColor
+//        }
+//        self.cashCheck.isHidden = !self.cashCheck.isHidden
         
-        cashCheck.isHidden = false
-        paymentCashView.layer.backgroundColor = UIColor.gray.cgColor
         
+        
+    }
+    
+    @objc func selectMpesa(_ sender: UITapGestureRecognizer) {
+        if self.mpesaCheck.isHidden {
+            self.mpesaCheck.isHidden = false
+            self.paymentMpesaView.layer.backgroundColor = UIColor.lightGray.cgColor
+        }
+//        else {
+//            self.mpesaCheck.isHidden = true
+//            self.paymentMpesaView.layer.backgroundColor = UIColor.white.cgColor
+//        }
+//        self.mpesaCheck.isHidden = !self.mpesaCheck.isHidden
     }
     
 }

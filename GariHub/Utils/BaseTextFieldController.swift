@@ -9,6 +9,19 @@
 import UIKit
 
 class BaseTextFieldController: UIViewController {
+    
+    let regularAttributes: [NSAttributedString.Key: Any] = [
+        .foregroundColor: UIColor.black
+    ]
+    
+    let boldAttributes: [NSAttributedString.Key: Any] = [
+        .foregroundColor: UIColor.black
+    ]
+    
+    let boldGreenAttributes: [NSAttributedString.Key: Any] = [
+        .font: UIFont.systemFont(ofSize: 14, weight: .bold),
+        .foregroundColor: UIColor.appYellow
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()

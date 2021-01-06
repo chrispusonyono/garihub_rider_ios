@@ -54,7 +54,8 @@ class OnboardingCoordinator: NavigationCoordinator<OnboardingRoutes> {
             let viewModel = RegistrationViewModel(client: client, router: self.strongRouter)
             let regVC = RegistrationController()
             regVC.viewModel = viewModel
-            return .set([regVC])
+            self.appCoordinatorDelegate?.selectRoute(.push(regVC))
+            return .none()
             
         case .registerTwo(let phoneNumber):
             let viewModel = RegTwoViewModel(client: client, router: self.strongRouter, phoneNumber: phoneNumber)
