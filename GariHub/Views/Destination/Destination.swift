@@ -16,6 +16,12 @@ class Destination: BaseTextFieldController {
     var viewModel: DestinationViewModel?
     var resultsViewController: GMSAutocompleteViewController?
     
+    let destinations: [String] = [
+        "CBD Kenyatta Avenue",
+        "Thika Road, TRM Mall",
+        "Westlands, Alchemist Bar & Grill"
+    ]
+    
     
     var locationManager:CLLocationManager!
     
@@ -25,6 +31,7 @@ class Destination: BaseTextFieldController {
     @IBOutlet weak var backButton: UIImageView!
     @IBOutlet weak var recentDestinationView: UIView!
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var stopview: UIView!
     @IBOutlet weak var stopStack: UIStackView!
     @IBOutlet weak var stopPoint: UITextField!
@@ -37,6 +44,10 @@ class Destination: BaseTextFieldController {
         getUserCoordinates()
         setupViews()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.register(UINib(nibName: RecentDestinationsCell.className, bundle: nil), forCellReuseIdentifier: RecentDestinationsCell.className)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -174,6 +185,24 @@ extension Destination: GMSAutocompleteViewControllerDelegate {
     
     
     
+}
+
+extension Destination: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: RecentDestinationsCell.className) as! RecentDestinationsCell
+        cell.destinationName.text = destinations[indexPath.row]
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.destinations.count
+    }
+    
+}
+
+extension Destination: UITableViewDelegate {
+
 }
 
 

@@ -35,7 +35,7 @@ class AppCoordinator: NavigationCoordinator<AppRoutes> {
         navigationController.navigationBar.barTintColor = UIColor.black
         navigationController.navigationBar.tintColor = .black
         
-        super.init(rootViewController: navigationController, initialRoute: .landingPage)
+        super.init(rootViewController: navigationController, initialRoute: .dashboard )
     }
     
     override func prepareTransition(for route: AppRoutes) -> NavigationTransition {

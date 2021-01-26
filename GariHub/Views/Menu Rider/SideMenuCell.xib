@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,18 +17,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Profile Management" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-cl-0JO">
-                        <rect key="frame" x="51" y="12" width="154" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Management" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-cl-0JO">
+                        <rect key="frame" x="16" y="12" width="153" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="VKp-cl-0JO" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.477273" id="19y-dK-ZaZ"/>
-                    <constraint firstItem="VKp-cl-0JO" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.48125" id="40d-va-yCM"/>
-                    <constraint firstItem="VKp-cl-0JO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5Qr-1d-zQE"/>
-                    <constraint firstItem="VKp-cl-0JO" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="E7q-dL-TfX"/>
+                    <constraint firstItem="VKp-cl-0JO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Nsm-z4-ASy"/>
+                    <constraint firstAttribute="bottom" secondItem="VKp-cl-0JO" secondAttribute="bottom" constant="11" id="VB2-Eq-UVX"/>
+                    <constraint firstAttribute="trailing" secondItem="VKp-cl-0JO" secondAttribute="trailing" constant="151" id="d9x-7u-54N"/>
+                    <constraint firstItem="VKp-cl-0JO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="r4h-mg-wC3"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

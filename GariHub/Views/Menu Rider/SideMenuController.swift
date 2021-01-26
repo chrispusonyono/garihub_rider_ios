@@ -31,17 +31,25 @@ class SideMenuController: UIViewController {
     @IBOutlet weak var riderNumber: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var riderName: UILabel!
+    @IBOutlet weak var viewTable: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         tableView.register(UINib(nibName: SideMenuCell.className, bundle: nil), forCellReuseIdentifier: SideMenuCell.className)
         
         let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.didSwipe(_:)))
         self.view.addGestureRecognizer(gestureRecognizer)
+        setupViews()
+    }
+    
+    func setupViews() {
+        viewTable.layer.cornerRadius = 20
     }
     
     
@@ -71,6 +79,8 @@ extension SideMenuController: UITableViewDelegate {
     
     
     
+    
+    
 }
 
 extension SideMenuController: UITableViewDataSource {
@@ -81,6 +91,7 @@ extension SideMenuController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SideMenuCell.className) as! SideMenuCell
         cell.menuType.text = titles[indexPath.row]
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,6 +18,7 @@
                 <outlet property="tableView" destination="DaU-ZF-AFn" id="gOg-38-wol"/>
                 <outlet property="userRating" destination="BfB-ej-3gs" id="G55-AH-sJa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTable" destination="thN-Zo-PFe" id="9b7-KY-1wu"/>
                 <outlet property="waitingTime" destination="enD-Fd-rfU" id="xqb-Qr-yHQ"/>
             </connections>
         </placeholder>
@@ -25,7 +27,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ag-R0-nlC">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ag-R0-nlC" userLabel="SideView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="896"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="0I7-aa-W5y">
@@ -45,35 +47,35 @@
                                     <rect key="frame" x="135" y="0.0" width="200" height="110.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alberta Newton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0x-rk-lD8">
-                                            <rect key="frame" x="0.0" y="0.0" width="128.5" height="20.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="lii-UR-OQA">
-                                            <rect key="frame" x="0.0" y="20.5" width="136.5" height="50"/>
+                                            <rect key="frame" x="0.0" y="20.5" width="136" height="50"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22IconsFilledStar" translatesAutoresizingMaskIntoConstraints="NO" id="fBY-1z-DTi">
                                                     <rect key="frame" x="0.0" y="0.0" width="16" height="50"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfB-ej-3gs">
-                                                    <rect key="frame" x="23" y="0.0" width="25" height="50"/>
+                                                    <rect key="frame" x="23" y="0.0" width="24.5" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veV-2Y-SMX">
-                                                    <rect key="frame" x="55" y="0.0" width="0.5" height="50"/>
+                                                    <rect key="frame" x="54.5" y="0.0" width="0.5" height="50"/>
                                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="0.5" id="Py0-Sc-5fw"/>
                                                     </constraints>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22IconsFilledPin" translatesAutoresizingMaskIntoConstraints="NO" id="L1r-Dq-J1H">
-                                                    <rect key="frame" x="62.5" y="0.0" width="16" height="50"/>
+                                                    <rect key="frame" x="62" y="0.0" width="16" height="50"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enD-Fd-rfU">
-                                                    <rect key="frame" x="85.5" y="0.0" width="51" height="50"/>
+                                                    <rect key="frame" x="85" y="0.0" width="51" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -132,7 +134,7 @@
                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DaU-ZF-AFn">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="487"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </tableView>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQj-qH-B5P">
                                     <rect key="frame" x="6" y="499" width="363" height="85"/>
@@ -146,7 +148,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 </view>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0aN-NT-cqO">
                                     <rect key="frame" x="67" y="592" width="240" height="64"/>
@@ -157,10 +159,10 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="673" id="gGP-eN-pXA"/>
                             </constraints>
@@ -177,9 +179,12 @@
                         <constraint firstItem="thN-Zo-PFe" firstAttribute="leading" secondItem="5ag-R0-nlC" secondAttribute="leading" id="Urz-TL-9VO"/>
                         <constraint firstItem="0I7-aa-W5y" firstAttribute="leading" secondItem="5ag-R0-nlC" secondAttribute="leading" constant="20" id="XBz-IH-0Uz"/>
                         <constraint firstAttribute="trailing" secondItem="0I7-aa-W5y" secondAttribute="trailing" constant="20" id="exd-nT-sut"/>
+                        <constraint firstItem="thN-Zo-PFe" firstAttribute="leading" secondItem="5ag-R0-nlC" secondAttribute="leading" id="isZ-n2-aH2"/>
+                        <constraint firstAttribute="trailing" secondItem="thN-Zo-PFe" secondAttribute="trailing" id="u4x-pF-gSo"/>
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="5ag-R0-nlC" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="JKh-Ap-5Er"/>
@@ -188,7 +193,6 @@
                 <constraint firstItem="5ag-R0-nlC" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="zoN-2T-5o4"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="656.52173913043487" y="125.89285714285714"/>
         </view>
     </objects>
@@ -197,5 +201,11 @@
         <image name="22IconsFilledStar" width="16" height="16"/>
         <image name="group57" width="133" height="28"/>
         <image name="pexels-cottonbro-4065156" width="705.5" height="703.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
