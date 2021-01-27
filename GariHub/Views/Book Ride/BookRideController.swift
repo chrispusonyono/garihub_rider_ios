@@ -20,6 +20,9 @@ class BookRideController: BaseTextFieldController {
     let selectVehicle = SelectVehicleController()
     let getDriver = DriverInfoController()
     var delegate: ModalControllerDelegate?
+    
+    var driverInfo: BookRideResponse?
+
 
     
     @IBOutlet weak var mapsView: GMSMapView!
@@ -59,7 +62,6 @@ class BookRideController: BaseTextFieldController {
         bottomSheet.dismissOnDraggingDownSheet = true
         present(bottomSheet, animated: true, completion: nil)
         selectVehicle.delegate = self
-        selectVehicle.bookRideDelegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -181,92 +183,6 @@ extension BookRideController: ModalControllerDelegate {
     var parentController: UIViewController {
         return self
     }
-    
-    
-}
-
-extension BookRideController: BookRideDelegate {
-    
-    
-    func bookRideRequest() {
-        
-        self.showSpinner(onView: self.view)
-        let userLoc = UserDefaults.standard.dictionary(forKey: "currentLocation")
-        let destination = UserDefaults.standard.dictionary(forKey: "destinationLocation")
-        
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        
-        let latitude = userLoc?["lat"]
-        let latNum = formatter.number(from: latitude as! String)
-        
-        let longitude = userLoc?["long"]
-        let longNum = formatter.number(from: longitude as! String)
-        let lat = destination?["lat"]
-        let latitudeNum = formatter.number(from: lat as! String)
-        let long = destination?["long"]
-        let longitudeNum = formatter.number(from: long as! String)
-        
-        guard let pickupLat = latNum else { return }
-        guard let pickupLong = longNum else { return }
-        guard let dropOffLat = latitudeNum else { return }
-        guard let dropOffLong = longitudeNum else { return }
-        
-        let semaphore = DispatchSemaphore (value: 0)
-        
-        let parameters = "{\n\t\"userId\": \"{% response 'body', 'req_ad54022f8889498fae09d55a8f7e43d2', 'b64::JC5pZGVudGlmaWVy::46b', 'never', 60 %}\",\n\t\"pickupLat\": \"\(String(describing: pickupLat))\",\n\t\"pickupLon\": \"\(String(describing: pickupLong))\",\n\t\"dropOffLat\": \"\(String(describing: dropOffLat))\",\n\t\"dropOffLon\": \"\(String(describing: dropOffLong))\",\n\t\"fcmToken\": \"eRu0GrEOpk0juP0Mo6wlJj:APA91bFoaaW80HMkiEEsXTGG1fHxb5txsmxi364wgsfaIPwf9rGZQV6rDFNxLdY0tsDm6QlCt5YIvpEnO3pxdhOu5WfPxTE3Kfvi2w7qcPKtK33LHrWsITECq4aFhR5A61cZhCgCP7zG\",\n\t\"vehicleType\": \"TAXI\",\n\t\"paymentMode\": \"CASH\"\n}"
-        let postData = parameters.data(using: .utf8)
-        
-        var request = URLRequest(url: URL(string: "http://dev.garihub.com/api/trip-service/v1/trip/book-ride")!,timeoutInterval: Double.infinity)
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        request.httpMethod = "POST"
-        request.httpBody = postData
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            self.removeSpinner()
-            guard let data = data else {
-                print(String(describing: error))
-                return
-            }
-            
-            do {
-                let bookRideResponse = try JSONDecoder().decode(BookRideResponse.self, from: data)
-                print(bookRideResponse)
-                self.selectVehicle.driverInfo = bookRideResponse
-
-            }
-            catch let DecodingError.dataCorrupted(context) {
-                print(context)
-            } catch let DecodingError.keyNotFound(key, context) {
-                print("Key '\(key)' not found:", context.debugDescription)
-                print("codingPath:", context.codingPath)
-            } catch let DecodingError.valueNotFound(value, context) {
-                print("Value '\(value)' not found:", context.debugDescription)
-                print("codingPath:", context.codingPath)
-            } catch let DecodingError.typeMismatch(type, context)  {
-                print("Type '\(type)' mismatch:", context.debugDescription)
-                print("codingPath:", context.codingPath)
-            } catch {
-                DispatchQueue.main.async {
-                    let alertController = UIAlertController(title: "Error", message: "Failed to fetch vehicle, Please try again later.", preferredStyle: .alert)
-                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                    
-                    alertController.addAction(defaultAction)
-                    self.present(alertController, animated: true, completion: nil)
-                }
-            }
-            print(String(data: data, encoding: .utf8)!)
-            semaphore.signal()
-        }
-        
-        task.resume()
-        semaphore.wait()
-        
-        
-    }
-    
-
     
     
 }

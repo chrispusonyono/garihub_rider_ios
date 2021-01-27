@@ -14,10 +14,6 @@ protocol ModalControllerDelegate: class {
     var parentController: UIViewController { get }
 }
 
-protocol BookRideDelegate: class {
-    func bookRideRequest()
-}
-
 protocol CallDriverDelegate {
     func callDriver()
 }

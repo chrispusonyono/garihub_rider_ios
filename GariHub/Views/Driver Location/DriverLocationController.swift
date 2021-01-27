@@ -42,6 +42,8 @@ class DriverLocationController: BaseTextFieldController {
         guard let rating = data?.driver.rating else { return }
         getDriver.carModel.text = vehicleModel
         
+        self.navigationItem.title = "driver location"
+        
         getDriver.carNumberPlate.text = numberPlate
         getDriver.driverName.text = ("\(String(describing: firstName))" + " \(String(describing: lastName))")
         getDriver.driverRating.text = "\(String(describing: rating))"
