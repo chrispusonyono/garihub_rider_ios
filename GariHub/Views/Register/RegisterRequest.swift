@@ -14,11 +14,5 @@ struct RegisterRequest: Codable {
 }
 
 struct RegisterResponse: Codable {
-    let id: Int
-    let firstName, lastName, gender, phoneNumber: String
-    let isRegistered, otpSent: Bool
-    let emailAddress, emailStatus, accountStatus, userType: String
-    let createdAt, updatedAt: String
-    let success: Bool
-    let message: JSONNull?
+    let identifier: String
 }

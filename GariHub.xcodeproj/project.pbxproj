@@ -28,6 +28,8 @@
 		0CF160E2253DA51300250C6F /* DestinationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF160E0253DA51300250C6F /* DestinationCell.xib */; };
 		A12DBECD69CE81D80AEFB552 /* Pods_GariHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C1FA5806F5E45A6B0CB26 /* Pods_GariHubTests.framework */; };
 		D4E2AD291D7D80089FD764D3 /* Pods_GariHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1088EAFA0F92978C39D32614 /* Pods_GariHub.framework */; };
+		FA05EDE525BEB3DB00345C44 /* RecentDestinationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EDE325BEB3DB00345C44 /* RecentDestinationsCell.swift */; };
+		FA05EDE625BEB3DB00345C44 /* RecentDestinationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA05EDE425BEB3DB00345C44 /* RecentDestinationsCell.xib */; };
 		FA22F276255533A00045618C /* PickupLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F275255533A00045618C /* PickupLocationView.swift */; };
 		FA22F278255533C30045618C /* PickupLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA22F277255533C30045618C /* PickupLocationView.xib */; };
 		FA22F27A25553AC80045618C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F27925553AC80045618C /* UIView+.swift */; };
@@ -159,6 +161,8 @@
 		A92FE1A0229AFA4E8FB2DCB2 /* Pods-GariHub-GariHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHub-GariHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-GariHub-GariHubUITests/Pods-GariHub-GariHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C87CF6AA74FFEFADC002D9DD /* Pods-GariHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GariHubTests.debug.xcconfig"; path = "Target Support Files/Pods-GariHubTests/Pods-GariHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D44C1FA5806F5E45A6B0CB26 /* Pods_GariHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GariHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA05EDE325BEB3DB00345C44 /* RecentDestinationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentDestinationsCell.swift; sourceTree = "<group>"; };
+		FA05EDE425BEB3DB00345C44 /* RecentDestinationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentDestinationsCell.xib; sourceTree = "<group>"; };
 		FA22F275255533A00045618C /* PickupLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocationView.swift; sourceTree = "<group>"; };
 		FA22F277255533C30045618C /* PickupLocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickupLocationView.xib; sourceTree = "<group>"; };
 		FA22F27925553AC80045618C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -564,6 +568,8 @@
 				0C31D696252B7E560089253F /* Destination.swift */,
 				0C31D697252B7E560089253F /* Destination.xib */,
 				FAD965B2254ADCA6004F4C70 /* DestinationViewModel.swift */,
+				FA05EDE325BEB3DB00345C44 /* RecentDestinationsCell.swift */,
+				FA05EDE425BEB3DB00345C44 /* RecentDestinationsCell.xib */,
 			);
 			path = Destination;
 			sourceTree = "<group>";
@@ -737,6 +743,7 @@
 				FA5D8C78256D329F009A7597 /* GoogleService-Info.plist in Resources */,
 				0C89310E251B6D9A001E17AD /* RegistrationController.xib in Resources */,
 				FAF7BDB3256E785D00160211 /* SideMenuController.xib in Resources */,
+				FA05EDE625BEB3DB00345C44 /* RecentDestinationsCell.xib in Resources */,
 				0C89311A251E1546001E17AD /* CampaignThree.xib in Resources */,
 				FADE532B256412D6007A4BD2 /* GetLocationController.xib in Resources */,
 				FA22F278255533C30045618C /* PickupLocationView.xib in Resources */,
@@ -921,6 +928,7 @@
 				FADE532E25641B15007A4BD2 /* DriverFoundController.swift in Sources */,
 				FADE533525643E36007A4BD2 /* BookRideRequest.swift in Sources */,
 				FADE532A256412D6007A4BD2 /* GetLocationController.swift in Sources */,
+				FA05EDE525BEB3DB00345C44 /* RecentDestinationsCell.swift in Sources */,
 				FA47DBB12527707C006FA060 /* OnboardingCoordinator.swift in Sources */,
 				FAA8B24325528FC5001484E7 /* MapsController.swift in Sources */,
 				FA22F282255542EB0045618C /* ModalInteractiveTransition.swift in Sources */,

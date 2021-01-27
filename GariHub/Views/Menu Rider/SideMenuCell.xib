@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Management" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-cl-0JO">
-                        <rect key="frame" x="16" y="12" width="153" height="21"/>
+                        <rect key="frame" x="16" y="12" width="294" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -26,8 +26,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="VKp-cl-0JO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Nsm-z4-ASy"/>
+                    <constraint firstAttribute="trailing" secondItem="VKp-cl-0JO" secondAttribute="trailing" constant="10" id="Pdh-ik-UYI"/>
                     <constraint firstAttribute="bottom" secondItem="VKp-cl-0JO" secondAttribute="bottom" constant="11" id="VB2-Eq-UVX"/>
-                    <constraint firstAttribute="trailing" secondItem="VKp-cl-0JO" secondAttribute="trailing" constant="151" id="d9x-7u-54N"/>
                     <constraint firstItem="VKp-cl-0JO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="r4h-mg-wC3"/>
                 </constraints>
             </tableViewCellContentView>
