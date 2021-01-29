@@ -16,4 +16,5 @@ protocol ModalControllerDelegate: class {
 
 protocol CallDriverDelegate {
     func callDriver()
+    func cancelRide()
 }

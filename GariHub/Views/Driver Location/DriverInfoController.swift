@@ -21,18 +21,51 @@ class DriverInfoController: UIViewController {
     @IBOutlet weak var carNumberPlate: UILabel!
     @IBOutlet weak var messageBtn: UIButton!
     @IBOutlet weak var callBtn: UIButton!
-    
+    @IBOutlet weak var cancelRide: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         // Do any additional setup after loading the view.
         callBtn.addTarget(self, action: #selector(self.callDriver(_:)), for: .touchUpInside)
+        cancelRide.addTarget(self, action: #selector(self.cancelRide(_:)), for: .touchUpInside)
+    }
+    
+    func makeCall() {
+        guard let driverNumber = self.driverInfo?.driver.phoneNumber else { return }
+        
+        if let url = URL(string: "tel://\(driverNumber)"),
+           UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                    UIApplication.shared.open(url, options: [:], completionHandler:nil)
+                   } else {
+                       UIApplication.shared.openURL(url)
+                   }
+        } else {
+           print("Unable to make phone call")
+        }
+
     }
     
     
     @objc func callDriver(_ sender: UIButton) {
-        self.calldriverDelegate?.callDriver()
+        guard let driverNumber = self.driverInfo?.driver.phoneNumber else { return }
+        
+        let phoneAction = UIAlertController(title: nil, message: "Call", preferredStyle: .actionSheet)
+        
+        let phone = UIAlertAction(title: driverNumber, style: .default, handler: {
+            (action) in
+            self.makeCall()
+        })
+        
+        phoneAction.addAction(phone)
+        
+        self.present(phoneAction, animated: true, completion: nil)
+        
+    }
+    
+    @objc func cancelRide(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func setupViews() {

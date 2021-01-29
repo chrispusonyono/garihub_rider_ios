@@ -42,7 +42,7 @@ class DriverLocationController: BaseTextFieldController {
         guard let rating = data?.driver.rating else { return }
         getDriver.carModel.text = vehicleModel
         
-        self.navigationItem.title = "driver location"
+        self.navigationItem.title = "Driver location"
         
         getDriver.carNumberPlate.text = numberPlate
         getDriver.driverName.text = ("\(String(describing: firstName))" + " \(String(describing: lastName))")
@@ -85,23 +85,6 @@ extension DriverLocationController: ModalControllerDelegate {
 }
 
 
-extension DriverLocationController: CallDriverDelegate {
-    func callDriver() {
-        guard let driverNumber = getDriver.driverInfo?.driver.phoneNumber else { return }
-        self.presentAlert(title: "Call", message: "\(driverNumber)")
-//        let actionSheetController: UIAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-//        let firstAction: UIAlertAction = UIAlertAction(title: "\(driverNumber)", style: .default) { action -> Void in
-//            print("Driver")
-//        }
-//        actionSheetController.addAction(firstAction)
-//        actionSheetController.popoverPresentationController?.sourceView = self.getDriver.view
-//        present(actionSheetController, animated: true, completion: nil)
-    }
-    
-    
-}
-
-
 extension DriverLocationController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -114,6 +97,7 @@ extension DriverLocationController: CLLocationManagerDelegate {
         
         let marker = GMSMarker(position: position)
         marker.title = "Driver Location"
+        marker.icon = UIImage(named: "car")
         marker.tracksViewChanges = true
         marker.map = mapView
         
